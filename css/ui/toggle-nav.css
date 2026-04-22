@@ -1,6 +1,6 @@
 /* toggle-nav.css */
 .page-wrapper.expand>.mobile-header-nav {
-    height: 10vh !important;
+    height: 30vh !important;
     z-index: 1;
     background-color: var(--bg-clr);
     border-bottom: 1px solid black;
