@@ -39,3 +39,10 @@
     background-color: inherit;
     border: none;
 }
+
+.section#bioHormoneReplacement>button.section-title>img {
+    position: absolute;
+    right: -5%;
+    top: -100%;
+
+}

@@ -25,9 +25,8 @@ function initMain(){
             });
         });    
 }
-
 function setupGlobalListeners(){
     // initDropDown()
-// h    initFilterSortItems()
+    // initFilterSortItems()
 }
 setupGlobalListeners()

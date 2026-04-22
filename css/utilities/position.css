@@ -1,5 +1,5 @@
 /* position.css */
-#sideNavBtn{
-    position: absolute;
-    bottom: 0;
+.page-header {
+    position: fixed;
+    z-index: 1;
 }
