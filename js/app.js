@@ -28,7 +28,6 @@ function initMain(){
 
 function setupGlobalListeners(){
     // initDropDown()
-    
-    // initFilterSortItems()
+// h    initFilterSortItems()
 }
 setupGlobalListeners()
