@@ -8,3 +8,6 @@
 .page-wrapper {
     background-color: var(--bg-clr);
 }
+.mobile-header-nav {
+    background-color: var(--bg-header);
+}

@@ -10,10 +10,9 @@
 .mobile-header-nav {
     width: 100%;
 }
-/* .main-landing-page { */
-    /* position: absolute; */
-    /* top: 0; */
-/* } */
+.main-landing-page {
+    width: 100%;
+}
 /* .page-wrapper { */
     /* position: relative; */
 /* } */

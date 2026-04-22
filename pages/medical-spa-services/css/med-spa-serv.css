@@ -1,11 +1,26 @@
 /* med-spa-services.css */
+.section#bioHormoneReplacement{
+    min-height: 10vh;
+}
+.section#bioHormoneReplacement>button.section-title>img {
+    z-index: 10;
+    position: absolute;
+    right: -5%;
+    top: -40%;
+
+}
+#botoxAndFillers {
+    min-height: 12vh;
+    /* Ensures the section is at least 12% of viewport height */
+}
 .page-container.med-spa-serv-container {
-    
+    padding-top: 10%;
     margin: 0 2%;
     padding-bottom: 18%;
 }
-
 .section {
+    /* width: 50%; */
+    width: 90%;
        margin-top: 1%;
     padding-top: 1.25rem;
     padding-bottom: .5rem;
@@ -37,9 +52,9 @@
     border: none;
 }
 
-.section#bioHormoneReplacement>button.section-title>img {
-    position: absolute;
-    right: -5%;
-    top: -100%;
 
+.section {
+    max-height: 100vh;  /* Limits the section to full viewport height */
+    overflow: hidden;   /* Prevents content overflow */
+    overflow-y: scroll; /* Allows vertical scrolling if content exceeds height */
 }

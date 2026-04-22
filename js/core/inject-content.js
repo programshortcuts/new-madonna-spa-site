@@ -3,8 +3,8 @@ import { isSafePath } from "./security-utils.js";
 import { initItemsScroll } from "../ui/items-scroll.js";
 // import { initBookingForm } from "./bookings.js";
 // import { initSwiper } from "../visuals/swiper.js";
-// import { initBgSlider } from "../visuals/change-background.js";
-// import { initDropDown } from "../ui/drop-down.js";
+import { initBgSlider } from "../visuals/change-background.js";
+import { initDropDown } from "../ui/drop-down.js";
 // import { initSectionsDropDown } from "../ui/sections-drop-downs.js";
 import { initFilterSortItems } from "../ui/filter-sort-items.js";
 // import { initImageHandling } from "../visuals/handleImages.js";
@@ -133,8 +133,9 @@ export async function injectPage(href){
     // initProdImgHandle()
     initItemsScroll()
     // initSectionsDropDown()   
+    initDropDown()
     // initSwiper();
-    // initBgSlider()
+    initBgSlider()
     // ✅ ONLY INIT IF ON BOOKING PAGE
     if (href.includes("bookings")) {
         initBookingForm();
