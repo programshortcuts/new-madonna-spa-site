@@ -8,14 +8,7 @@
     padding-bottom: 18%;
 }
 
-section#botoxAndFillers {
-    background-image: url('../media/botox-filler.webp');
-    background-repeat: no-repeat;
-    background-position-y: 50%;
-    background-position-x: -2%;
-    filter: saturate(1);
-    filter: brightness(1);
-}
+
 section.colored#botoxAndFillers,
 section#botoxAndFillers:hover {
     filter: saturate(1.2);

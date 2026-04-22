@@ -1,39 +1,22 @@
 /* toggle-nav.css */
-.page-wrapper.expand #sideNavBtn {
-    /* z-index: 0;  */
-}
-
-.page-wrapper.expand>.page-header .img-wrapper {
-    /* position: absolute; */
-    /* right: 0%; */
-    /* z-index: 99 !important; */
-}
 
 .page-wrapper.expand>.mobile-header-nav {
     height: 20vh !important;
-    /* position: ; */
     z-index: 1;
-    /* top: 0; */
     background-color: var(--bg-clr);
     border-bottom: 1px solid black;
     border-radius: 5px;
-    /* padding-top: 5%; */
     transition: all 400ms;
 }
 
 .page-wrapper.expand>.mobile-header-nav>ul {
     padding-top: 1%;
-    /* padding-left: 2%; */
     transition: all 250ms;
-
 }
-
 .page-wrapper.expand>.mobile-header-nav>ul>li>ul {
     display: flex;
-    /* filter: opacity(1); */
     transition: all 1s;
 }
-
 .page-wrapper.expand>.mobile-header-nav>ul>li>ul>li a {
     padding-left: 5%;
     font-size: .9rem;

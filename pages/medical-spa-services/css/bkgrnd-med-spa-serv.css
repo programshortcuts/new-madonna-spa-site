@@ -1,0 +1,21 @@
+/* bkgrnd-med-spa-serv.css */
+
+.med-spa-serv-container .section {
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: -2%;
+    filter: saturate(1);
+    filter: brightness(1);
+    
+}
+section#IVinfusionTherapy {
+    background-image: url('../media/iv-infusion.jpeg'); 
+}
+section#peptides {
+
+    background-image: url('../media/peptide.jpeg');
+}
+section#botoxAndFillers {
+    background-image: url('../media/botox-filler.webp');
+    
+}
