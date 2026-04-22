@@ -7,8 +7,8 @@
     /* --bg-header: #878a8b; */
 }
 .page-header{
-    background-color: var(--bg-clr);
-    background-color: rgb(115, 103, 109);
+    /* background-color: rgb(115, 103, 109); */
+    background-color: rgb(92, 86, 83);
 
 }
 .main-landing-page {
