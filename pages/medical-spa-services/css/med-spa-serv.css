@@ -1,12 +1,14 @@
 /* med-spa-services.css */
 .section#bioHormoneReplacement{
     min-height: 10vh;
+    position: relative
 }
+
 .section#bioHormoneReplacement>button.section-title>img {
     z-index: 10;
     position: absolute;
-    right: -5%;
-    top: -40%;
+    left:50%;
+    bottom: 50%;
 
 }
 #botoxAndFillers {

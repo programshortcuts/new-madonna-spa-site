@@ -12,15 +12,12 @@
 
 @media screen and (min-width:535px) {
     .home-page-container {
-        
         margin: 0 5%;
     }
-    
     .home-page-header {
         float: left;
         width: 45%;
     }
-
     .home-page-container>article.mission-state>p {
         /* padding: 1%; */
         /* padding-top: 5%; */
