@@ -1,10 +1,25 @@
 /* page-header.css */
-.page-header .page-title {
-    font-size: 1.5rem;
+.page-header {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    z-index: 1;
+    justify-content: space-between;
+}
+.page-header>.page-title-container {
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    flex-basis: 80%;
+    /* flex-wrap: wrap; */
+}
+.page-title-container > h1 > .page-title {
+    font-size: 1.6rem;
     text-decoration: none;
-    letter-spacing: 20%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 18%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .page-header .page-title-container h1 .tel-num-header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -12,27 +27,9 @@
     text-decoration: none;
     color: var(--font-p-clr);
 }
-.page-container-title {
-    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-}
 
 
-.page-header {
-    position: fixed;
-    z-index: 1;
-    display: flex;
-    justify-content: space-between;
-}
-.page-header > img{
-    display: flex;
-    justify-content: space-between;
-}
-.page-header>.page-title-container {
-    display: flex;
-    /* flex-direction: column; */
-    flex-basis: 90%;
-    /* flex-wrap: wrap; */
-}
+
 .page-header  img {
     height: 15vh !important;
     position: absolute;;
@@ -40,8 +37,5 @@
     z-index: 99;
 }
 
-.page-header {
-    width: 100%;
-    position: fixed;
-}
+
 

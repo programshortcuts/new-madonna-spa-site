@@ -16,7 +16,7 @@ export function initBgSlider() {
     // assign images
     slides.forEach((slide, i) => {
         slide.style.backgroundImage = `url(${images[i]})`;
-        if(images[i] === "pages/medical-spa-services/media/AS-Botox2000.webp.png"){
+        if (images[i] != "imgs/rustic rockymoutains-1024.JPEG"){
             slide.classList.add('xMove')
         }
     });
