@@ -6,7 +6,11 @@
     --bg-header: #ddd;
     /* --bg-header: #878a8b; */
 }
-.page-wrapper {
+.main-landing-page {
+    /* background-color: var(--bg-clr); */
+}
+.page-wrapper
+{
     background-color: var(--bg-clr);
 }
 .mobile-header-nav {
