@@ -29,9 +29,15 @@
 /* @import url('utilities/colors.css'); */
 
 /* home */
+@import url('../pages/home/css/bkgrnd-home.css');
+@import url('../pages/home/css/borders-home.css');
+@import url('../pages/home/css/layout-home.css');
+@import url('../pages/home/css/position-home.css');
+@import url('../pages/home/css/sizing-home.css');
+@import url('../pages/home/css/txt-home.css');
+/* @import url('../pages/home/css/responsive-home.css'); */
 
 /* products */
-@import url('../pages/products/css/borders-products.css');
 @import url('../pages/products/css/colors-products.css');
 @import url('../pages/products/css/layout-products.css');
 @import url('../pages/products/css/sizing-products.css');
