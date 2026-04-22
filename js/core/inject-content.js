@@ -5,8 +5,7 @@ import { isSafePath } from "./security-utils.js";
 // import { initBgSlider } from "../visuals/change-background.js";
 // import { initDropDown } from "../ui/drop-down.js";
 // import { initSectionsDropDown } from "../ui/sections-drop-downs.js";
-// import { initToggleNav } from "../ui/toggle-nav.js";
-// import { initFilterSortItems } from "../ui/filter-sort-items.js";
+import { initFilterSortItems } from "../ui/filter-sort-items.js";
 // import { initImageHandling } from "../visuals/handleImages.js";
 // import { initProdImgHandle } from "../visuals/handleProductImgs.js";
 // import { initItemsScroll } from "../visuals/items-scroll.js";
@@ -129,11 +128,11 @@ export async function injectPage(href){
     })
 
     mainLandingPage.scrollTo(0,0)
+    initFilterSortItems()
     // initImageHandling()
     // initProdImgHandle()
     // initItemsScroll()
     // initSectionsDropDown()   
-    // initFilterSortItems()
     // initSwiper();
     // initBgSlider()
     // ✅ ONLY INIT IF ON BOOKING PAGE
