@@ -1,4 +1,9 @@
+/* mobile-header-nav.css */
+:root{
+    --social-max-height: 3vh;
+}
 .page-wrapper>.mobile-header-nav {
+    width: 100%;
     height: 10vh;
 }
 .page-wrapper>.mobile-header-nav>ul>li>ul {
@@ -53,7 +58,15 @@
      color: var(--header-clr);
 }
 
+li#contactNavLink {
+    flex: 1 1 0;
+    /* same behavior as others */
+    min-width: 0;
+    /* 🔥 allows shrinking */
+}
+
 .social-media-container {
+    /* width: 100%; */
     display: flex;
     flex-direction: column;
 }
@@ -67,9 +80,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px solid ;
+    /* max-height: 20px !important; */
+    width: 100%;
+    max-height: var(--social-max-height);
+    height: fit-content;
 }
 
+
+
+
 .social-media-link-container svg {
+    max-height: var(--social-max-height);
+    margin-top: 4%;
+    width: 100%;
     height: auto;
     max-width: 100%;
+}
+.social-media-link-container {
+    position: relative;
 }
