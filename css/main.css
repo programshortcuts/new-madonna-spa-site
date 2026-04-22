@@ -11,6 +11,7 @@
 
 /* components */
 @import url('components/mobile-header-nav.css');
+@import url('components/page-header.css');
 @import url('components/sideNavBtn.css');
 
 /* ui */

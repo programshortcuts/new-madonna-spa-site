@@ -1,12 +1,4 @@
 /* position.css */
-.page-header {
-    position: fixed;
-    z-index: 1;
-}
-#sideNavBtn {
-    position: fixed;
-    z-index: 2;
-}
 .main-landing-page {
     position: absolute;
     top: 0;

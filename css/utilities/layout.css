@@ -4,19 +4,6 @@
     overflow-x: hidden;
     flex-direction: column;
 }
-.page-header {
-    display: flex;
-    justify-content: space-between;
-}
-.page-header>.page-title-container {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 90%;
-    flex-wrap: wrap;
-}
-
-
-
 .main-landing-page {
     overflow: hidden;
     overflow-y: scroll;

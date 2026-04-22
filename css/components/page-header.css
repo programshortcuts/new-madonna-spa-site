@@ -1,0 +1,31 @@
+/* page-header.css */
+
+.page-header {
+    position: fixed;
+    z-index: 1;
+}
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}
+.page-header > img{
+    display: flex;
+    justify-content: space-between;
+}
+.page-header>.page-title-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 90%;
+    flex-wrap: wrap;
+}
+.page-header  img {
+    height: 15vh !important;
+    position: absolute;;
+    right: 0;
+    z-index: 99;
+}
+
+.page-header {
+    width: 100%;
+    position: fixed;
+}
