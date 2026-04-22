@@ -1,0 +1,46 @@
+/* layout-products.css */
+.alpha-list {display: flex;}
+.alpha-list>li {flex-basis: 4%;}
+
+.items-container {
+    display: flex;
+    overflow-x: auto;
+    /* allow horizontal scroll */
+    overflow-y: hidden;
+    /* NOT vmax */
+    gap: 1rem;
+    /* optional smooth scroll */
+    scroll-behavior: smooth;
+}
+.items-container.sort {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+}
+.item {
+    /* flex: 0 0 20%; */
+    /* 👈 THIS is what you want */
+    display: flex;
+    flex-direction: column;
+}
+.item > .title-item{
+    font-size: .9rem;
+}
+.products-container-header {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+.products-content{
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+
+    width: 100%;
+    padding: 0.5rem 1rem;
+    /* background: white; */
+    /* border-bottom: 1px solid #ddd; */
+    /* background-color: blue !important; */
+}
+
+ 

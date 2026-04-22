@@ -1,0 +1,22 @@
+/* spacing-products.css */
+.products-page-container {
+    padding-top: 20% ;
+}
+.products-container {
+    margin-bottom: 5%;
+}
+.products-container-header{
+    padding-left: 5%;
+}
+.products-content {
+    /* margin-top: 5%; */
+
+}
+.items-container {
+    /* margin: 0 5%; */
+    scroll-padding-left: 40px;
+    scroll-padding-right: 40px;
+}
+.item{
+    padding:1%;
+}

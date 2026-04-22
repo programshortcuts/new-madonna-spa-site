@@ -1,0 +1,53 @@
+/* layout-home.css*/
+.page-container.home-page-container {
+}
+.home-page-header {
+    display: flex;
+}
+.home-page-header .img-wrapper {
+    flex-basis: 10%;
+}
+.home-page-container button.section-title{
+    display: block;
+}
+
+.reviews-container {
+    /* font-size: ; */
+    display: flex;
+    flex-direction: column;
+}
+.reviews-container > .review-swiper-container{
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+.page-container.home-page-container {
+    display: flex;
+    flex-direction: column;
+}
+.home-page-header .contact-content {
+    padding-top: 5%;
+    flex-basis: 30%;
+}
+.address-num-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mission-state {
+    position: relative;
+}
+.mission-state .img-wrapper{
+    float: left;
+    z-index: 99
+}
+.mission-state .img-wrapper img{
+    height: 20vh;
+}
+.main-item > .img-wrapper{
+    float: right;
+    
+}
+.main-item > .content .img-wrapper{
+    float: left;
+}

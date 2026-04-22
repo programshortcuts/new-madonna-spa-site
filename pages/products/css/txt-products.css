@@ -1,0 +1,19 @@
+/* txt-products.css */
+.products-title{
+    
+}
+.alpha-list>li >a{
+    text-decoration: none;
+ }
+ .alpha-list,
+ .alpha-list>li {
+     list-style-type: none none;
+ }
+ .item {
+     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ .item > .title-item{
+     font-style: oblique;
+
+    font-style: normal !important;
+ }
