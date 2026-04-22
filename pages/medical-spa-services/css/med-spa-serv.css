@@ -1,6 +1,15 @@
 /* med-spa-services.css */
 .section#bioHormoneReplacement{
+    /* border: 10px solid black !important; */
     min-height: 10vh;
+}
+.section#bioHormoneReplacement{
+    
+}
+.section#bioHormoneReplacement>button.section-title{
+    width: 60%;
+}
+.section#bioHormoneReplacement>button.section-title> .title-txt{
 }
 .section#bioHormoneReplacement>button.section-title>img {
     z-index: 10;
@@ -9,7 +18,7 @@
     top: -40%;
 
 }
-#botoxAndFillers {
+section#botoxAndFillers {
     min-height: 12vh;
     /* Ensures the section is at least 12% of viewport height */
 }
