@@ -6,8 +6,13 @@
     --bg-header: #ddd;
     /* --bg-header: #878a8b; */
 }
+.page-header{
+    background-color: var(--bg-clr);
+    background-color: rgb(115, 103, 109);
+
+}
 .main-landing-page {
-    /* background-color: var(--bg-clr); */
+    background-color: var(--bg-clr);
 }
 .page-wrapper
 {

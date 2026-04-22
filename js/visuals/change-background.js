@@ -17,9 +17,7 @@ export function initBgSlider() {
     slides.forEach((slide, i) => {
         slide.style.backgroundImage = `url(${images[i]})`;
         if(images[i] === "pages/medical-spa-services/media/AS-Botox2000.webp.png"){
-            // console.log('he')
             slide.classList.add('xMove')
-            console.log(slide)
         }
     });
 
