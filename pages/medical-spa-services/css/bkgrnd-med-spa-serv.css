@@ -19,3 +19,18 @@ section#botoxAndFillers {
     background-image: url('../media/botox-filler.webp');
     
 }
+
+section.colored#botoxAndFillers,
+section#botoxAndFillers:hover {
+    filter: saturate(1.2);
+    filter: brightness(1.2);
+}
+
+.section-title:active~.img-wrapper>img {
+    filter: grayscale(0) !important;
+}
+
+.img-wrapper>img:hover,
+section.colored .img-wrapper>img {
+    filter: grayscale(0) !important;
+}

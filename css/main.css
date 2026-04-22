@@ -5,13 +5,18 @@
 /* @import url('visuals/animations.css'); */
 /* @import url('visuals/carousel.css'); */
 /* @import url('swiper.css'); */
+
+/* components */
+@import url('components/mobile-header-nav.css');
+
 /* ui */
 @import url('ui/items-scroll.css');
 @import url('ui/toggle-nav.css');
 
 /* utilities */
 @import url('utilities/layout.css');
-/* @import url('utilities/position.css'); */
+@import url('utilities/position.css');
+@import url('utilities/effects.css');
 /* @import url('utilities/sizing.css'); */
 /* @import url('utilities/backgrounds.css'); */
 /* @import url('utilities/borders.css'); */

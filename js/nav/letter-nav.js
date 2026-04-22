@@ -58,10 +58,11 @@ export function initLetterNav({
             ...document.querySelectorAll('#sideNavBtn, #navBarBtn'),
             // 🔥 your intentional system FIRST
             ...document.querySelectorAll('[data-nav-target]'),
+            ...document.querySelectorAll('.section-title'),
+            ...document.querySelectorAll('.item'),
 
             // 🔗 navigation links
             ...document.querySelectorAll('.mobile-header-nav a'),
-
 
             // 🧱 fallback interactive elements
             ...document.querySelectorAll('button, [tabindex="0"]')
@@ -78,6 +79,7 @@ export function initLetterNav({
             // 🔥 FIX: target your button text directly
             if (el.classList.contains('section-title')) {
                 const span = el.querySelector('.title-text');
+                console.log(el)
                 return span?.textContent.trim()[0]?.toLowerCase() || '';
             }
 

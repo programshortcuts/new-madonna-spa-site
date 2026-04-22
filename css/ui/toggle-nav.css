@@ -1,7 +1,6 @@
 /* toggle-nav.css */
-
 .page-wrapper.expand>.mobile-header-nav {
-    height: 20vh !important;
+    height: 10vh !important;
     z-index: 1;
     background-color: var(--bg-clr);
     border-bottom: 1px solid black;
@@ -15,9 +14,11 @@
 }
 .page-wrapper.expand>.mobile-header-nav>ul>li>ul {
     display: flex;
+    flex-direction: column;
     transition: all 1s;
 }
 .page-wrapper.expand>.mobile-header-nav>ul>li>ul>li a {
+    
     padding-left: 5%;
     font-size: .9rem;
 

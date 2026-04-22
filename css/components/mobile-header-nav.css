@@ -1,0 +1,11 @@
+.page-wrapper>.mobile-header-nav {
+    height: 10vh;
+}
+.page-wrapper>.mobile-header-nav>ul>li>ul {
+    display: none
+}
+.mobile-header-nav {
+    position: fixed;
+    z-index: 2;
+    bottom: 5%;
+}

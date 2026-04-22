@@ -1,5 +1,6 @@
 // inject-content.js
 import { isSafePath } from "./security-utils.js";
+import { initItemsScroll } from "../ui/items-scroll.js";
 // import { initBookingForm } from "./bookings.js";
 // import { initSwiper } from "../visuals/swiper.js";
 // import { initBgSlider } from "../visuals/change-background.js";
@@ -8,7 +9,6 @@ import { isSafePath } from "./security-utils.js";
 import { initFilterSortItems } from "../ui/filter-sort-items.js";
 // import { initImageHandling } from "../visuals/handleImages.js";
 // import { initProdImgHandle } from "../visuals/handleProductImgs.js";
-// import { initItemsScroll } from "../visuals/items-scroll.js";
 export const mainLandingPage = document.querySelector('.main-landing-page')
 export const pageWrapper = document.querySelector('.page-wrapper')
 if (!mainLandingPage) {
@@ -131,7 +131,7 @@ export async function injectPage(href){
     initFilterSortItems()
     // initImageHandling()
     // initProdImgHandle()
-    // initItemsScroll()
+    initItemsScroll()
     // initSectionsDropDown()   
     // initSwiper();
     // initBgSlider()
