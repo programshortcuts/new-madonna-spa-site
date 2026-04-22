@@ -1,4 +1,7 @@
 /* sizing.css */
+.page-header .img-wrapper img {
+    height: 15vh !important;
+}
 .page-header {
     width: 100%;
     position: fixed;
