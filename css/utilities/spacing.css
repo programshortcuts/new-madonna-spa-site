@@ -4,9 +4,9 @@
 }
 .page-header>.page-title-container {
     padding-left: 5%;
-    padding-top: 0 !important;
+    /* padding-top: 0 !important; */
 }
 .page-title-container>.address-title {
-    margin-left: 50%;
-    margin-top: -2%;
+    /* margin-left: 50%; */
+    /* margin-top: -2%; */
 }
