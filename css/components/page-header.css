@@ -1,35 +1,23 @@
 /* page-header.css */
+
 .page-header {
-    width: 100%;
     position: fixed;
-    display: flex;
     z-index: 1;
+}
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}
+.page-header > img{
+    display: flex;
     justify-content: space-between;
 }
 .page-header>.page-title-container {
-    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
     display: flex;
+    flex-direction: column;
+    flex-basis: 90%;
     flex-wrap: wrap;
-    /* flex-direction: column; */
-    flex-basis: 80%;
-    /* flex-wrap: wrap; */
 }
-.page-title-container > h1 > .page-title {
-    font-size: 1.6rem;
-    text-decoration: none;
-    letter-spacing: 18%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.page-header .page-title-container h1 .tel-num-header {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.1rem;
-    text-decoration: none;
-    color: var(--font-p-clr);
-}
-
-
-
 .page-header  img {
     height: 15vh !important;
     position: absolute;;
@@ -37,5 +25,8 @@
     z-index: 99;
 }
 
-
+.page-header {
+    width: 100%;
+    position: fixed;
+}
 

@@ -6,14 +6,10 @@
     --bg-header: #ddd;
     /* --bg-header: #878a8b; */
 }
-.page-header{
-    /* background-color: rgb(115, 103, 109); */
-    /* background-color: rgb(92, 86, 83); */
-
-}
 .main-landing-page {
-    background-color: var(--bg-clr);
+    /* background-color: var(--bg-clr); */
 }
+.main-landing-page,
 .page-wrapper
 {
     background-color: var(--bg-clr);

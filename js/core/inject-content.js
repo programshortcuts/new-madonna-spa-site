@@ -135,11 +135,11 @@ export async function injectPage(href){
     initItemsScroll()
     // initSectionsDropDown()   
     initDropDown()
-    // initSwiper();
-    initBgSlider()
+    
     initSwiper()
     // ✅ ONLY INIT IF ON BOOKING PAGE
     if (href.includes("bookings")) {
         initBookingForm();
     }
+    initBgSlider()
 }

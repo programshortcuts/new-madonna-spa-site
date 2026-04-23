@@ -1,5 +1,7 @@
 /* spacing.css */
-.main-landing-page {}
+.main-landing-page {
+    /* padding-top: 20%; */
+}
 .page-header>.page-title-container {
     padding-left: 5%;
     padding-top: 0 !important;

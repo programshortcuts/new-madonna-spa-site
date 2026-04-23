@@ -1,8 +1,9 @@
+@media screen and (min-width:1500px) {
+.home-page-container {
+    margin: 0 10%;
+}
+}
 @media screen and (min-width:723px) {
-    .home-page-header {
-        /* float: left; */
-        /* width: 45%; */
-    }
     .home-page-container p {
         /* font-size: 1.2rem; */
         /* line-height: 1.1; */
@@ -12,7 +13,7 @@
 
 @media screen and (min-width:535px) {
     .home-page-container {
-        margin: 0 5%;
+        margin-top: 5%;
     }
     .home-page-header {
         float: left;
@@ -39,6 +40,6 @@
 
 @media screen and (max-width:500px) {
     .home-page-header {
-        padding-top: 5%;
+        /* padding-top: 5%; */
     }
 }

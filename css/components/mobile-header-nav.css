@@ -53,9 +53,8 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .mobile-header-nav>ul>li a {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-     font-weight: 400;
-    font-size: 1.25rem;  
+     font-weight: 600;
+    font-size: 1.35rem;  
      color: var(--header-clr);
 }
 
@@ -81,11 +80,16 @@ li#contactNavLink {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px solid ;
     /* max-height: 20px !important; */
     width: 100%;
     max-height: var(--social-max-height);
     height: fit-content;
 }
+
+
+
+
 .social-media-link-container svg {
     max-height: var(--social-max-height);
     margin-top: 4%;
