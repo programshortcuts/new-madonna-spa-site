@@ -1,11 +1,11 @@
 /* spacing-home.css */
-.page-container.home-page-container {
-    /* margin-top: 5%; */
-}
 .home-page-header>.contact-content>.img-wrapper>img {
     margin-left: 5%;
 }
-
+.home-page-container{
+    /* margin: 0 5%; */
+    margin-top: 10%;
+}
 .main-item {
     margin-bottom: 2%;
 }

@@ -6,9 +6,10 @@ export function initBgSlider() {
     const slides = container.querySelectorAll('.bg-slide');
 
     const images = [
-        "pages/medical-spa-services/media/peptide-header.jpeg",
-        "pages/home/media/rustic-rockymoutains-1024.JPEG",
-        "pages/medical-spa-services/media/AS-Botox2000.webp.png"
+        "imgs/rustic-rockymoutains-1024.JPEG",
+        "imgs/peptide-header.png",
+        "imgs/rustic-rockymoutains-1024.JPEG"
+        // "pages/medical-spa-services/media/AS-Botox2000.webp.png",
         // "pages/ivInfustionTherepy/media/iv-infusion.jpeg"
         // "../imgs/MadMediSpa-sihlouette.png",
     ];
@@ -16,13 +17,14 @@ export function initBgSlider() {
     // assign images
     slides.forEach((slide, i) => {
         slide.style.backgroundImage = `url(${images[i]})`;
-        if(images[i] === "pages/medical-spa-services/media/AS-Botox2000.webp.png"){
-            slide.classList.add('xMove')
-        }
-        if(images[i] === "pages/medical-spa-services/media/petide-header.jpeg"){
-            console.log('petitde')
-            // slide.style.backgroundPositionX = '-250%';
-        }
+        // if(images[i] === "pages/medical-spa-services/media/AS-Botox2000.webp.png"){
+        //     slide.classList.add('xMove')
+        // }
+        // if (images[i] === "pages/home/media/peptide-header.png"){
+        //     console.log('petitde')
+            
+        //         slide.classList.add('zoomOut')
+        // }
     });
 
     let current = 0;
