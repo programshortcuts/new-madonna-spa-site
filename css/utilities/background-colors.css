@@ -12,6 +12,7 @@
 .mobile-header-nav,
 .page-header {
     /* background-color: rgb(99, 95, 95) !important; */
+    
     background-image: url('../../imgs/rustic-rockymoutains-1024.JPEG');
     background-position-x: 50% ;
     filter: grayscale(50%);
