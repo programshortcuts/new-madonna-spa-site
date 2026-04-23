@@ -7,15 +7,11 @@
     /* --bg-header: #878a8b; */
 }
 .main-landing-page {
-    /* background-color: var(--bg-clr); */
 }
-/* .page-header > h1{ */
 .page-header {
-    /* background-color: var(--bg-clr) !important; */
-    background-color: inherit !important;
+    background-color: inherit 
 }
 .mobile-header-nav{
-    /* background-color: rgb(99, 95, 95) !important; */
     background-image: url('../../imgs/rustic-rockymoutains-1024.JPEG');
     background-position-x: 50% ;
     filter: grayscale(50%);
