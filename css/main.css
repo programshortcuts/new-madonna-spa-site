@@ -45,6 +45,12 @@
 /* @import url('../pages/products/css/spacing-products.css'); */
 @import url('../pages/products/css/txt-products.css');
 
+/* contact */
+@import url('../pages/contact/css/layout-contact.css');
+@import url('../pages/contact/css/position-contact.css');
+@import url('../pages/contact/css/sizing-contact.css');
+@import url('../pages/contact/css/spacing-contact.css');
+
 * {
     margin: 0;
     padding: 0;
