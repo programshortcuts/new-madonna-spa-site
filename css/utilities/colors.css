@@ -1,0 +1,6 @@
+/* colors.css */
+.mobile-header-nav{
+    color: var(--bg-clr);
+
+    text-shadow: 1px 1px 1px black;
+}
