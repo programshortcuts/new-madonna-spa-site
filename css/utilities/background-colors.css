@@ -9,6 +9,10 @@
 .main-landing-page {
     /* background-color: var(--bg-clr); */
 }
+.mobile-header-nav ,
+.page-header {
+    background-color: springgreen !important;
+}
 .page-wrapper
 {
     background-color: var(--bg-clr);
