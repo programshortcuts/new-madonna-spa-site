@@ -6,7 +6,9 @@
     width: 100%;
     height: 10vh;
 }
-
+.page-wrapper>.mobile-header-nav>ul>li>ul {
+    display: none
+}
 .social-media-container {
     display: flex;
     flex-direction: column;
@@ -18,7 +20,6 @@
 }
 .mobile-header-nav>ul {
     display: flex;
-    padding-top: 2%;
 }
 
 .mobile-header-nav>ul>li {
@@ -31,9 +32,7 @@
     flex-direction: column;
     margin-left: 5%;
 }
-.mobile-header-nav>ul>li>ul {
-    display: none
-}
+
 .mobile-header-nav>ul>li>ul>li {
     width: 120%;
 }
