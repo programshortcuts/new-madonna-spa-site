@@ -20,9 +20,7 @@
     padding-top: 2%;
     display: flex;
 }
-.page-wrapper>.mobile-header-nav>ul>li>ul {
-    display: none
-}
+
 .mobile-header-nav>ul>li {
     flex-basis: 25%;
     display: flex;

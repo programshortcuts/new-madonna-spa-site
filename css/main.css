@@ -45,8 +45,6 @@
 /* @import url('../pages/products/css/spacing-products.css'); */
 @import url('../pages/products/css/txt-products.css');
 
-/* contanct */
-@import url('../pages/contact/css/layout-contact.css');
 * {
     margin: 0;
     padding: 0;
@@ -54,6 +52,7 @@
 }
 .error-message {color: red;}
 .hide {display: none !important;}
+
 a[x-apple-data-detectors] {
     color: inherit !important;
     text-decoration: none !important;
@@ -61,6 +60,7 @@ a[x-apple-data-detectors] {
     font-family: inherit !important;
     font-weight: inherit !important;
 }
+
 /* Target standard telephone links */
 a[href^="tel"] {
     color: inherit;
