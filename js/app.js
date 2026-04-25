@@ -17,7 +17,7 @@ function initMain(){
     initLetterNav({
         pageWrapper
     });
-
+    
     document.querySelectorAll("*").forEach(el => {
             [...el.attributes].forEach(attr => {
                 if (attr.name.startsWith("on")) {
@@ -29,5 +29,6 @@ function initMain(){
 function setupGlobalListeners(){
     // initDropDown()
     // initFilterSortItems()
+    initChangeStyles()
 }
 setupGlobalListeners()

@@ -1,5 +1,6 @@
+// change-styles.js
 export function initChangeStyles(){
-    const themes = ["default", "modern", "luxury"];
+    const themes = ["default", "v1","v2"];
     let currentThemeIndex = 0;
 
     const themeLink = document.getElementById("themeStylesheet");
@@ -9,7 +10,7 @@ export function initChangeStyles(){
 
     if (savedTheme && themes.includes(savedTheme)) {
         currentThemeIndex = themes.indexOf(savedTheme);
-        themeLink.href = `css/themes/${savedTheme}/main.css`;
+        themeLink.href = `css/themes/${savedTheme}/main-${savedTheme}.css`;
     }
 
     // Logo click → switch FULL CSS
@@ -23,7 +24,7 @@ export function initChangeStyles(){
 
             const newTheme = themes[currentThemeIndex];
 
-            themeLink.href = `css/themes/${newTheme}/main.css`;
+            themeLink.href = `css/themes/${newTheme}/main-${newTheme}.css`;
             localStorage.setItem("theme", newTheme);
 
             console.log("Switched to theme:", newTheme);
