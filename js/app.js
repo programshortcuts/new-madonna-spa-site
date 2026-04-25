@@ -1,4 +1,5 @@
 // app.js
+import { initChangeStyles } from "./ui/change-styles.js";
 import { initInjectContentListeners } from "./core/inject-content.js";
 import { initToggleNav } from "./ui/toggle-nav.js";
 import { initLetterNav } from "./nav/letter-nav.js";
