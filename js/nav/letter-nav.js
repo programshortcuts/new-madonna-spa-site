@@ -53,7 +53,7 @@ function getAlpha(el) {
 
 function buildElements(container = document) {
     const raw = [
-        ...container.querySelectorAll('#sideNavBtn, #navBarBtn'),
+        ...container.querySelectorAll('#sideNavBtn, #navBarBtn,#madonnaShilouetteLogo'),
         ...container.querySelectorAll('.mobile-header-nav a'),
         ...container.querySelectorAll('[data-nav-target]'),
         ...container.querySelectorAll('button, [tabindex="0"]')
