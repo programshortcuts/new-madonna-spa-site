@@ -1,0 +1,54 @@
+/* responsive.css */
+@media screen and (min-width:751px) {
+    
+    
+}
+@media screen and (min-width:533px) {
+    .home-page-container {
+        margin-top: 0% !important;
+    }
+}
+@media screen and (max-width:890px) {
+    
+    .page-header .page-title-container{
+        flex-basis: 76%;
+        font-size: .8rem;
+    }
+    #sideNavBtn {
+        min-height: 39px;
+        min-width:  39px;
+    }
+    .mobile-header-nav > ul > li >a {
+        /* border: 3px solid magenta; */
+        font-size: 100% !important;
+    }
+        .mission-state {
+            padding-right: 5%;
+            margin-top: -5%;
+        }
+    
+}
+@media screen and (max-width:600px) {
+    
+    .swiper-slide {
+        font-size: 1rem !important;
+    }
+    #sideNavBtn {
+        min-height: 30px;
+        min-width:  30px;
+    }
+    .page-header .page-title-container {
+        flex-basis: 90%;
+        font-size: .5rem;
+    }
+    .mobile-header-nav {
+        font-size: .8rem;
+    }
+        .mission-state {
+            padding-right: 15%;
+            margin-top: -10%;
+        }
+               
+}
+
+

@@ -17,11 +17,17 @@
     flex-basis: 90%;
     flex-wrap: wrap;
 }
+#versionTile,
 .page-header  img {
     height: 15vh !important;
     position: absolute;;
     right: 0;
     z-index: 99;
+}
+#versionTile{
+    display: block;
+    z-index: 100
+    
 }
 
 .page-header {
