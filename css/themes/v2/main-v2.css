@@ -3,8 +3,8 @@
 @import url('../default/visuals/change-background.css');
 @import url('./swiper.css');
 /* main.css */
-@import url('../../../pages/medical-spa-services/css/med-spa-serv.css');
-@import url('../../../pages/medical-spa-services/css/bkgrnd-med-spa-serv.css');
+@import url('./med-spa-serv-OLD.css');
+/* @import url('../../../pages/medical-spa-services/css/bkgrnd-med-spa-serv.css'); */
 /* @import url('../../../pages/medical-spa-services/css/responsive-med-spa-serv.css'); */
 
 /* @import url('visuals/animations.css'); */
@@ -55,9 +55,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: lightblue;
-}
+
 .error-message {color: red;}
 .hide {display: none !important;}
 

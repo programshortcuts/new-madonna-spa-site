@@ -9,7 +9,6 @@
     display: block;
 }
 .reviews-container {
-    /* font-size: ; */
     display: flex;
     flex-direction: column;
 }

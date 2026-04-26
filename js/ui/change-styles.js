@@ -1,14 +1,13 @@
 // change-styles.js
 export function initChangeStyles(){
-    // const themes = ["default","v2","v3"];
-    const themes = ["default","v3"];
+    const themes = ["default","v2","v3"];
+    // const themes = ["default","v3"];
     
     let currentThemeIndex = 0;
     const versionTextEl = document.querySelector('#versionTitle')
     const themeLink = document.getElementById("themeStylesheet");
     // Load saved theme
     const savedTheme = localStorage.getItem("theme");
-    console.log(savedTheme)
     if (savedTheme && themes.includes(savedTheme)) {
         currentThemeIndex = themes.indexOf(savedTheme);
         themeLink.href = `css/themes/${savedTheme}/main-${savedTheme}.css`;

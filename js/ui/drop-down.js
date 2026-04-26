@@ -22,22 +22,7 @@ export function initDropDown() {
         const catTitle = e.target.closest('.cat-title')
         const productTitle = e.target.closest('.product-title')
         const sectionTitleDropDown = e.target.closest('.section-title.drop-down')
-
-        // 🟣 CAT DROPDOWN
-        if (catTitle) {
-            const container = productTitle.closest('.cat')
-            console.log(container)
-            if (!container) return
-
-            const downs = container.querySelector('.products-container.downs')
-
-            console.log(downs)
-            if (!downs) return
-            downs.classList.toggle('hide')
-
-            return
-        }
-        // 🟣 PRODUCT DROPDOWN
+// 🟣 PRODUCT DROPDOWN
         if (productTitle) {
             const productsContainer = productTitle.closest('.products-container')
             if (!productsContainer) return
@@ -49,6 +34,21 @@ export function initDropDown() {
 
             return
         }
+        // 🟣 CAT DROPDOWN
+        if (catTitle) {
+            const container = e.target.closest('.cat')
+            console.log(container)
+            if (!container) return
+
+            const downs = container.querySelector('.products-container.downs')
+
+            console.log(downs)
+            if (!downs) return
+            downs.classList.toggle('hide')
+
+            return
+        }
+        
 
         // 🔵 SECTION DROPDOWN
         if (sectionTitleDropDown) {
