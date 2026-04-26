@@ -1,7 +1,7 @@
 #sideNavBtn {
     position: absolute;
-    bottom: 5%;
-    left: 2%;
+    bottom: 2.5%;
+    left: 3%;
     transform: scale(2);
     border: 1px solid black;
     position: fixed;

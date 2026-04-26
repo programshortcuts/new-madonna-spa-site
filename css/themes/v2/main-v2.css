@@ -1,7 +1,7 @@
 /* main.css */
 /* visuals */
 @import url('../default/visuals/change-background.css');
-@import url('../../swiper.css');
+@import url('./swiper.css');
 /* main.css */
 @import url('../../../pages/medical-spa-services/css/med-spa-serv.css');
 @import url('../../../pages/medical-spa-services/css/bkgrnd-med-spa-serv.css');
@@ -11,6 +11,7 @@
 /* @import url('swiper.css'); */
 
 /* components */
+/* @import url('./components/mobile-header-nav-v2.css'); */
 @import url('./components/mobile-header-nav-v2.css');
 @import url('./components/page-header-v2.css');
 @import url('../default/components/sideNavBtn.css');

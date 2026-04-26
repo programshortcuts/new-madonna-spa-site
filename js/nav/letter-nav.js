@@ -40,7 +40,7 @@ function getAlpha(el) {
     }
 
     if (el.tagName === 'IMG') {
-        return el.alt?.[0]?.toLowerCase() || '';
+        return el.id?.[0]?.toLowerCase() || '';
     }
 
     if (el.id) {

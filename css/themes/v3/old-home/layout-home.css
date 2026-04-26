@@ -1,4 +1,6 @@
 /* layout-home.css*/
+.page-container.home-page-container {
+}
 .home-page-header {
     display: flex;
 }
@@ -8,6 +10,7 @@
 .home-page-container button.section-title{
     display: block;
 }
+
 .reviews-container {
     /* font-size: ; */
     display: flex;

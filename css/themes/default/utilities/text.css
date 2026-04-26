@@ -21,6 +21,6 @@
 
 .mobile-header-nav>ul>li a {
     font-weight: 600;
-    font-size: 1.05rem;
+    font-size: .8rem;
     color: var(--header-clr);
 }
