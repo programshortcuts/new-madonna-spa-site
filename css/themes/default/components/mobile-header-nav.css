@@ -47,15 +47,7 @@
     align-items: center;
     justify-content: center;
 }
-.mobile-header-nav li a {
-    text-decoration: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.mobile-header-nav>ul>li a {
-     font-weight: 600;
-    font-size: 1.35rem;  
-     color: var(--header-clr);
-}
+
 
 li#contactNavLink {
     flex: 1 1 0;
@@ -84,10 +76,6 @@ li#contactNavLink {
     max-height: var(--social-max-height);
     height: fit-content;
 }
-
-
-
-
 .social-media-link-container svg {
     max-height: var(--social-max-height);
     margin-top: 4%;

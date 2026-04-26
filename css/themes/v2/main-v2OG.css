@@ -1,6 +1,6 @@
 /* main.css */
 /* visuals */
-@import url('./visuals/change-background.css');
+@import url('../default/visuals/change-background.css');
 @import url('../../swiper.css');
 /* main.css */
 @import url('../../../pages/medical-spa-services/css/med-spa-serv.css');
@@ -11,32 +11,32 @@
 /* @import url('swiper.css'); */
 
 /* components */
-@import url('components/mobile-header-nav.css');
-@import url('components/page-header.css');
-@import url('components/sideNavBtn.css');
+@import url('./components/mobile-header-nav-v1.css');
+@import url('./components/page-header-v1.css');
+@import url('../default/components/sideNavBtn.css');
 
 /* ui */
-@import url('ui/items-scroll.css');
-@import url('ui/toggle-nav.css');
+@import url('../default/ui/items-scroll.css');
+@import url('../default/ui/toggle-nav.css');
 
 /* utilities */
-@import url('utilities/effects.css');
-@import url('utilities/background-colors.css');
-@import url('utilities/layout.css');
-@import url('utilities/position.css');
-@import url('utilities/sizing.css');
-@import url('utilities/spacing.css');
-@import url('utilities/text.css');
+@import url('../default/utilities/effects.css');
+@import url('../default/utilities/background-colors.css');
+@import url('../default/utilities/layout.css');
+@import url('../default/utilities/position.css');
+@import url('../default/utilities/sizing.css');
+@import url('../default/utilities/spacing.css');
+@import url('../default/utilities/text.css');
 /* @import url('utilities/borders.css'); */
 /* @import url('utilities/colors.css'); */
 
 /* home */
-@import url('../../../pages/home/css/bkgrnd-home.css');
-@import url('../../../pages/home/css/borders-home.css');
-@import url('../../../pages/home/css/layout-home.css');
-@import url('../../../pages/home/css/position-home.css');
-@import url('../../../pages/home/css/sizing-home.css');
-@import url('../../../pages/home/css/txt-home.css');
+/* @import url('../../../pages/home/css/bkgrnd-home.css'); */
+/* @import url('../../../pages/home/css/borders-home.css'); */
+/* @import url('../../../pages/home/css/layout-home.css'); */
+/* @import url('../../../pages/home/css/position-home.css'); */
+/* @import url('../../../pages/home/css/sizing-home.css'); */
+/* @import url('../../../pages/home/css/txt-home.css'); */
 /* @import url('../../../pages/home/css/responsive-home.css'); */
 
 /* products */

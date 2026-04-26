@@ -1,7 +1,7 @@
 // change-styles.js
 export function initChangeStyles(){
     // const themes = ["default", "v1","v2"];
-    const themes = ["v1","default"];
+        const themes = ["v2","default"];
     let currentThemeIndex = 0;
 
     const themeLink = document.getElementById("themeStylesheet");
