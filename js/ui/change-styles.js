@@ -1,7 +1,7 @@
 // change-styles.js
 export function initChangeStyles(){
-    const themes = ["default","v2","v3"];
-    // const themes = ["default","v3"];
+    // const themes = ["default","v2","v3"];
+    const themes = ["default","v2"];
     
     let currentThemeIndex = 0;
     const versionTextEl = document.querySelector('#versionTitle')
