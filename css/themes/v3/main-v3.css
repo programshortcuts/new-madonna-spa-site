@@ -22,13 +22,13 @@
 
 
 /* home-styles */
-@import url('old-home/css/bkgrnd-home.css');
-@import url('old-home/css/borders-home.css');
-@import url('old-home/css/txt-home.css');
-@import url('old-home/css/layout-home.css');
-@import url('old-home/css/sizing-home.css');
-@import url('old-home/css/spacing-home.css');
-@import url('old-home/css/position-home.css');
+@import url('./old-home/bkgrnd-home.css');
+@import url('./old-home/borders-home.css');
+@import url('./old-home/txt-home.css');
+@import url('./old-home/layout-home.css');
+@import url('./old-home/sizing-home.css');
+@import url('./old-home/spacing-home.css');
+@import url('./old-home/position-home.css');
 
 
 /* med-spa-serv-styles */
