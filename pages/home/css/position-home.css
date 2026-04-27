@@ -2,14 +2,12 @@
 .mission-state>img {
     float: left;
 }
-
 .home-page-container .animation-container::after,
 .home-page-header::after{
     content: "";
     display: block;
     clear: both;
 }
-
 .home-page-item .content > .img-wrapper{
     float:right
 }

@@ -4,7 +4,7 @@
 @import url('./swiper.css');
 /* main.css */
 @import url('../../../pages/medical-spa-services/css/med-spa-serv-default.css');
-@import url('../../../pages/medical-spa-services/css/bkgrnd-med-spa-serv.css');
+/* @import url('../../../pages/medical-spa-services/css/bkgrnd-med-spa-serv.css'); */
 /* @import url('../../../pages/medical-spa-services/css/responsive-med-spa-serv.css'); */
 
 /* @import url('visuals/animations.css'); */
@@ -20,15 +20,15 @@
 @import url('ui/toggle-nav.css');
 
 /* utilities */
-@import url('utilities/effects.css');
+/* @import url('utilities/colors.css'); */
+/* @import url('utilities/borders.css'); */
 @import url('utilities/background-colors.css');
+@import url('utilities/effects.css');
 @import url('utilities/layout.css');
 @import url('utilities/position.css');
 @import url('utilities/sizing.css');
 @import url('utilities/spacing.css');
 @import url('utilities/text.css');
-/* @import url('utilities/borders.css'); */
-/* @import url('utilities/colors.css'); */
 
 /* home */
 @import url('../../../pages/home/css/bkgrnd-home.css');

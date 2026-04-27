@@ -2,9 +2,24 @@
 .page-header .page-title {
     text-decoration: none;
     letter-spacing: 20%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.8rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.page-header .tel-num {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+    /* color: inherit; */
+}
+
+.page-header .page-title {
+    /* text-decoration: none; */
+    /* letter-spacing: 20%; */
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    /* font-size: 1.8rem; */
 }
 .page-header .tel-num-header {
     font-size: 1.5rem;
