@@ -1,36 +1,21 @@
 /* sizing-home.css*/
-.home-page-header {
-    width: 100vw !important;
-    /* .contact-container>.address-num-container { */
-    background-image: url('../../../../imgs/rustic-rockymoutains-1024.JPEG');
-    /* background-repeat: no-repeat; */
-    background-repeat: repeat;
-    background-position-y: 49%;
-    /* background-position-x: 0%; */
-    background-position-x: 150%;
-    filter: grayscale(50%);
+.home-page-header{
+    /* height: 7vh; */
 }
-/*  👆 👆 👆  👆*/
-/* home-page-header css is in ./css/themes/default/visuals/CHANGE-BACKGROUND.css. !! */
-/*  */
 .home-page-header>.contact-content>.img-wrapper>img {
     width: 80%;
     height: 10vh;
 }
-
 .mission-state>.img-wrapper {
     /* height: 20vh; */
 }
-
-.mission-state>p {
+.mission-state > p {
     padding-top: 2%;
 }
-
 .main-item .content>.img-wrapper {
     height: fit-content;
     width: fit-content;
 }
-
-.main-item .content>.img-wrapper>img {
+.main-item .content>.img-wrapper > img{
     height: 14vh;
 }

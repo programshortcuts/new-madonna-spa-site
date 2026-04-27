@@ -7,9 +7,8 @@ export function initBgSlider() {
 
     const images = [
         "../../imgs/peptide-header.png",
-        // "../../imgs/rustic-rockymoutains-1024.JPEG",
-        // "../../imgs/peptide-header.png",
-        // "../../imgs/rustic-rockymoutains-1024.JPEG"
+        "../../imgs/rustic-rockymoutains-1024.JPEG",
+        "../../imgs/rustic-rockymoutains-1024.JPEG"
         // "pages/medical-spa-services/media/AS-Botox2000.webp.png",
         // "pages/ivInfustionTherepy/media/iv-infusion.jpeg"
         // "../imgs/MadMediSpa-sihlouette.png",
@@ -44,5 +43,5 @@ export function initBgSlider() {
 
         current = nextIndex;
 
-    }, 2000);
+    }, 3000);
 }

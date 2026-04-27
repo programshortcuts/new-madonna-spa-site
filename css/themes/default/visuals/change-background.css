@@ -1,5 +1,13 @@
-/* change-background.css */
-
+.home-page-header {
+    width: 100vw !important;
+    /* .contact-container>.address-num-container { */
+    background-image: url('../../../../imgs/rustic-rockymoutains-1024.JPEG');
+    /* background-repeat: no-repeat; */
+    background-repeat: repeat;
+    background-position-y: 49%;
+    background-position-x: 0%;
+    filter: grayscale(50%);
+}
 .bg-slider{
     min-height: 30vh;
 }
@@ -9,8 +17,7 @@
     background-size: cover;
     background-position: center;
     
-    background-position-x: 50%;
-    background-size: 160%;
+    background-position-x: 40%;
     opacity: 0;
     transition: opacity 1.2s ease;
 
