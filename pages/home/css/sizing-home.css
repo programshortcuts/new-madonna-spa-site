@@ -19,3 +19,6 @@
 .main-item .content>.img-wrapper > img{
     height: 14vh;
 }
+.home-page-container .animation-container{
+    width: 50%;
+}
