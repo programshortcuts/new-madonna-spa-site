@@ -1,4 +1,7 @@
 /* spacing-home.css */
+.page-container.home-page-container{
+    padding-top: 20%;
+}
 .home-page-header>.contact-content>.img-wrapper>img {
     margin-left: 5%;
 }
@@ -8,18 +11,15 @@
 .address-num-container .address-box{
     padding: 2%
 }
-.mission-state{
-}
-.mission-state>img {
-    margin-right: 3%;
- }
  .address-num-container {
-    padding: 0 5%;
+    /* padding: 0 5%; */
     padding-bottom: 10%;
 
  }
  
 
-.main-content > article {
-    padding: 2% 25%;
+.page-container.home-page-container  .mission-state p{
+    /* padding: 2% 2%; */
+    margin-left: 5%;
+    /* background-color: blue; */
 }

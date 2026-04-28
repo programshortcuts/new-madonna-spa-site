@@ -7,7 +7,7 @@
     /* --bg-header: #878a8b; */
 }
 .main-landing-page {
-    /* background-color: var(--bg-clr); */
+    background-color: var(--bg-clr);
 }
 .page-wrapper
 {
@@ -17,5 +17,6 @@
     background-color: var(--bg-header);
 }
 .page-header {
-    background-color: var(--bg-header);
+    background-color: var(--bg-clr);
+    /* background-color: blue; */
 }

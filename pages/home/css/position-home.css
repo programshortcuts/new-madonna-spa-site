@@ -3,7 +3,10 @@
     float: left;
 }
 
-.home-page-container .animation-container::after,
+.home-page-container article.mission-state::after{
+        display: flow-root;
+}
+/* .home-page-container .animation-container::after, */
 .home-page-header::after{
     content: "";
     display: block;
@@ -13,7 +16,11 @@
 .home-page-item .content > .img-wrapper{
     float:right
 }
-article > .animation-container{
+#shilouetteIcon {
     float: right;
-    
+    /* margin-left: 1rem; */
+    /* margin-bottom: 0. 5rem; */
+    width: 50%;
+    position: relative;
+    right: -20%;
 }

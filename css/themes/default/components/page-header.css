@@ -1,9 +1,8 @@
-/* page-header.css */
+/* themes/default/components/page-header.css */
+
 .page-header {
+    z-index: 999;
     position: fixed;
-    z-index: 1;
-}
-.page-header {
     display: flex;
     justify-content: space-between;
 }
