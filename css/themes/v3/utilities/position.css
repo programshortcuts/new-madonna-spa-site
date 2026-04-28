@@ -10,9 +10,13 @@
     position: fixed;
     z-index: 1;
 }
-.page-header .img-wrapper{
+.page-header img{
     position: absolute;
-    right: 0%;
+    /* right: */
+    left: 60%;
+    /* bottom: 100%; */
+    top: -120%;
+    transform: scale(.5);
 }
 
 .social-media-link-container {
