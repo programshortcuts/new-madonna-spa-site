@@ -1,4 +1,9 @@
 /* main.css */
+/* components */
+@import url('../default/components/sideNavBtn.css');
+
+
+
 @import url('visuals/animations.css');
 /* @import url('visuals/carousel.css'); */
 @import url('swiper.css');
