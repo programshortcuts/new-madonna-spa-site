@@ -16,3 +16,6 @@
 .mobile-header-nav {
     background-color: var(--bg-header);
 }
+.page-header {
+    background-color: var(--bg-header);
+}

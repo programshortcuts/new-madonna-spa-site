@@ -36,6 +36,7 @@
 @import url('../../../pages/home/css/layout-home.css');
 @import url('../../../pages/home/css/position-home.css');
 @import url('../../../pages/home/css/sizing-home.css');
+@import url('../../../pages/home/css/spacing-home.css');
 @import url('../../../pages/home/css/txt-home.css');
 /* @import url('../../../pages/home/css/responsive-home.css'); */
 
@@ -47,9 +48,7 @@
 @import url('../../../pages/products/css/txt-products.css');
 /* contact.css */
 
-.mobile-header-nav{
-    background-color: blue !important;
-}
+
 
 * {
     margin: 0;
