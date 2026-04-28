@@ -6,28 +6,20 @@ export function initBgSlider() {
     const slides = container.querySelectorAll('.bg-slide');
 
     const images = [
-        // "imgs/rustic-rockymoutains-1024.JPEG",
         "imgs/woman-man.png",
-        "imgs/peptide-header.png"
+        "imgs/rustic-rockymoutains-1024.JPEG"
+        // "imgs/peptide-header.png"
         // "imgs/rustic-rockymoutains-1024.JPEG"
         // "pages/medical-spa-services/media/AS-Botox2000.webp.png",
         // "pages/ivInfustionTherepy/media/iv-infusion.jpeg"
         // "../imgs/MadMediSpa-sihlouette.png",
     ];
 
-    // assign images
     slides.forEach((slide, i) => {
-        slide.style.backgroundImage = `url(${images[i]})`;
-        // if(images[i] === "pages/medical-spa-services/media/AS-Botox2000.webp.png"){
-        //     slide.classList.add('xMove')
-        // }
-        // if (images[i] === "pages/home/media/peptide-header.png"){
-        //     console.log('petitde')
-            
-        //         slide.classList.add('zoomOut')
-        // }
-    });
+        const img = images[i % images.length]; // loops images if fewer
 
+        slide.style.backgroundImage = `url(${img})`;
+    });
     let current = 0;
 
     

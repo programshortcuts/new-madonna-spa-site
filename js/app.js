@@ -13,11 +13,11 @@ addEventListener('DOMContentLoaded', initMain)
 function initMain(){
     const pageWrapper = document.querySelector('.page-wrapper')
     initToggleNav()
-    initInjectContentListeners()
+    
     initLetterNav({
         pageWrapper
     });
-    
+    initInjectContentListeners()
     document.querySelectorAll("*").forEach(el => {
             [...el.attributes].forEach(attr => {
                 if (attr.name.startsWith("on")) {

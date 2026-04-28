@@ -28,7 +28,7 @@ document.addEventListener("submit", (e) => {
 
     if (e.target.id === "contact-form") {
         e.preventDefault();
-        mainLandingPage.textContent = `Form submission blocked`;
+       mainLandingPage.textContent = `Form submission blocked`;
     }
 });
 export function initInjectContentListeners(){
@@ -40,7 +40,13 @@ export function initInjectContentListeners(){
         const link = e.target.closest('a')
         if(!link)return
         const href = link.getAttribute("href");
-        if (!href || href === "#") return;
+        // if (!href || href === "#") return;
+
+        if (!href || href === "#" || href === "undefined") {
+
+            console.warn("Blocked bad href:", href);
+            return;
+        }
         e.preventDefault();
         injectPage(href);
         mainLandingPage.scrollTo(0,0)
@@ -90,6 +96,16 @@ export async function injectPage(href){
     }
     const parser = new DOMParser()
     const doc = parser.parseFromString(html, 'text/html')
+    // 🔥 Remove broken attributes before injection
+    doc.querySelectorAll("[src], [href], [action]").forEach(el => {
+        ["src", "href", "action"].forEach(attr => {
+            const val = el.getAttribute(attr);
+            if (val === "undefined") {
+                console.warn("Removing bad attr:", attr, "from", el);
+                el.removeAttribute(attr);
+            }
+        });
+    });
 
     // Grab the actual page content
     const newContent = doc.querySelector(".page-container");
@@ -135,7 +151,6 @@ export async function injectPage(href){
     initItemsScroll()
     // initSectionsDropDown()   
     initDropDown()
-    // initSwiper();
     initBgSlider()
     initSwiper()
     // ✅ ONLY INIT IF ON BOOKING PAGE
