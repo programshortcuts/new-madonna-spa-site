@@ -25,9 +25,10 @@ const DEFAULT_PAGE =
 const pageCache = new Map()
 let lastClickedLink = null
 document.addEventListener("submit", (e) => {
+
     if (e.target.id === "contact-form") {
         e.preventDefault();
-       mainLandingPage.textContent = `Failed to load page: ${href}`;
+        mainLandingPage.textContent = `Form submission blocked`;
     }
 });
 export function initInjectContentListeners(){
@@ -39,7 +40,6 @@ export function initInjectContentListeners(){
         const link = e.target.closest('a')
         if(!link)return
         const href = link.getAttribute("href");
-        if (!href || href === "#") return;        
         if (!href || href === "#") return;
         e.preventDefault();
         injectPage(href);

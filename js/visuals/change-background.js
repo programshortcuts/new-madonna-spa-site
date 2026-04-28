@@ -44,5 +44,5 @@ export function initBgSlider() {
 
         current = nextIndex;
 
-    }, 2000);
+    }, 4000);
 }
