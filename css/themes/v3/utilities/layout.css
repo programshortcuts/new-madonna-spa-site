@@ -12,8 +12,8 @@ body{
     flex-direction: column;
 }
 .main-landing-page {
-    /* overflow: hidden; */
-    overflow-x: scroll;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 .page-header {
     display: flex;
