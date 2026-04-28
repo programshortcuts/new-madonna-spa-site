@@ -47,6 +47,10 @@
 @import url('../../../pages/products/css/txt-products.css');
 /* contact.css */
 
+.mobile-header-nav{
+    background-color: blue !important;
+}
+
 * {
     margin: 0;
     padding: 0;
