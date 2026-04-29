@@ -1,4 +1,7 @@
 /* layout-home.css*/
+.home-page-container h3{
+    display: none;
+}
 .home-page-header {
     display: flex;
 }
