@@ -9,3 +9,13 @@ footer {
     background-position-x: 0%;
     filter: grayscale(50%);
 }
+.contact-container{
+/* background-image: url('../../../imgs/ai-longevity-madonna-spa.png'); */
+/* background-color: blue; */
+height: 10vh;
+background-repeat: no-repeat;
+background-position-y: 40%;
+background-position-x: 50%;
+background-size: 90%;
+filter: grayscale(80%);
+}
