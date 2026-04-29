@@ -14,7 +14,7 @@
     filter: grayscale(50%);
 }
 .bg-slider{
-    min-height: 30vh;
+    /* min-height: 10vh; */
 }
 .bg-slide {
     /* position: absolute; */
