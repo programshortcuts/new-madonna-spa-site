@@ -12,9 +12,10 @@
     background-position-y: 49%;
     background-position-x: 0%;
     filter: grayscale(50%);
+    height: 35vh;
 }
 .bg-slider{
-    /* min-height: 10vh; */
+    min-height: 40vh;
 }
 .bg-slide {
     /* position: absolute; */
