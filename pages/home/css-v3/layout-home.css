@@ -4,7 +4,10 @@
     flex-wrap: wrap;
 }
 .home-page-header .img-wrapper {
-    flex-basis: 10%;
+    /* flex-basis: 10%; */
+}
+.home-page-header .img-wrapper > a{
+    display: block;
 }
 .home-page-container button.section-title{
     display: block;

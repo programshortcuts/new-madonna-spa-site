@@ -2,12 +2,21 @@
 .home-page-header{
     /* height: 7vh; */
 }
-.home-page-header .contact-content>.img-wrapper>img {
+.home-page-header > .address-num-container{
+    flex-basis: 70%;
+}
+.home-page-header .contact-content>.img-wrapper{
+    flex: 10%;
+
+}
+.home-page-header .contact-content>.img-wrapper> a {
+}
+.home-page-header .contact-content>.img-wrapper> a img {
     height: 10vh;
+    width: 100%;
+    /* display: none; */
 }
 .img-wrapper {
-    width: 20vw !important;
-    display: none;
     /* height: 20vh; */
 }
 .mission-state > p {
