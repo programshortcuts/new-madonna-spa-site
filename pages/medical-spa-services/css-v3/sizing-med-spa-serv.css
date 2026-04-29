@@ -1,0 +1,13 @@
+/* med-spa-services.css */
+.section#bioHormoneReplacement {
+    min-height: 10vh;
+    /* position: relative; */
+}
+.section {
+    max-height: 100vh;
+
+}
+.content .img-wrapper>img {
+    max-height: 200px;
+    max-width: 200px;
+}

@@ -12,14 +12,11 @@
 }
 .page-header img{
     position: absolute;
-    /* right: */
-    left: 60%;
-    /* bottom: 100%; */
-    top: -120%;
+    right: 00%;
+    top: 0%;
     z-index: 100;
-    transform: scale(.5);
+    width: 20%;
 }
-
 .social-media-link-container {
     position: relative;
 }

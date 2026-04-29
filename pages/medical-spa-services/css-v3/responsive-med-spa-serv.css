@@ -1,0 +1,20 @@
+@media screen and (max-width:920px) {
+    /* .main-landing-page {
+        padding-top: 15% !important;
+    } */
+    
+}
+@media screen and (max-width:533px) {
+    .section#bioHormoneReplacement>button.section-title>img {
+            transform: scale(.5);
+            right: -30%;
+            top: -40%;
+    
+        }
+}
+@media screen and (min-width:500px) {
+    .section{
+        margin-right: 50%;
+        background-position-x: -50% !important;
+    }   
+}

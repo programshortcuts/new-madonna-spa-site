@@ -1,0 +1,15 @@
+/* med-spa-services.css */
+.section#bioHormoneReplacement>button.section-title{
+    position: relative;
+}
+.section#bioHormoneReplacement>button.section-title>img {
+    z-index: 10;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+
+}
+
+.content > .img-wrapper {
+    float: right;
+}

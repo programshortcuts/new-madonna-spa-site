@@ -1,0 +1,8 @@
+/* layout-med-spa-services.css */
+.section {
+    /* Limits the section to full viewport height */
+    overflow: hidden;
+    /* Prevents content overflow */
+    overflow-y: scroll;
+    /* Allows vertical scrolling if content exceeds height */
+}
