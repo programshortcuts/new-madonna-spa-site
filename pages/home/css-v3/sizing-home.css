@@ -1,0 +1,25 @@
+/* sizing-home.css*/
+.home-page-header{
+    /* height: 7vh; */
+}
+.home-page-header .contact-content>.img-wrapper>img {
+    height: 10vh;
+}
+.img-wrapper {
+    width: 20vw !important;
+    display: none;
+    /* height: 20vh; */
+}
+.mission-state > p {
+    padding-top: 2%;
+}
+.main-item .content>.img-wrapper {
+    height: fit-content;
+    width: fit-content;
+}
+.main-item .content>.img-wrapper > img{
+    height: 14vh;
+}
+.home-page-container .animation-container{
+    width: 50%;
+}

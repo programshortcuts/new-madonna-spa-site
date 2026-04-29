@@ -58,3 +58,7 @@ a[href^="tel"] {
     /* fill:"#1877f2"; */
     /* color: blue; */
 }
+.home-page-container h3{
+    color: white;
+    text-shadow: 1px  1px 1px var(--font-p-clr);
+}

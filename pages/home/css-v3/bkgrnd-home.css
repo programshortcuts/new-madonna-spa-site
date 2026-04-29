@@ -1,0 +1,11 @@
+.home-page-container button.section-title {
+    background-color: rga(0,0,0,0);
+}
+footer {
+    background-image: url('../../../imgs/chatImgCollage.png');
+    height: 10vh;
+    background-repeat: no-repeat;
+    background-position-y: 10%;
+    background-position-x: 0%;
+    filter: grayscale(50%);
+}

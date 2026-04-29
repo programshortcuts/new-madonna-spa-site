@@ -27,11 +27,12 @@
 
 
 /* home-styles */
+@import url('../../../pages/home/css-v3/spacing-home.css');
+@import url('../../../pages/home/css-v3/layout-home.css');
+@import url('../../../pages/home/css-v3/sizing-home.css');
 @import url('./old-home/bkgrnd-home.css');
 @import url('./old-home/borders-home.css');
 @import url('./old-home/txt-home.css');
-@import url('./old-home/layout-home.css');
-@import url('./old-home/sizing-home.css');
 @import url('./old-home/spacing-home.css');
 @import url('./old-home/position-home.css');
 
