@@ -9,10 +9,10 @@
     flex-basis: 10%;
 }
 .home-page-header .img-wrapper img{
-    display: none;
+    /* display: none; */
 }
 .home-page-container button.section-title{
-    display: block;
+    /* display: block; */
 }
 .reviews-container {
     display: flex;
@@ -36,15 +36,15 @@
     flex-direction: column;
     justify-content: center;
 }
-.mission-state {
+.main-item {
     position: relative;
 }
-.mission-state::after { 
+.main-item::after { 
     content: "";
     display: block;
     clear: both;
 }
-.mission-state .swiper{
+.main-item .swiper{
     float: right;
     width: 250px;
 }

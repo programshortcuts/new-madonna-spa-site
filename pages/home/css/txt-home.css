@@ -1,9 +1,8 @@
 /* txt-home.css*/
-.home-page-container .main-content > article > p,
-.home-page-container .main-content > section > p{
+
+.home-page-container   p{
     /* font-family: Georgia, 'Times New Roman', Times, serif; */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: .rem;
     /* line-height: 1.3; */
 }
 
@@ -21,4 +20,8 @@
     letter-spacing: 20%;
     font-size: 1rem;
     text-decoration: none;
+}
+
+.page-container.home-page-container .main-item>p {
+    font-size: 1.2rem;
 }

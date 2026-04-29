@@ -4,11 +4,10 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     width: 90%;
     max-width: 40vw;
-    /* height: 15vh; */
     margin-right: 50%;
     /* max-height: 15vh; */
     display: block;
-    height: 15vh;
+    height: 12h;
     /* background: #f6f1eb; */
     background: var(--bg-clr);
     background-color: whitesmoke;
