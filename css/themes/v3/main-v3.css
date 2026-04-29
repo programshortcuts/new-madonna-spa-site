@@ -8,7 +8,8 @@
 /* @import url('visuals/carousel.css'); */
 @import url('swiper.css');
 /* ui */
-@import url('ui/toggle-nav.css');
+@import url('../default/ui/items-scroll.css');
+@import url('../default/ui/toggle-nav.css');
 
 /* utilities */
 @import url('utilities/backgrounds.css');
