@@ -3,8 +3,12 @@
     min-height: 10vh;
     /* position: relative; */
 }
+.section#bioHormoneReplacement >.section-title img{
+    max-height: 2vh;
+}
 .section {
     max-height: 100vh;
+    min-width: 99vw;
 
 }
 .content .img-wrapper>img {
