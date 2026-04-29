@@ -1,3 +1,5 @@
+/* bkgrn-home.css */
+/* DON"T forget , header in change-background.css.css */
 .home-page-container button.section-title {
     background-color: rga(0,0,0,0);
 }
@@ -10,12 +12,12 @@ footer {
     filter: grayscale(50%);
 }
 .contact-container{
-/* background-image: url('../../../imgs/ai-longevity-madonna-spa.png'); */
+/* background-image: url('../../../imgs/chatImgCollage.png'); */
 /* background-color: blue; */
 height: 10vh;
 background-repeat: no-repeat;
 background-position-y: 40%;
 background-position-x: 50%;
 background-size: 90%;
-filter: grayscale(80%);
+filter: grayscale(50%);
 }
