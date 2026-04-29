@@ -8,6 +8,9 @@
 .home-page-header .img-wrapper {
     flex-basis: 10%;
 }
+.home-page-header .img-wrapper img{
+    display: none;
+}
 .home-page-container button.section-title{
     display: block;
 }
@@ -36,9 +39,14 @@
 .mission-state {
     position: relative;
 }
-.mission-state .img-wrapper{
-    float: left;
-    z-index: 99
+.mission-state::after { 
+    content: "";
+    display: block;
+    clear: both;
+}
+.mission-state .swiper{
+    float: right;
+    width: 250px;
 }
 .mission-state .img-wrapper img{
     height: 20vh;

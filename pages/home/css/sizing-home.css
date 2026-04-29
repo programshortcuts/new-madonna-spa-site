@@ -1,6 +1,6 @@
 /* sizing-home.css*/
 .home-page-header{
-    min-height: 22vh;
+    min-height: 27vh;
 }
 .home-page-header>.contact-content>.img-wrapper>img {
     width: 80%;
