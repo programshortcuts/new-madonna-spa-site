@@ -1,13 +1,9 @@
 /* txt-home.css*/
-
+.home-page-header>p {
+    font-family: 'Courier New', Courier, monospace;
+}
 .home-page-container   {
-    
-}
-.home-page-container   p{
-    /* font-family: Georgia, 'Times New Roman', Times, serif; */
-    /* line-height: 1.3; */
-}
-
+}   
 .address-num-container>p {
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
     color: white;
@@ -25,7 +21,12 @@
 }
 
 .page-container.home-page-container .main-item>p {
+    font-family: 'Courier New', Courier, monospace;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1rem;
     font-weight: 400;
+}
+.page-container.home-page-container .main-item> .content > p {
+    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

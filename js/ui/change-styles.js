@@ -12,7 +12,12 @@ export function initChangeStyles(){
         currentThemeIndex = themes.indexOf(savedTheme);
         themeLink.href = `css/themes/${savedTheme}/main-${savedTheme}.css`;
     }
-    versionTextEl.innerText = savedTheme
+    if(savedTheme == 'default'){
+        versionTextEl.innerText = ''
+    } else {
+
+        versionTextEl.innerText = savedTheme
+    }
 
     // Logo click → switch FULL CSS
     const logo = document.getElementById("madonnaShilouetteLogo");
@@ -28,7 +33,6 @@ export function initChangeStyles(){
             localStorage.setItem("theme", newTheme);
             
             console.log("Switched to theme:", newTheme);
-            console.log(newTheme)
             versionTextEl.innerText = newTheme
         });
         logo.addEventListener("keydown", (e) => {
@@ -42,7 +46,13 @@ export function initChangeStyles(){
                 localStorage.setItem("theme", newTheme);
                 
                 console.log("Switched to theme:", newTheme);
-                versionTextEl.innerText = newTheme
+                if(newTheme == 'default'){
+
+                    versionTextEl.innerText = ``
+                }else{
+
+                    versionTextEl.innerText = newTheme
+                }
             }
         });
     }

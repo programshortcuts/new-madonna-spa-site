@@ -2,6 +2,10 @@
 .page-container.home-page-container{
     padding-top: 10%;
 }
+.home-page-header> p{
+    padding-bottom: 5%;
+    padding-left: 2%;
+}
 .home-page-header>.contact-content>.img-wrapper>img {
     margin-left: 5%;
 }
@@ -28,5 +32,9 @@
     padding-right: 2%;
     padding-top: 5%;
     line-height: 1.55;
+}
+.page-container.home-page-container  .main-item > .content > p{
+    line-height: 1.55;
+
 }
 

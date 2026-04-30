@@ -6,6 +6,7 @@
 
 .home-page-header {
     display: flex;
+    align-items: flex-end;
 }
 .home-page-header .img-wrapper {
     flex-basis: 10%;

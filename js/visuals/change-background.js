@@ -6,6 +6,7 @@ export function initBgSlider() {
     const slides = container.querySelectorAll('.bg-slide');
 
     const images = [
+        "imgs/istock/istockphoto01.jpg",
         "imgs/woman-man.png",
         "imgs/rustic-rockymoutains-1024.JPEG"
         // "imgs/peptide-header.png"

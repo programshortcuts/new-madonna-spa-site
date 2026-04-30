@@ -1,0 +1,7 @@
+.home-page-header > p{
+    color: whitesmoke;
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-shadow: hoff voff blur #000;
+    text-shadow: 1px 1pxblur #000;
+}
