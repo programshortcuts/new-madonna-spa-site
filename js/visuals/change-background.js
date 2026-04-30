@@ -7,7 +7,6 @@ export function initBgSlider() {
 
     const images = [
         "imgs/woman-man.png",
-        "imgs/perfect-peptide-header.png",
         "imgs/rustic-rockymoutains-1024.JPEG"
         // "imgs/peptide-header.png"
         // "imgs/rustic-rockymoutains-1024.JPEG"

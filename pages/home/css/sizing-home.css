@@ -1,6 +1,7 @@
 /* sizing-home.css*/
 .home-page-header{
-    min-height: 27vh;
+    /* min-height: 27vh; */
+    height: 50vh
 }
 .home-page-header>.contact-content>.img-wrapper>img {
     width: 80%;
@@ -18,11 +19,6 @@
 }
 .main-item .content>.img-wrapper > img{
     height: 14vh;
-}
-.main-item img{
-
-    max-height: 200px;
-    max-width: 200px;
 }
 .home-page-container .animation-container{
     width: 50%;

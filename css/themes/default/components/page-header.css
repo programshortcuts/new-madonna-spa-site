@@ -1,4 +1,32 @@
 /* themes/default/components/page-header.css */
+.page-header>.page-title-container {    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 80%;
+    margin-left: 5%;
+    flex-wrap: wrap;
+}
+.page-header .tel-num-header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+}
+.page-title-container h1 {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    line-height: .8;
+}
+.page-header .page-title {
+    text-decoration: none;
+    letter-spacing: 12%;
+    
+    font-size: 1.1rem;
+}
+
 
 .page-header {
     z-index: 999;
@@ -10,15 +38,10 @@
     display: flex;
     justify-content: space-between;
 }
-.page-header>.page-title-container {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 90%;
-    flex-wrap: wrap;
-}
+
 #versionTile,
 .page-header  img {
-    height: 15vh !important;
+    height: 10vh !important;
     position: absolute;;
     right: 0;
     z-index: 99;
@@ -31,5 +54,8 @@
 .page-header {
     width: 100%;
     position: fixed;
+}
+.tel-num-header {
+    font-size: .5rem;
 }
 
