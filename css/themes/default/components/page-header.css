@@ -2,14 +2,14 @@
 .page-header>.page-title-container {    
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
-    flex-direction: column;
-    flex-basis: 80%;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    align-items: space-between;
+    flex-basis: 90%;
+    /* margin-left: 10%; */
+    /* border: 1px solid red; */
     margin-left: 5%;
     flex-wrap: wrap;
-}
-.page-header .tel-num-header {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1rem;
 }
 .page-title-container h1 {
     margin-top: 2%;
@@ -17,8 +17,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
     line-height: .8;
+}
+.page-header .tel-num-header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: .8rem;
+}
+.page-title-container h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: .4rem;
+    margin-left: 25%;
+    /* border: 1px solid blue; */
 }
 .page-header .page-title {
     text-decoration: none;

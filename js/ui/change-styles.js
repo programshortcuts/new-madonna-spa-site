@@ -28,6 +28,7 @@ export function initChangeStyles(){
             localStorage.setItem("theme", newTheme);
             
             console.log("Switched to theme:", newTheme);
+            console.log(newTheme)
             versionTextEl.innerText = newTheme
         });
         logo.addEventListener("keydown", (e) => {
