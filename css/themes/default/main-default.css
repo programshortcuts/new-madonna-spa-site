@@ -3,10 +3,13 @@
 @import url('./visuals/change-background.css');
 @import url('./swiper.css');
 /* main.css */
-@import url('../../../pages/medical-spa-services/css/med-spa-serv.css');
-@import url('../../../pages/medical-spa-services/css/bkgrnd-med-spa-serv.css');
-/* @import url('../../../pages/medical-spa-services/css/responsive-med-spa-serv.css'); */
 
+@import url('../../../pages/medical-spa-services/css-v3/bkgrnd-med-spa-serv.css');
+@import url('../../../pages/medical-spa-services/css-v3/layout-med-spa-serv.css');
+@import url('../../../pages/medical-spa-services/css-v3/position-med-spa-serv.css');
+@import url('../../../pages/medical-spa-services/css-v3/sizing-med-spa-serv.css');
+@import url('../../../pages/medical-spa-services/css-v3/spacing-med-spa-serv.css');
+@import url('../../../pages/medical-spa-services/css-v3/txt-med-spa-serv.css');
 /* @import url('visuals/animations.css'); */
 /* @import url('swiper.css'); */
 
