@@ -1,6 +1,5 @@
 /* themes/default/components/page-header.css */
 .page-header>.page-title-container {    
-    font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
     /* flex-direction: column; */
     justify-content: space-around;
@@ -19,9 +18,35 @@
     justify-content: center;
     line-height: .8;
 }
+.page-header {
+    z-index: 999;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.page-header .page-title {
+    text-decoration: none;
+    letter-spacing: 25%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: cursive;
+    font-size: 1.1rem;
+}
+
 .page-header .tel-num-header {
+    font-size: .5rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: .8rem;
+    font-family: cursive;
+    font-size: .7rem;
+    margin-top: 2%;
+}
+
+.page-header>img {
+    display: flex;
+    justify-content: space-between;
 }
 .page-title-container h2 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -29,24 +54,9 @@
     margin-left: 25%;
     /* border: 1px solid blue; */
 }
-.page-header .page-title {
-    text-decoration: none;
-    letter-spacing: 12%;
-    
-    font-size: 1.1rem;
-}
 
 
-.page-header {
-    z-index: 999;
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-}
-.page-header > img{
-    display: flex;
-    justify-content: space-between;
-}
+
 
 #versionTile,
 .page-header  img {
@@ -60,11 +70,5 @@
     z-index: 100
     
 }
-.page-header {
-    width: 100%;
-    position: fixed;
-}
-.tel-num-header {
-    font-size: .5rem;
-}
+
 

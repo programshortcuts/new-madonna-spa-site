@@ -8,8 +8,9 @@ export function initBgSlider() {
     const images = [
         "imgs/istock/istockphoto01.jpg",
         "imgs/woman-man.png",
-        "imgs/rustic-rockymoutains-1024.JPEG"
-        // "imgs/peptide-header.png"
+        "imgs/rustic-rockymoutains-1024.JPEG",
+        "imgs/ai-imgs/8c5bef42-4ec2-4c5c-be3c-9804e804114f.png",
+        "imgs/perfect-peptide-header.png"
         // "imgs/rustic-rockymoutains-1024.JPEG"
         // "pages/medical-spa-services/media/AS-Botox2000.webp.png",
         // "pages/ivInfustionTherepy/media/iv-infusion.jpeg"

@@ -26,3 +26,12 @@ background-position-x: 50%;
 background-size: 90%;
 filter: grayscale(80%);
 }
+#bioHormoneReplacementHomePage{
+    background-image: url('../../../imgs/ai-imgs/8c5bef42-4ec2-4c5c-be3c-9804e804114f.png');
+    height: 20vh;
+    background-repeat: no-repeat;
+    background-position-y: 30%;
+    background-size: 89%;
+    background-position-x: 40%;
+    filter: grayscale(50%);
+}

@@ -1,6 +1,8 @@
 /* toggle-nav.css */
 .page-wrapper.expand>.mobile-header-nav {
-    height: 30vh !important;
+    height: 22vh !important;
+    padding-top: 6%;
+    padding-right: 5%;
     z-index: 1;
     background-color: var(--bg-clr);
     top: 5%;
@@ -14,14 +16,23 @@
     padding-top: 1%;
     transition: all 250ms;
 }
-.page-wrapper.expand>.mobile-header-nav>ul>li>ul {
+.page-wrapper.expand>.mobile-header-nav>ul>li{
     display: flex;
     flex-direction: column;
-    transition: all 1s;
-    list-style: none;
+    align-self: flex-start;
+        justify-content: center;
+    }
+    .page-wrapper.expand>.mobile-header-nav>ul>li>ul {
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid red; */
+        transition: all 1s;
+        list-style: none;
+        list-style-type:circle;
+        min-width: 130px;
 }
 .page-wrapper.expand>.mobile-header-nav>ul>li>ul>li a {   
     padding-left: 5%;
-    font-size: .9rem;
+    font-size: .7rem;
 
 }

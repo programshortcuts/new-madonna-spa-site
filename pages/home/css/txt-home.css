@@ -21,12 +21,13 @@
 }
 
 .page-container.home-page-container .main-item>p {
-    font-family: 'Courier New', Courier, monospace;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 1rem;
     font-weight: 400;
 }
 .page-container.home-page-container .main-item> .content > p {
-    font-family: 'Courier New', Courier, monospace;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: .9rem;
 }
