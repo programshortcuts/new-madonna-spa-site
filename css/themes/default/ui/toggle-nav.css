@@ -1,38 +1,39 @@
 /* toggle-nav.css */
 .page-wrapper.expand>.mobile-header-nav {
-    height: 22vh !important;
-    padding-top: 6%;
-    padding-right: 5%;
-    z-index: 1;
-    background-color: var(--bg-clr);
-    top: 5%;
-
+    height: 30vh;
+    position: fixed;
+    transform: translateY(0) scaleX(1);
+    opacity: 1;
     border-bottom: 1px solid black;
-    border-radius: 5px;
-    transition: all 400ms;
 }
-
-.page-wrapper.expand>.mobile-header-nav>ul {
+.page-wrapper.expand .mobile-header-nav ul > li > ul{
+    padding-top: 8% ;
+}
+.page-wrapper.expand .mobile-header-nav ul>li {
     padding-top: 1%;
-    transition: all 250ms;
+    animation: slideInX 100ms forwards;
 }
-.page-wrapper.expand>.mobile-header-nav>ul>li{
-    display: flex;
-    flex-direction: column;
-    align-self: flex-start;
-        justify-content: center;
-    }
-    .page-wrapper.expand>.mobile-header-nav>ul>li>ul {
-        display: flex;
-        flex-direction: column;
-        /* border: 1px solid red; */
-        transition: all 1s;
-        list-style: none;
-        list-style-type:circle;
-        min-width: 130px;
-}
-.page-wrapper.expand>.mobile-header-nav>ul>li>ul>li a {   
-    padding-left: 5%;
-    font-size: .7rem;
 
+
+/* Animate AFTER parent */
+.page-wrapper.expand .mobile-header-nav ul li ul li {
+    animation: dropIn 150ms forwards;
+}
+
+/* stagger them vertically */
+.page-wrapper.expand .mobile-header-nav ul li ul li:nth-child(1) {animation-delay: 120ms;}
+.page-wrapper.expand .mobile-header-nav ul li ul li:nth-child(2) {animation-delay: 170ms;}
+.page-wrapper.expand .mobile-header-nav ul li ul li:nth-child(3) {animation-delay: 220ms;}
+.page-wrapper.expand .mobile-header-nav ul li ul li:nth-child(4) {animation-delay: 270ms;}
+@keyframes slideInX {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes dropIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

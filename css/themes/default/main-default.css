@@ -61,7 +61,7 @@
     box-sizing: border-box;
 }
 .error-message {color: red;}
-.hide {display: none !important;}
+
 a[x-apple-data-detectors] {
     color: inherit !important;
     text-decoration: none !important;
@@ -77,3 +77,4 @@ a[href^="tel"] {
 a.tel-num:visited {
     color: var(--font-p-clr);
 }
+.hide {display: none !important;}

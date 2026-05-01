@@ -6,7 +6,6 @@
     width: 100%;
     height: 10vh;
 }
-
 .social-media-container {
     display: flex;
     flex-direction: column;
@@ -14,7 +13,20 @@
 .mobile-header-nav {
     position: fixed;
     z-index: 2;
-    bottom: 0;
+    /* bottom: 0; */
+        position: absolute;
+            /* or fixed if you had it that way before */
+            top: 5%;
+            /* keep your original exact value */
+            left: 0;
+        
+            transform: translateY(-10px) scaleX(0.95);
+            transform-origin: left top;
+        
+            opacity: 0;
+            transition:
+                transform 400ms cubic-bezier(0.22, 1, 0.36, 1),
+                opacity 200ms ease;
 }
 .mobile-header-nav>ul {
     padding-top: 2%;
@@ -25,29 +37,38 @@
     flex-basis: 25%;
     display: flex;
     flex-direction: column;
+        opacity: 0;
+            transform: translateX(-20px);
 }
-.mobile-header-nav>ul>li>ul {
-    display: none;
+.mobile-header-nav>ul>li>a {
+    display: inline-flex;
+    display: inline-block;
+    text-align: center;
+    /* text-decoration: none; */
+    align-items: center;
+    justify-content: center;
+}
+.mobile-header-nav>ul>li > ul:first-child {
     flex-direction: column;
-    margin-left: 5%;
+    margin-left: -25%;
+    margin-right: 25%;
+    border: 1px solid blue;
 }
 
 .mobile-header-nav>ul>li>ul>li {
     width: 120%;
+        opacity: 0;
+            transform: translateY(-10px);
 }
 
-.mobile-header-nav>ul>li>a {
-    display: inline-block;
-    text-align: center;
-}
-.mobile-header-nav>ul>li>a {
-    text-decoration: none;
-    display: inline-flex;
-    /* or inline-flex */
-    align-items: center;
-    justify-content: center;
+li#medicalSpaServicesNavLi > ul{
+    margin-left: -5%;
+    /* margin-right: 30%; */
 }
 
+li#productsNavLi > ul{
+    margin-left: 25%;
+}
 
 li#contactNavLink {
     flex: 1 1 0;
@@ -56,8 +77,9 @@ li#contactNavLink {
     /* 🔥 allows shrinking */
 }
 
-.social-media-container {
+li#contactNavLink > .social-media-container {
     /* width: 100%; */
+    margin-left: 15%;
     display: flex;
     flex-direction: column;
 }
