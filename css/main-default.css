@@ -37,7 +37,7 @@
 @import url('../pages/home/css/borders-home.css');
 @import url('../pages/home/css/colors-home.css');
 @import url('../pages/home/css/layout-home.css');
-/* @import url('../pages/home/css/position-home.css'); */
+@import url('../pages/home/css/position-home.css');
 @import url('../pages/home/css/sizing-home.css');
 @import url('../pages/home/css/spacing-home.css');
 @import url('../pages/home/css/txt-home.css');
