@@ -1,7 +1,8 @@
 /* swiper.css */
 .swiper-wrapper {width: 100%;}
 .swiper {
-    font-family: Georgia, 'Times New Roman', Times, serif;    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    z-index: 2;
     width: 90%;
     max-width: 40vw;
     margin-right: 50%;
