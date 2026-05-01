@@ -1,33 +1,36 @@
 /* mobile-header-nav.css */
-:root{
+:root {
     --social-max-height: 3vh;
 }
+
 .page-wrapper>.mobile-header-nav {
     width: 100%;
     height: 10vh;
 }
+
 .social-media-container {
     display: flex;
     flex-direction: column;
 }
+
 .mobile-header-nav {
     position: fixed;
     z-index: 2;
-    /* bottom: 0; */
-        position: absolute;
-            /* or fixed if you had it that way before */
-            top: 5%;
-            /* keep your original exact value */
-            left: 0;
-        
-            transform: translateY(-10px) scaleX(0.95);
-            transform-origin: left top;
-        
-            opacity: 0;
-            transition:
-                transform 400ms cubic-bezier(0.22, 1, 0.36, 1),
-                opacity 200ms ease;
+    /* 🔥 always fixed */
+    bottom: 0;
+    /* 🔥 anchor to bottom */
+    left: 0;
+    width: 100%;
+
+    transform: translateY(100%) scaleX(0.95);
+    border: 1px solid black;
+    box-shadow: 0 0 1px 1px whitesmoke;
+    border-radius: 8px;
+    background-color: blue !important;
+    /* hide it */
+    /* opacity: 0; */
 }
+
 .mobile-header-nav>ul {
     padding-top: 2%;
     display: flex;
@@ -37,9 +40,10 @@
     flex-basis: 25%;
     display: flex;
     flex-direction: column;
-        opacity: 0;
-            transform: translateX(-20px);
+    /* opacity: 0; */
+    transform: translateX(-20px);
 }
+
 .mobile-header-nav>ul>li>a {
     display: inline-flex;
     display: inline-block;
@@ -48,7 +52,8 @@
     align-items: center;
     justify-content: center;
 }
-.mobile-header-nav>ul>li > ul:first-child {
+
+.mobile-header-nav>ul>li>ul:first-child {
     flex-direction: column;
     margin-left: -25%;
     margin-right: 25%;
@@ -57,16 +62,16 @@
 
 .mobile-header-nav>ul>li>ul>li {
     width: 120%;
-        opacity: 0;
-            transform: translateY(-10px);
+    opacity: 0;
+    transform: translateY(-10px);
 }
 
-li#medicalSpaServicesNavLi > ul{
+li#medicalSpaServicesNavLi>ul {
     margin-left: -5%;
     /* margin-right: 30%; */
 }
 
-li#productsNavLi > ul{
+li#productsNavLi>ul {
     margin-left: 25%;
 }
 
@@ -77,7 +82,7 @@ li#contactNavLink {
     /* 🔥 allows shrinking */
 }
 
-li#contactNavLink > .social-media-container {
+li#contactNavLink>.social-media-container {
     /* width: 100%; */
     margin-left: 15%;
     display: flex;
@@ -98,6 +103,7 @@ li#contactNavLink > .social-media-container {
     max-height: var(--social-max-height);
     height: fit-content;
 }
+
 .social-media-link-container svg {
     max-height: var(--social-max-height);
     margin-top: 4%;
@@ -105,6 +111,7 @@ li#contactNavLink > .social-media-container {
     height: auto;
     max-width: 100%;
 }
+
 .social-media-link-container {
     position: relative;
 }

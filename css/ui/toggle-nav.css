@@ -1,15 +1,18 @@
 /* toggle-nav.css */
 .page-wrapper.expand>.mobile-header-nav {
-    height: 30vh;
+    height: 20vh;
     position: fixed;
     transform: translateY(0) scaleX(1);
     opacity: 1;
-    border-bottom: 1px solid black;
     top: 5%;
+    bottom: auto;
+    transition: all 800ms;
 }
-.page-wrapper.expand .mobile-header-nav ul > li > ul{
-    padding-top: 8% ;
+
+.page-wrapper.expand .mobile-header-nav ul>li>ul {
+    padding-top: 8%;
 }
+
 .page-wrapper.expand .mobile-header-nav ul>li {
     padding-top: 1%;
     animation: slideInX 100ms forwards;
@@ -22,16 +25,29 @@
 }
 
 /* stagger them vertically */
-.page-wrapper.expand .mobile-header-nav ul li ul li:nth-child(1) {animation-delay: 120ms;}
-.page-wrapper.expand .mobile-header-nav ul li ul li:nth-child(2) {animation-delay: 170ms;}
-.page-wrapper.expand .mobile-header-nav ul li ul li:nth-child(3) {animation-delay: 220ms;}
-.page-wrapper.expand .mobile-header-nav ul li ul li:nth-child(4) {animation-delay: 270ms;}
+.page-wrapper.expand .mobile-header-nav ul li ul li:nth-child(1) {
+    animation-delay: 120ms;
+}
+
+.page-wrapper.expand .mobile-header-nav ul li ul li:nth-child(2) {
+    animation-delay: 170ms;
+}
+
+.page-wrapper.expand .mobile-header-nav ul li ul li:nth-child(3) {
+    animation-delay: 220ms;
+}
+
+.page-wrapper.expand .mobile-header-nav ul li ul li:nth-child(4) {
+    animation-delay: 270ms;
+}
+
 @keyframes slideInX {
     to {
         opacity: 1;
         transform: translateX(0);
     }
 }
+
 @keyframes dropIn {
     to {
         opacity: 1;
