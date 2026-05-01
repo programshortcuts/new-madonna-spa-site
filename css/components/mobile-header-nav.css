@@ -11,9 +11,9 @@
     flex-direction: column;
 }
 .mobile-header-nav {
-    
     border-radius: 2px;
-    /* box-shadow: 0 -1px 1px 1px black; */
+    border-top: 1px solid whitesmoke;
+    box-shadow: 0 -1px 1px 1px grey;
     position: fixed;
     z-index: 999;
     /* 🔥 always fixed */
