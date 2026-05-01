@@ -1,16 +1,20 @@
-/* med-spa-services.css */
+/* sizing-med-spa-services.css */
+.med-spa-serv-container 
 .section#bioHormoneReplacement {
     min-height: 10vh;
     /* position: relative; */
 }
+.med-spa-serv-container
 .section#bioHormoneReplacement >.section-title img{
     max-height: 2vh;
 }
+.med-spa-serv-container
 .section {
     max-height: 100vh;
     min-width: 99vw;
 
 }
+.med-spa-serv-container
 .content .img-wrapper>img {
     max-height: 200px;
     max-width: 200px;

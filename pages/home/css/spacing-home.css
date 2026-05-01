@@ -26,13 +26,12 @@
 .page-container.home-page-container  .main-item{
     padding-bottom: 2%;
     
-    padding-right: 1%;
+    padding-right: 4%;
 }
 .page-container.home-page-container  .main-item > p{
     /* padding:0  2%; */
     padding-left: 3%;
     padding-top: 5%;
-    margin-right: 5% !important;
     line-height: 1.55;
 }
 .page-container.home-page-container  .main-item > .content > p{
