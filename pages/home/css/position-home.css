@@ -24,3 +24,6 @@
     position: relative;
     right: -20%;
 }
+.home-page-header p {
+    z-index: 2
+}

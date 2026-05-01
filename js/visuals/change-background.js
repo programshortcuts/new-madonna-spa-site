@@ -6,7 +6,7 @@ export function initBgSlider() {
     const slides = container.querySelectorAll('.bg-slide');
 
     const images = [
-        "imgs/istock/istockphoto01.jpg",
+        // "imgs/istock/istockphoto01.jpg",
         "imgs/woman-man.png",
         "imgs/rustic-rockymoutains-1024.JPEG",
         "imgs/ai-imgs/8c5bef42-4ec2-4c5c-be3c-9804e804114f.png",
@@ -19,24 +19,43 @@ export function initBgSlider() {
 
     slides.forEach((slide, i) => {
         const img = images[i % images.length]; // loops images if fewer
-
+        
         slide.style.backgroundImage = `url(${img})`;
+        
     });
     let current = 0;
 
-    
+    const currentSlide = slides[current];
+    const nextIndex = (current + 1) % slides.length;
+    const nextSlide = slides[nextIndex];
+    // fade out current
+    currentSlide.classList.remove('active');
+
+    // fade in next
+    console.log()
+    nextSlide.classList.add('active');
+    if (nextSlide.style.backgroundImage === 'url("imgs/ai-imgs/8c5bef42-4ec2-4c5c-be3c-9804e804114f.png")') {
+        nextSlide.classList.add('move-right')
+        console.log('here')
+    }
+
+    current = nextIndex;
     setInterval(() => {
         const currentSlide = slides[current];
         const nextIndex = (current + 1) % slides.length;
         const nextSlide = slides[nextIndex];
-
         // fade out current
         currentSlide.classList.remove('active');
-
+        
         // fade in next
+        console.log()
         nextSlide.classList.add('active');
+        if (nextSlide.style.backgroundImage === 'url("imgs/ai-imgs/8c5bef42-4ec2-4c5c-be3c-9804e804114f.png")'){
+            nextSlide.classList.add('move-right')    
+            console.log('here')
+        }
 
         current = nextIndex;
 
-    }, 4000);
+    }, 3400);
 }

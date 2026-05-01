@@ -1,6 +1,6 @@
 /* themes/default/main-default.css */
 /* visuals */
-@import url('./visuals/change-background.css');
+
 @import url('./swiper.css');
 /* main.css */
 
@@ -34,6 +34,7 @@
 /* @import url('utilities/colors.css'); */
 
 /* home */
+@import url('../default/visuals/change-background.css');
 @import url('../../../pages/home/css/bkgrnd-home.css');
 @import url('../../../pages/home/css/borders-home.css');
 @import url('../../../pages/home/css/colors-home.css');
