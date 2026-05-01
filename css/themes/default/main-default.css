@@ -60,7 +60,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-.error-message {color: red;}
+
+.error-message {
+    color: red;
+}
 
 a[x-apple-data-detectors] {
     color: inherit !important;
@@ -69,12 +72,17 @@ a[x-apple-data-detectors] {
     font-family: inherit !important;
     font-weight: inherit !important;
 }
+
 /* Target standard telephone links */
 a[href^="tel"] {
     color: inherit;
     text-decoration: none;
 }
+
 a.tel-num:visited {
     color: var(--font-p-clr);
 }
-.hide {display: none !important;}
+
+.hide {
+    display: none !important;
+}
