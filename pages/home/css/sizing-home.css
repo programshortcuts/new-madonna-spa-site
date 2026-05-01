@@ -23,3 +23,6 @@
 .home-page-container .animation-container{
     width: 50%;
 }
+.home-main-content > .main-content > section{
+    width: 50% !important;
+}
