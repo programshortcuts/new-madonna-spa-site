@@ -4,6 +4,7 @@
     position: fixed;
     transform: translateY(0) scaleX(1);
     opacity: 1;
+    z-index: 1;
     top: 5%;
     bottom: auto;
     transition: all 800ms;
