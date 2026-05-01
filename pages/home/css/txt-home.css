@@ -25,10 +25,11 @@
     /* font-family: 'Courier New', Courier, monospace; */
     /* font-size: 1rem; */
     /* font-weight: 400; */
+    line-height: 1.8;
 }
 .page-container.home-page-container .main-item p {
     font-family: 'Courier New', Courier, monospace;
     
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: .8rem;
+    font-size: .9rem;
 }
