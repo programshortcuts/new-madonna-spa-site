@@ -11,7 +11,7 @@
     flex-direction: column;
 }
 .mobile-header-nav {
-    border: 1px solid black;
+    
     border-radius: 2px;
     /* box-shadow: 0 -1px 1px 1px black; */
     position: fixed;

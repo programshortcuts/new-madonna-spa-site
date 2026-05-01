@@ -1,7 +1,8 @@
 /* toggle-nav.css */
 .page-wrapper.expand>.mobile-header-nav {
     border-top: 0;
-    box-shadow: none;
+    border-bottom: 1px solid whitesmoke;
+    box-shadow: 0 2px 0 2px grey;
     height: 23vh;
     position: fixed;
     transform: translateY(0) scaleX(1);
