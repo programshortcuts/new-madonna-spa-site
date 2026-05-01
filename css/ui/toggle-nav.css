@@ -8,7 +8,7 @@
     transform: translateY(0) scaleX(1);
     opacity: 1;
     z-index: 1;
-    top: 5%;
+    top: 4%;
     bottom: auto;
     transition: all 400ms;
 }
