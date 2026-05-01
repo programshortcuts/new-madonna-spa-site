@@ -1,21 +1,23 @@
 /* default/change-background.css */
-.page-wrapper{
+.page-wrapper {
     /* position: relative; */
 }
+
 .home-page-header {
     width: 100vw !important;
     /* .contact-container>.address-num-container { */
     /* background-image: url('../../../../imgs/peptide-header.png'); */
     /* background-image: url('../../../../imgs/woman-man.png'); */
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
+    height: 50vh;
     /* background-repeat: repeat; */
     background-position-y: 49%;
-    background-position-x: 0% !important ;
+    background-position-x: 0% !important;
     filter: grayscale(50%);
-    height: 35vh;
 }
-.bg-slider{
-    min-height: 40vh;
+
+.bg-slider {
+    /* min-height: 40vh; */
 }
 
 .bg-slide {
@@ -25,7 +27,7 @@
     /* background-position: center; */
     background-position: right;
     background-size: cover;
-    
+
     /* background-position-x: 40%; */
     opacity: 0;
     transition: opacity 1.2s ease;
@@ -33,10 +35,12 @@
     inset: 0;
     z-index: 0;
 }
+
 .contact-container>*:not(.bg-slide) {
     position: relative;
     z-index: 2;
 }
+
 /* visible slide */
 .bg-slide.active {
     opacity: 1;
@@ -48,6 +52,7 @@
     opacity: 0;
     z-index: 0;
 }
+
 .move-right {
     background-position-x: 80% !important;
     /* border: 20px solid blue; */
