@@ -1,4 +1,5 @@
 // inject-content.js
+import { onPageReady } from "./page-lifecycle.js";
 import { isSafePath } from "./security-utils.js";
 import { initItemsScroll } from "../ui/items-scroll.js";
 import { initSwiper } from "../visuals/swiper.js";
@@ -143,14 +144,7 @@ export async function injectPage(href){
     })
 
     mainLandingPage.scrollTo(0,0)
-    initFilterSortItems()
-    // initImageHandling()
-    // initProdImgHandle()
-    initItemsScroll()
-    // initSectionsDropDown()   
-    initDropDown()
-    initBgSlider()
-    initSwiper()
+    onPageReady()   
     // ✅ ONLY INIT IF ON BOOKING PAGE
     if (href.includes("bookings")) {
         initBookingForm();

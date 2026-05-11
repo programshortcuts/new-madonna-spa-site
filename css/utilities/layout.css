@@ -1,10 +1,10 @@
 /* layout.css */
 .page-wrapper {
     display: flex;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     flex-direction: column;
 }
 .main-landing-page {
-    overflow: hidden;
-    overflow-y: scroll;
+    /* overflow: hidden; */
+    /* overflow-y: scroll; */
 }
