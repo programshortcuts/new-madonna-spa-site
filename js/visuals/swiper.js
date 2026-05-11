@@ -7,10 +7,11 @@ export function initSwiper() {
     if (!swiperEl) return;
 
     if (typeof Swiper === 'undefined') {
-        console.error("Swiper not loaded");
+        console.error("Swiper is not loaded (check script tag)");
         return;
     }
 
+    // destroy old instance safely
     if (reviewsSwiper) {
         reviewsSwiper.destroy(true, true);
         reviewsSwiper = null;
@@ -19,13 +20,19 @@ export function initSwiper() {
     reviewsSwiper = new Swiper(swiperEl, {
         slidesPerView: 1,
         loop: true,
+        speed: 700,
+
         grabCursor: true,
-        speed: 800,
+        allowTouchMove: true,
+
+        // IMPORTANT: makes swipe feel natural
+        threshold: 5,
+
         autoplay: {
             delay: 5000,
             disableOnInteraction: false
         }
     });
 
-    console.log("Swiper ready");
+    console.log("Swiper initialized");
 }
