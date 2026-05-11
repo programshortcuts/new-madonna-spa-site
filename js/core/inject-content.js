@@ -25,17 +25,15 @@ const DEFAULT_PAGE =
 const pageCache = new Map()
 let lastClickedLink = null
 document.addEventListener("submit", (e) => {
-
     if (e.target.id === "contact-form") {
         e.preventDefault();
-       mainLandingPage.textContent = `Form submission blocked`;
+        mainLandingPage.textContent = `Form submission blocked`;
     }
 });
 export function initInjectContentListeners(){
     const mobileHeaderNav = document.querySelector('.mobile-header-nav')
-    
     injectPage(DEFAULT_PAGE)
-             
+    
     mobileHeaderNav.addEventListener('click', e => {
         const link = e.target.closest('a')
         if(!link)return

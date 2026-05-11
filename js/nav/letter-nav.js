@@ -2,9 +2,7 @@
 
 export function isActuallyVisible(el) {
     if (!el) return false;
-
     const style = getComputedStyle(el);
-
     if (
         style.display === 'none' ||
         style.visibility === 'hidden' ||
@@ -19,7 +17,6 @@ export function isActuallyVisible(el) {
         }
         parent = parent.parentElement;
     }
-
     return true;
 }
 

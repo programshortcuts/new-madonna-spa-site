@@ -47,10 +47,7 @@
     display: block;
     clear: both;
 }
-.main-item .swiper{
-    float: right;
-    width: 250px;
-}
+/* Removed conflicting width: 250px and float: right for .swiper */
 .mission-state .img-wrapper img{
     height: 20vh;
 }

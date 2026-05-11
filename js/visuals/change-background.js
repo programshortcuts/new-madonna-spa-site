@@ -36,7 +36,6 @@ export function initBgSlider() {
     nextSlide.classList.add('active');
     if (nextSlide.style.backgroundImage === 'url("imgs/ai-imgs/8c5bef42-4ec2-4c5c-be3c-9804e804114f.png")') {
         nextSlide.classList.add('move-right')
-        console.log('here')
     }
 
     current = nextIndex;
@@ -52,7 +51,6 @@ export function initBgSlider() {
         nextSlide.classList.add('active');
         if (nextSlide.style.backgroundImage === 'url("imgs/ai-imgs/8c5bef42-4ec2-4c5c-be3c-9804e804114f.png")'){
             nextSlide.classList.add('move-right')    
-            console.log('here')
         }
 
         current = nextIndex;
