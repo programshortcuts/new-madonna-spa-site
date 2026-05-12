@@ -1,33 +1,36 @@
+/* swiper.css */
+.reviews-swiper {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews-swiper>.review-swiper-container {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+}
 .swiper {
     position: relative;
     z-index: 10;
-
     width: 100%;
     max-width: 40vw;
     height: 12vh;
-
     margin: 0 auto;
-
     background: whitesmoke;
     border-radius: 20px;
     box-shadow: 0 0 5px 5px grey;
-
     user-select: none;
-
     /* CRITICAL FOR SWIPE */
     touch-action: pan-y;
 }
-
 .swiper-wrapper {
     width: 100%;
     height: 100%;
 }
-
 .swiper-slide {
     display: flex;
     align-items: center;
     justify-content: center;
-
     text-align: center;
     padding: 10px;
 }

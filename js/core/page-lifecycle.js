@@ -1,11 +1,10 @@
-import { initSwiper } from "../visuals/swiper.js";
+import { initReviewsSwiper, initServicesSwiper } from "../visuals/swiper.js";
 import { initDropDown } from "../ui/drop-down.js";
 import { initBgSlider } from "../visuals/change-background.js";
 import { initFilterSortItems } from "../ui/filter-sort-items.js";
 import { initItemsScroll } from "../ui/items-scroll.js";
 
 export function onPageReady() {
-    console.log("PAGE READY → initializing features");
 
     // IMPORTANT: run after DOM injection is complete
     requestAnimationFrame(() => {
@@ -15,8 +14,9 @@ export function onPageReady() {
         initDropDown();
         initBgSlider();
 
-        // Swiper must run AFTER DOM exists
-        initSwiper();
+        // Swipers must run AFTER DOM exists
+        initReviewsSwiper();
+        initServicesSwiper();
     });
 }
 
@@ -27,6 +27,6 @@ export function onPageReady() {
 // initSectionsDropDown()   
 // initDropDown()
 // initBgSlider()
-// setTimeout(() => {
+
 //     initSwiper();
 // }, 50);

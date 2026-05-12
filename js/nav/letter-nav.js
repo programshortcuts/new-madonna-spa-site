@@ -82,7 +82,7 @@ export function initLetterNav({ container = document } = {}) {
         if (!/^[a-z]$/.test(key)) return;
 
         const allEls = buildElements(container);
-
+        
         const matches = allEls
             .map((el, i) => ({ el, i, alpha: getAlpha(el) }))
             .filter(x => x.alpha === key);

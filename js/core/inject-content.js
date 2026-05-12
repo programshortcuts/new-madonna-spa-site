@@ -2,8 +2,6 @@
 import { onPageReady } from "./page-lifecycle.js";
 import { isSafePath } from "./security-utils.js";
 import { initItemsScroll } from "../ui/items-scroll.js";
-import { initSwiper } from "../visuals/swiper.js";
-
 // import { initBookingForm } from "./bookings.js";
 import { initBgSlider } from "../visuals/change-background.js";
 import { initDropDown } from "../ui/drop-down.js";
@@ -145,6 +143,18 @@ export async function injectPage(href){
 
     mainLandingPage.scrollTo(0,0)
     onPageReady()   
+
+    const autoFocusEl = mainLandingPage.querySelector('[data-auto-focus]');
+
+    if (autoFocusEl) {
+        requestAnimationFrame(() => {
+            autoFocusEl.focus();
+            autoFocusEl.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+        });
+    }
     // ✅ ONLY INIT IF ON BOOKING PAGE
     if (href.includes("bookings")) {
         initBookingForm();
