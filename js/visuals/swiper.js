@@ -43,32 +43,57 @@ export function initServicesSwiper() {
     if (!swiperEl) return;
 
     if (typeof Swiper === 'undefined') {
-        console.error("Swiper is not loaded (check script tag)");
+        console.error("Swiper is not loaded");
         return;
     }
 
-    // destroy old instance safely
     if (servicesSwiper) {
         servicesSwiper.destroy(true, true);
         servicesSwiper = null;
     }
 
     servicesSwiper = new Swiper(swiperEl, {
-        slidesPerView: 1,
-        loop: true,
-        speed: 700,
 
+        loop: true,
+        speed: 600,
+
+        // MAIN FEATURE
+        centeredSlides: true,
+
+        // show neighboring slides
+        slidesPerView: 3,
+
+        spaceBetween: 20,
+
+        // drag/swipe
         grabCursor: true,
         allowTouchMove: true,
-
-        // IMPORTANT: makes swipe feel natural
         threshold: 5,
 
+        // keyboard support
+        keyboard: {
+            enabled: true,
+            onlyInViewport: true
+        },
+
+        // makes active slide become focused
+        slideToClickedSlide: true,
+
+        // responsive
+        breakpoints: {
+            0: {
+                slidesPerView: 1.2
+            },
+
+            768: {
+                slidesPerView: 3
+            }
+        },
         autoplay: {
             delay: 5000,
-            disableOnInteraction: false
+            disableOnInteraction: true
         }
     });
 
-    console.log("Swiper initialized");
+    console.log("Services Swiper initialized");
 }
