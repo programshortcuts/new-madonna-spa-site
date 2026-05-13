@@ -38,7 +38,7 @@ export function initReviewsSwiper() {
     console.log("Swiper initialized");
 }
 export function initServicesSwiper() {
-    const swiperEl = document.querySelector('.services-container');
+    const swiperEl = document.querySelector('.services-swiper');
 
     if (!swiperEl) return;
 

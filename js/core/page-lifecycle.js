@@ -1,4 +1,4 @@
-import { initReviewsSwiper } from "../visuals/swiper.js";
+import { initReviewsSwiper, initServicesSwiper } from "../visuals/swiper.js";
 import { initDropDown } from "../ui/drop-down.js";
 import { initBgSlider } from "../visuals/change-background.js";
 import { initFilterSortItems } from "../ui/filter-sort-items.js";
@@ -16,6 +16,7 @@ export function onPageReady() {
 
         // Reviews Swiper must run AFTER DOM exists
         initReviewsSwiper();
+        initServicesSwiper();
     });
 }
 
