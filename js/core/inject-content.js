@@ -2,6 +2,8 @@
 import { onPageReady } from "./page-lifecycle.js";
 import { isSafePath } from "./security-utils.js";
 import { initItemsScroll } from "../ui/items-scroll.js";
+import { initReviewsSwiper } from "../visuals/swiper.js";
+
 // import { initBookingForm } from "./bookings.js";
 import { initBgSlider } from "../visuals/change-background.js";
 import { initDropDown } from "../ui/drop-down.js";
