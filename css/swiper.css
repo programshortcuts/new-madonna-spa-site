@@ -1,41 +1,40 @@
 /* swiper.css */
-.reviews-container {
-    display: flex;
-    flex-direction: column;
-}
 
-.reviews-container>.review-swiper-container {
-    align-self: flex-start;
-    display: flex;
-    flex-direction: column;
-}
-.swiper {
+.swiper.reviews-swiper {
     position: relative;
     z-index: 10;
+
     width: 100%;
     max-width: 40vw;
     height: 12vh;
+
     margin: 0 auto;
+
     background: whitesmoke;
     border-radius: 20px;
     box-shadow: 0 0 5px 5px grey;
+
     user-select: none;
-    /* CRITICAL FOR SWIPE */
     touch-action: pan-y;
 }
-.swiper-wrapper {
+
+.swiper.reviews-swiper>.swiper-wrapper {
     width: 100%;
     height: 100%;
 }
-.swiper-slide {
+
+.swiper.reviews-swiper>.swiper-wrapper>.swiper-slide {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+
     text-align: center;
     padding: 10px;
 }
 
-/* 🔥 CRITICAL FIX: background must NEVER block input */
+/* background layers */
+
 .bg-slider,
 .bg-slide {
     pointer-events: none;
