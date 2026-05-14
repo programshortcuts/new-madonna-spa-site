@@ -5,9 +5,10 @@
     box-shadow: 0 2px 0 2px grey;
     height: 23vh;
     position: fixed;
+    z-index: 1;
+    z-index: 11;
     transform: translateY(0) scaleX(1);
     opacity: 1;
-    z-index: 1;
     top: 4%;
     bottom: auto;
     transition: all 400ms;

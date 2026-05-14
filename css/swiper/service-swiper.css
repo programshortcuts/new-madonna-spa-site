@@ -1,0 +1,42 @@
+/* service-swiper.css */
+.swiper.services-swiper {
+    width: 100%;
+    max-width: 80vw;
+    overflow: hidden;
+    height: 50vh;
+}
+
+.services-swiper .swiper-slide {
+    transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
+
+    opacity: 0.4;
+    transform: scale(0.8);
+
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+
+}
+
+/* active center slide */
+.services-swiper .swiper-slide-active {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 2;
+}
+
+/* neighboring slides */
+.services-swiper .swiper-slide-prev,
+.services-swiper .swiper-slide-next {
+    opacity: 0.7;
+    transform: scale(0.9);
+}
+.service{
+    background-color: blue;
+    
+    /* display: flex; */
+    
+}
