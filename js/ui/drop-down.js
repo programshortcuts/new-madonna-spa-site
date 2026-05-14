@@ -52,7 +52,9 @@ export function initDropDown() {
 
         // 🔵 SECTION DROPDOWN
         if (sectionTitleDropDown) {
-            const section = sectionTitleDropDown.closest('.section')
+            const section = sectionTitleDropDown.closest('.section') ?
+                            sectionTitleDropDown.closest('.section') :
+                sectionTitleDropDown.closest('.service')
             
             if (!section) return
             // if(!section.classList.contains('drop-down')) return
