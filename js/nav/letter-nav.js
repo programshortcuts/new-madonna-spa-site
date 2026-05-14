@@ -59,10 +59,38 @@ function buildElements(container = document) {
     // remove duplicates + invisible
     const seen = new Set();
 
+    // return raw.filter(el => {
+    //     if (!isActuallyVisible(el)) return false;
+    //     if (seen.has(el)) return false;
+    //     seen.add(el);
+    //     return true;
+    // });
     return raw.filter(el => {
+
+        // -----------------------------------
+        // skip collapsed submenu links
+        // -----------------------------------
+
+        const pageWrapper = document.querySelector('.page-wrapper');
+
+        const isSubMenuLink =
+            el.matches('.mobile-header-nav > ul > li > ul > li > a');
+
+        if (
+            isSubMenuLink &&
+            !pageWrapper?.classList.contains('expand')
+        ) {
+            return false;
+        }
+
+        // -----------------------------------
+
         if (!isActuallyVisible(el)) return false;
+
         if (seen.has(el)) return false;
+
         seen.add(el);
+
         return true;
     });
 }
