@@ -9,11 +9,19 @@
 }
 [data-nav-target="botoxFillerServiceHome"] {
     background: url('../../imgs/botox-filler.webp') 
-                 no-repeat !important;
-    background-position-x: 20%;
+    no-repeat !important;
+    background-position-x: 60%;
+}
+[data-nav-target="peptidesServiceHome"] {
+    background: url('../../imgs/peptide-header.png') 
+    no-repeat !important;
+    
+}
+[data-nav-target="glp-1ServiceHome"] {
+    background: url('../../imgs/ai-imgs/perfect-peptide-header.png') 
+    no-repeat !important;
 }
 [data-nav-target="ivFusionsServiceHome"] {
-    
     background: url('../../imgs/ai-imgs/iv-infusion.jpeg') center/cover no-repeat !important;
     /* filter: grayscale(.7); */
     /* filter: contrast(.2); */
