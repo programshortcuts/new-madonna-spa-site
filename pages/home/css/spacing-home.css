@@ -20,12 +20,9 @@
  .address-num-container {
     /* padding: 0 5%; */               
     padding-bottom: 10%;
-
- }
-
+}
 .page-container.home-page-container  .main-item{
     padding-bottom: 2%;
-    
     padding-right: 4%;
 }
 .page-container.home-page-container  .main-item > p{
@@ -36,11 +33,7 @@
 }
 .page-container.home-page-container  .main-item > .content > p{
     line-height: 1.55;
-
 }
-
-
-.page-container.home-page-container > .home-main-content > #longetivyMedHomePage{
-    padding-left: 2% !important;
-    border: 1px solid orange
+.page-container.home-page-container section   {
+    padding-left: 2%;
 }
