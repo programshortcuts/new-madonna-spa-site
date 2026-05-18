@@ -55,7 +55,7 @@ export function initServicesSwiper() {
 
     servicesSwiper = new Swiper(swiperEl, {
         loop: true,
-        speed: 400,
+        speed: 600,
 
         // IMPORTANT:
         // Do NOT use centeredSlides if you want the first slide to appear on the LEFT.
@@ -93,7 +93,7 @@ export function initServicesSwiper() {
 
         // Start automatically on page load
         autoplay: {
-            delay: 5000,
+            delay: 3333,
             disableOnInteraction: true
         },
 
