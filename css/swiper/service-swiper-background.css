@@ -1,7 +1,15 @@
 /* service-swiper-background.css */
+.service > .content {
+    background: transparent !important;
+    border: 1px solid red
+}
+[data-nav-target="bioidenticalHormReplaServiceBtn"],
 [data-nav-target="bioIdenticalServiceHome"] {
-    background-image: url('../../imgs/biote.webp') !important;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    min-height: 50vh;
+    background: url('../../../../imgs/biote.webp') center/cover no-repeat !important;
+}
+[data-nav-target="botoxFillerServiceHome"] {
+    min-height: 50vh;
+    /* background: url('../../../../imgs/biote.webp') */;
+    background: url('../../../../imgs/botox-filler.webp') center/cover no-repeat !important;
 }
