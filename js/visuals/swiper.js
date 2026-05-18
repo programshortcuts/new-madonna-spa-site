@@ -54,6 +54,7 @@ export function initServicesSwiper() {
     }
 
     servicesSwiper = new Swiper(swiperEl, {
+        slidesPerView: 3,
         loop: true,
         speed: 600,
         centeredSlides: false,
@@ -79,7 +80,7 @@ export function initServicesSwiper() {
             },
             768: {
                 slidesPerView: 3,
-                centeredSlides: false
+                centeredSlides: true
             }
         },
 

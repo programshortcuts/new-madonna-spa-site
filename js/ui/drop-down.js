@@ -21,7 +21,8 @@ export function initDropDown() {
         
         const catTitle = e.target.closest('.cat-title')
         const productTitle = e.target.closest('.product-title')
-        const sectionTitleDropDown = e.target.closest('.section-title.drop-down')
+        const sectionTitleDropDown = e.target.closest('.service-title.drop-down')
+        const serviceHomeDropDown = e.target.closest('.service-title.drop-down')
 // 🟣 PRODUCT DROPDOWN
         if (productTitle) {
             const productsContainer = productTitle.closest('.products-container')
@@ -55,6 +56,26 @@ export function initDropDown() {
             const section = sectionTitleDropDown.closest('.section') ?
                             sectionTitleDropDown.closest('.section') :
                 sectionTitleDropDown.closest('.service')
+            
+            if (!section) return
+            // if(!section.classList.contains('drop-down')) return
+            const downs = section.querySelector('.downs')
+            if (!downs) return
+
+            // if(e.target === lastClickedDrop){
+            //     downs.classList.toggle('hide')
+            // } else {
+            //     hideAllDowns()
+            // }
+            // console.log(downs)
+            downs.classList.toggle('hide')
+            lastClickedDrop = e.target
+            return
+        }
+        if (serviceHomeDropDown) {
+            const section = serviceHomeDropDown.closest('.section') ?
+                            serviceHomeDropDown.closest('.section') :
+                serviceHomeDropDown.closest('.service')
             
             if (!section) return
             // if(!section.classList.contains('drop-down')) return
