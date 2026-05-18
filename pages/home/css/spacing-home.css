@@ -37,3 +37,6 @@
 .page-container.home-page-container section   {
     padding-left: 2%;
 }
+.page-container.home-page-container  .main-item >h4{
+    padding-left: 2%;
+}

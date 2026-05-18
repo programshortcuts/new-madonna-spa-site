@@ -5,7 +5,12 @@
     overflow: hidden;
     height: 50vh;
 }
+.services-swiper .service-title{
+    padding: 2%;
+    background:transparent;
+}
 .services-swiper .swiper-slide {
+    border-radius: 8px;
     height: 100%;
     transition:
     transform 0.4s ease,
