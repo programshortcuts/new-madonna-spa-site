@@ -17,8 +17,9 @@
     height: fit-content;
     width: fit-content;
 }
-.main-item .content>.img-wrapper > img{
-    height: 14vh;
+.img-wrapper > a img{
+    /* height: 14vh; */
+    width: 100%;
 }
 .home-page-container .animation-container{
     width: 50%;
@@ -30,4 +31,18 @@
     border: 1px solid grey;
     box-shadow: 0 0 1px 1px grey;
     border-radius: 4px;
+}
+#drMadonnaPhoto{
+    /* width:      100px !important; */
+    /* height:     100px !important; */
+    /* max-width:  100px !important; */
+    /* max-height: 100px !important; */
+}
+#drMadonnaPhoto {
+    display: block;
+    width: 200px !important;
+    height: auto !important;
+    max-width: unset !important;
+    max-height: unset !important;
+    object-fit: contain;
 }
