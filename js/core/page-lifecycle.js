@@ -8,7 +8,7 @@ export function onPageReady() {
 
     // IMPORTANT: run after DOM injection is complete
     requestAnimationFrame(() => {
-
+        console.log('go')
         initFilterSortItems();
         initItemsScroll();
         initDropDown();

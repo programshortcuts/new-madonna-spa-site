@@ -1,0 +1,7 @@
+/* service-swiper-background.css */
+[data-nav-target="bioIdenticalServiceHome"] {
+    background-image: url('../../imgs/biote.webp') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

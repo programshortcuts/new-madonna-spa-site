@@ -1,5 +1,6 @@
+/* bkgrnd-home.css */
 .home-page-container button.section-title {
-    background-color: rga(0, 0, 0, 0);
+    background-color: rgaa(0, 0, 0, 0);
 }
 
 .home-page-header {
