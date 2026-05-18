@@ -56,17 +56,9 @@ export function initServicesSwiper() {
     servicesSwiper = new Swiper(swiperEl, {
         loop: true,
         speed: 600,
-
-        // IMPORTANT:
-        // Do NOT use centeredSlides if you want the first slide to appear on the LEFT.
         centeredSlides: false,
-
-        // Show three slides in order:
-        // [Bioidentical] [Botox] [IV Fusion]
         slidesPerView: 3,
         spaceBetween: 20,
-
-        // Start with the first original slide
         initialSlide: 0,
 
         grabCursor: true,
@@ -91,20 +83,52 @@ export function initServicesSwiper() {
             }
         },
 
-        // Start automatically on page load
+        // Start autoplay immediately
         autoplay: {
             delay: 3333,
-            disableOnInteraction: true
+            disableOnInteraction: true // stop after swipe/touch
         },
 
-        // Force the swiper to start on the first REAL slide
         on: {
             init(swiper) {
+                // Start on the first real slide
                 swiper.slideToLoop(0, 0, false);
                 swiper.autoplay.start();
             }
         }
     });
+
+    // --------------------------------------------------
+    // STOP AUTOPLAY ON ANY USER INTERACTION
+    // --------------------------------------------------
+    const stopAutoplayAndFocus = () => {
+        if (!servicesSwiper) return;
+
+        // Move keyboard focus to the swiper container
+        swiperEl.focus();
+
+        // Stop autoplay permanently
+        if (servicesSwiper.autoplay?.running) {
+            servicesSwiper.autoplay.stop();
+        }
+    };
+
+    // Mouse click
+    swiperEl.addEventListener('click', stopAutoplayAndFocus);
+
+    // Keyboard focus (tabbing into the swiper)
+    swiperEl.addEventListener('focus', stopAutoplayAndFocus);
+
+    // Touch interaction (mobile)
+    swiperEl.addEventListener('touchstart', stopAutoplayAndFocus, {
+        passive: true
+    });
+
+    // Pointer interaction (covers mouse, touch, pen)
+    swiperEl.addEventListener('pointerdown', stopAutoplayAndFocus);
+
+    // Swiper drag interaction
+    servicesSwiper.on('touchStart', stopAutoplayAndFocus);
 
     console.log("Services Swiper initialized");
 }
