@@ -47,25 +47,27 @@ export function initServicesSwiper() {
         return;
     }
 
+    // Destroy previous instance
     if (servicesSwiper) {
         servicesSwiper.destroy(true, true);
         servicesSwiper = null;
     }
 
-    // Count original slides (before Swiper duplicates them for loop mode)
-    const slideCount = swiperEl.querySelectorAll('.swiper-slide').length;
-
-    // Find the middle slide index
-    const middleIndex = Math.floor(slideCount / 2);
-
     servicesSwiper = new Swiper(swiperEl, {
         loop: true,
-        speed: 600,
-        centeredSlides: true,
-        initialSlide: 0,
+        speed: 400,
 
+        // IMPORTANT:
+        // Do NOT use centeredSlides if you want the first slide to appear on the LEFT.
+        centeredSlides: false,
+
+        // Show three slides in order:
+        // [Bioidentical] [Botox] [IV Fusion]
         slidesPerView: 3,
         spaceBetween: 20,
+
+        // Start with the first original slide
+        initialSlide: 0,
 
         grabCursor: true,
         allowTouchMove: true,
@@ -80,29 +82,29 @@ export function initServicesSwiper() {
 
         breakpoints: {
             0: {
-                slidesPerView: 1.2
+                slidesPerView: 1.2,
+                centeredSlides: false
             },
             768: {
-                slidesPerView: 3
+                slidesPerView: 3,
+                centeredSlides: false
             }
         },
 
+        // Start automatically on page load
         autoplay: {
             delay: 5000,
             disableOnInteraction: true
         },
 
-        // Once Swiper finishes creating duplicate slides,
-        // jump to the first real slide (Bioidentical Hormone Replacement)
+        // Force the swiper to start on the first REAL slide
         on: {
             init(swiper) {
                 swiper.slideToLoop(0, 0, false);
+                swiper.autoplay.start();
             }
         }
     });
 
-    // Required when using the init callback
-    servicesSwiper.init();
-
-    console.log(`Services Swiper initialized at slide ${middleIndex + 1} of ${slideCount}`);
+    console.log("Services Swiper initialized");
 }
