@@ -23,6 +23,7 @@ const DEFAULT_PAGE =
     // "pages/contact/contact.html";
     // "pages/bookings/bookings.html";
     
+const girlShilouetteMediSpaLogo = document.querySelector('#girlShilouetteMediSpaLogo')
 const pageCache = new Map()
 let lastClickedLink = null
 document.addEventListener("submit", (e) => {
@@ -34,7 +35,11 @@ document.addEventListener("submit", (e) => {
 export function initInjectContentListeners(){
     const mobileHeaderNav = document.querySelector('.mobile-header-nav')
     injectPage(DEFAULT_PAGE)
-    
+    girlShilouetteMediSpaLogo.addEventListener('focus', (e) => {
+        console.log('here')
+        mainLandingPage.scrollTo(0,0)
+        window.scrollTo(0,0)
+    });
     mobileHeaderNav.addEventListener('click', e => {
         const link = e.target.closest('a')
         if(!link)return

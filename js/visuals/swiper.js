@@ -54,11 +54,15 @@ export function initServicesSwiper() {
     }
 
     servicesSwiper = new Swiper(swiperEl, {
-        slidesPerView: 3,
         loop: true,
         speed: 600,
-        centeredSlides: false,
-        slidesPerView: 3,
+
+        /* THIS centers the active slide horizontally */
+        centeredSlides: true,
+
+        /* Allow CSS width to control slide size */
+        slidesPerView: 'auto',
+
         spaceBetween: 20,
         initialSlide: 0,
 
@@ -73,63 +77,18 @@ export function initServicesSwiper() {
 
         slideToClickedSlide: true,
 
-        breakpoints: {
-            0: {
-                slidesPerView: 1.2,
-                centeredSlides: false
-            },
-            768: {
-                slidesPerView: 3,
-                centeredSlides: true
-            }
-        },
-
-        // Start autoplay immediately
         autoplay: {
             delay: 3333,
-            disableOnInteraction: true // stop after swipe/touch
+            disableOnInteraction: true
         },
 
         on: {
             init(swiper) {
-                // Start on the first real slide
                 swiper.slideToLoop(0, 0, false);
                 swiper.autoplay.start();
             }
         }
     });
-
-    // --------------------------------------------------
-    // STOP AUTOPLAY ON ANY USER INTERACTION
-    // --------------------------------------------------
-    const stopAutoplayAndFocus = () => {
-        if (!servicesSwiper) return;
-
-        // Move keyboard focus to the swiper container
-        swiperEl.focus();
-
-        // Stop autoplay permanently
-        if (servicesSwiper.autoplay?.running) {
-            servicesSwiper.autoplay.stop();
-        }
-    };
-
-    // Mouse click
-    swiperEl.addEventListener('click', stopAutoplayAndFocus);
-
-    // Keyboard focus (tabbing into the swiper)
-    swiperEl.addEventListener('focus', stopAutoplayAndFocus);
-
-    // Touch interaction (mobile)
-    swiperEl.addEventListener('touchstart', stopAutoplayAndFocus, {
-        passive: true
-    });
-
-    // Pointer interaction (covers mouse, touch, pen)
-    swiperEl.addEventListener('pointerdown', stopAutoplayAndFocus);
-
-    // Swiper drag interaction
-    servicesSwiper.on('touchStart', stopAutoplayAndFocus);
 
     console.log("Services Swiper initialized");
 }
