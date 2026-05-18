@@ -49,6 +49,12 @@
     animation-delay: 360ms;
 }
 
+.page-wrapper>.mobile-header-nav > ul > li > ul > li > a{
+    display: none;
+}
+.page-wrapper.expand>.mobile-header-nav > ul > li > ul > li > a {
+    display: flex !important;
+}
 @keyframes slideInX {
     to {
         opacity: 1;
