@@ -39,3 +39,8 @@
 
 }
 
+
+.page-container.home-page-container > .home-main-content > #longetivyMedHomePage{
+    padding-left: 2% !important;
+    border: 1px solid orange
+}
