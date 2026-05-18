@@ -9,7 +9,7 @@ export function initBgSlider() {
         // "imgs/istock/istockphoto01.jpg",
         "imgs/woman-man.png",
         "imgs/rustic-rockymoutains-1024.JPEG",
-        "imgs/ai-imgs/8c5bef42-4ec2-4c5c-be3c-9804e804114f.png",
+        "imgs/ai-imgs/lady-med-spa.png",
         "imgs/perfect-peptide-header.png"
         // "imgs/rustic-rockymoutains-1024.JPEG"
         // "pages/medical-spa-services/media/AS-Botox2000.webp.png",
@@ -34,7 +34,7 @@ export function initBgSlider() {
     // fade in next
     console.log()
     nextSlide.classList.add('active');
-    if (nextSlide.style.backgroundImage === 'url("imgs/ai-imgs/8c5bef42-4ec2-4c5c-be3c-9804e804114f.png")') {
+    if (nextSlide.style.backgroundImage === 'url("imgs/ai-imgs/lady-med-spa.png")') {
         nextSlide.classList.add('move-right')
     }
 
@@ -49,7 +49,7 @@ export function initBgSlider() {
         // fade in next
         console.log()
         nextSlide.classList.add('active');
-        if (nextSlide.style.backgroundImage === 'url("imgs/ai-imgs/8c5bef42-4ec2-4c5c-be3c-9804e804114f.png")'){
+        if (nextSlide.style.backgroundImage === 'url("imgs/ai-imgs/lady-med-spa.png")'){
             nextSlide.classList.add('move-right')    
         }
 

@@ -3,13 +3,20 @@
     background: transparent !important;
     border: 1px solid red
 }
-[data-nav-target="bioidenticalHormReplaServiceBtn"],
 [data-nav-target="bioIdenticalServiceHome"] {
     min-height: 50vh;
-    background: url('../../../../imgs/biote.webp') center/cover no-repeat !important;
+    background: url('../../../../imgs/ai-imgs/perfect-peptide-header.png') center/cover no-repeat !important;
+    /* background: url('../../../../imgs/ai-imgs/lady-med-spa.png') center/cover no-repeat !important; */
 }
 [data-nav-target="botoxFillerServiceHome"] {
     min-height: 50vh;
-    /* background: url('../../../../imgs/biote.webp') */;
     background: url('../../../../imgs/botox-filler.webp') center/cover no-repeat !important;
+}
+[data-nav-target="ivFusionsServiceHome"] {
+    min-height: 50vh;
+    background: url('../../../../imgs/ai-imgs/iv-infusion.jpeg') center/cover no-repeat !important;
+    /* filter: grayscale(.7); */
+    /* filter: contrast(.2); */
+    /* filter:invert(.4); */
+    filter:brightness(.5)
 }

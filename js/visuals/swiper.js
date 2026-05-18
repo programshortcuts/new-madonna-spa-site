@@ -52,48 +52,57 @@ export function initServicesSwiper() {
         servicesSwiper = null;
     }
 
-    servicesSwiper = new Swiper(swiperEl, {
+    // Count original slides (before Swiper duplicates them for loop mode)
+    const slideCount = swiperEl.querySelectorAll('.swiper-slide').length;
 
+    // Find the middle slide index
+    const middleIndex = Math.floor(slideCount / 2);
+
+    servicesSwiper = new Swiper(swiperEl, {
         loop: true,
         speed: 600,
-
-        // MAIN FEATURE
         centeredSlides: true,
+        initialSlide: 0,
 
-        // show neighboring slides
         slidesPerView: 3,
-
         spaceBetween: 20,
 
-        // drag/swipe
         grabCursor: true,
         allowTouchMove: true,
         threshold: 5,
 
-        // keyboard support
         keyboard: {
             enabled: true,
             onlyInViewport: true
         },
 
-        // makes active slide become focused
         slideToClickedSlide: true,
 
-        // responsive
         breakpoints: {
             0: {
                 slidesPerView: 1.2
             },
-
             768: {
                 slidesPerView: 3
             }
         },
+
         autoplay: {
             delay: 5000,
             disableOnInteraction: true
+        },
+
+        // Once Swiper finishes creating duplicate slides,
+        // jump to the first real slide (Bioidentical Hormone Replacement)
+        on: {
+            init(swiper) {
+                swiper.slideToLoop(0, 0, false);
+            }
         }
     });
 
-    console.log("Services Swiper initialized");
+    // Required when using the init callback
+    servicesSwiper.init();
+
+    console.log(`Services Swiper initialized at slide ${middleIndex + 1} of ${slideCount}`);
 }
