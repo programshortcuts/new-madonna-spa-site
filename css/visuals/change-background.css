@@ -12,7 +12,7 @@
     height: 50vh;
     /* background-repeat: repeat; */
     background-position-y: 49%;
-    background-position-x: 0% !important;
+    background-position-x: 50% !important;
     filter: grayscale(50%);
 }
 
@@ -54,6 +54,11 @@
 }
 
 .move-right {
-    background-position-x: 80% !important;
+    background-position-x: -20% !important;
     /* border: 20px solid blue; */
+    
+}
+.x-120{
+    background-position-x: -150% !important;
+
 }

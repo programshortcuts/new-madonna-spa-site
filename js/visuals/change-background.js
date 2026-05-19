@@ -8,9 +8,10 @@ export function initBgSlider() {
     const images = [
         // "imgs/istock/istockphoto01.jpg",
         "imgs/woman-man.png",
-        "imgs/rustic-rockymoutains-1024.JPEG",
+        "imgs/nature-bg.png",
         "imgs/ai-imgs/lady-med-spa.png",
-        "imgs/perfect-peptide-header.png"
+        "imgs/perfect-peptide-header.png",
+        "imgs/rustic-rockymoutains-1024.JPEG",
         // "imgs/rustic-rockymoutains-1024.JPEG"
         // "pages/medical-spa-services/media/AS-Botox2000.webp.png",
         // "pages/ivInfustionTherepy/media/iv-infusion.jpeg"
@@ -35,7 +36,7 @@ export function initBgSlider() {
     console.log()
     nextSlide.classList.add('active');
     if (nextSlide.style.backgroundImage === 'url("imgs/ai-imgs/lady-med-spa.png")') {
-        nextSlide.classList.add('move-right')
+        nextSlide.classList.add('x-120')
     }
 
     current = nextIndex;
@@ -49,7 +50,7 @@ export function initBgSlider() {
         // fade in next
         console.log()
         nextSlide.classList.add('active');
-        if (nextSlide.style.backgroundImage === 'url("imgs/ai-imgs/lady-med-spa.png")'){
+        if (nextSlide.style.backgroundImage === 'url("imgs/nature-bg.png")'){
             nextSlide.classList.add('move-right')    
         }
 

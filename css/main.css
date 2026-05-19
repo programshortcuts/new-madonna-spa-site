@@ -21,6 +21,7 @@
 @import url('components/sideNavBtn.css');
 
 /* ui */
+@import url('./responsive.css');
 @import url('ui/items-scroll.css');
 
 /* utilities */
