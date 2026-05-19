@@ -47,7 +47,7 @@ export function initServicesSwiper() {
         return;
     }
 
-    // Destroy previous instance
+    // destroy old instance
     if (servicesSwiper) {
         servicesSwiper.destroy(true, true);
         servicesSwiper = null;
@@ -57,14 +57,13 @@ export function initServicesSwiper() {
         loop: true,
         speed: 600,
 
-        /* THIS centers the active slide horizontally */
         centeredSlides: true,
 
-        /* Allow CSS width to control slide size */
-        slidesPerView: '2',
+        slidesPerView: 2,
 
         spaceBetween: 20,
-        initialSlide: 2,
+
+        initialSlide: 0,
 
         grabCursor: true,
         allowTouchMove: true,
@@ -79,14 +78,8 @@ export function initServicesSwiper() {
 
         autoplay: {
             delay: 3333,
-            disableOnInteraction: true
-        },
-
-        on: {
-            init(swiper) {
-                swiper.slideToLoop(0, 0, false);
-                swiper.autoplay.start();
-            }
+            disableOnInteraction: true,
+            pauseOnMouseEnter: true
         }
     });
 
