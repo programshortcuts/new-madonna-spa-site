@@ -40,33 +40,44 @@ export function initInjectContentListeners(){
         mainLandingPage.scrollTo(0,0)
         window.scrollTo(0,0)
     });
-    mobileHeaderNav.addEventListener('click', e => {
-        const link = e.target.closest('a')
-        if(!link)return
-        const href = link.getAttribute("href");
-        // if (!href || href === "#") return;
+    document.addEventListener('click', e => {
+        const link = e.target.closest('a[data-link]');
 
-        if (!href || href === "#" || href === "undefined") {
+        if (!link) return;
 
-            console.warn("Blocked bad href:", href);
+        const href = link.getAttribute('href');
+
+        if (!href || href === '#' || href === 'undefined') {
+            console.warn('Blocked bad href:', href);
             return;
         }
+
         e.preventDefault();
+
         injectPage(href);
-        mainLandingPage.scrollTo(0,0)
-        mainLandingPage.scrollIntoView({behavior:'smooth', 
-            inline:'nearest',
-            block: 'start'})
-        if(e.target == lastClickedLink){
-            mainLandingPage.focus()
-            if(pageWrapper.classList.contains('expand')) {
-                pageWrapper.classList.remove('expand')
+
+        mainLandingPage.scrollTo(0, 0);
+
+        mainLandingPage.scrollIntoView({
+            behavior: 'smooth',
+            inline: 'nearest',
+            block: 'start'
+        });
+
+        if (link === lastClickedLink) {
+
+            mainLandingPage.focus();
+
+            if (pageWrapper.classList.contains('expand')) {
+                pageWrapper.classList.remove('expand');
             }
-            lastClickedLink = null
-            return
+
+            lastClickedLink = null;
+            return;
         }
-        lastClickedLink = e.target
-    })
+
+        lastClickedLink = link;
+    }); 
     
     document.querySelectorAll("*").forEach(el => {
         [...el.attributes].forEach(attr => {
