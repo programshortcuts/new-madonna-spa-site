@@ -50,3 +50,7 @@
 .main-item > .content .img-wrapper{
     float: left;
 }
+
+#drMadonnaPhoto {
+    display: block;
+}
