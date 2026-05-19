@@ -40,3 +40,16 @@
 .page-container.home-page-container  .main-item >h4{
     padding-left: 2%;
 }
+.section-title[data-nav-target="ourServices"]  {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    text-align: start;
+
+}
+.section-title[data-nav-target="ourServices"] > span.title-text {
+    display: inline-block;
+    width: 100%;
+    letter-spacing: 10% !important;
+    padding-left: 2%;
+}
