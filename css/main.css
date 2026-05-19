@@ -18,6 +18,7 @@
 @import url('components/mobile-header-nav.css');
 @import url('components/page-header.css');
 @import url('ui/toggle-nav.css');
+@import url('visuals/change-background.css');
 @import url('components/sideNavBtn.css');
 
 /* ui */
@@ -36,7 +37,6 @@
 /* @import url('utilities/colors.css'); */
 
 /* home */
-@import url('visuals/change-background.css');
 @import url('../pages/home/css/bkgrnd-home.css');
 @import url('../pages/home/css/borders-home.css');
 @import url('../pages/home/css/colors-home.css');

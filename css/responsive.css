@@ -1,6 +1,20 @@
-@media screen and (min-width:535px) {
-    /* .page-header {
-        height: 10vh;
-        background-color: blue;
-    } */
+@media screen and (min-width:520px) {
+    .page-container.home-page-container {
+            padding-top: 0% !important;
+            /* margin-top: 20%; */
+
+        }
+    .home-page-container > .home-page-header.bg-slider > .bg-slide{
+        /* height: 50vh; */
+        background-position-y: 10% !important;
+    }
+    .page-header {
+        /* height: 10vh; */
+        /* background-color: blue !important; */
+    }
+        .home-page-header {
+            background-position-y: -129% !important;
+            /* border: 1px solid magenta; */
+            height: 50vh !important;
+        }
 }
