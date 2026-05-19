@@ -61,10 +61,10 @@ export function initServicesSwiper() {
         centeredSlides: true,
 
         /* Allow CSS width to control slide size */
-        slidesPerView: 'auto',
+        slidesPerView: '2',
 
         spaceBetween: 20,
-        initialSlide: 0,
+        initialSlide: 2,
 
         grabCursor: true,
         allowTouchMove: true,
