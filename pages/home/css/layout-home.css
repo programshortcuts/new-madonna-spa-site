@@ -16,6 +16,7 @@
 }
 .home-page-container button.section-title{
     /* display: block; */
+    overflow-x: hidden;
 }
 
 .page-container.home-page-container {
