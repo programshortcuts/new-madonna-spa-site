@@ -36,8 +36,8 @@
     background-position-y: 50% !important;
     background-size: 98% !important;
 }
-#ivFusionsServiceHome{
-    background: url('../../imgs/ai-imgs/iv-infusion.jpeg') center/cover no-repeat !important;
+#ivInfusionsServiceHome{
+    background: url('../../imgs/ai-imgs/ivInfusion-header-wide.png') center/cover no-repeat !important;
     /* filter: grayscale(.7); */
     /* filter: contrast(.2); */
     /* filter:invert(.4); */
