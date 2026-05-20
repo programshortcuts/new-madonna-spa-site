@@ -62,3 +62,13 @@
     letter-spacing: 10% !important;
     padding-left: 2%;
 }
+#drMadonnaBio > .content > p {
+    padding-top: 2%;
+    margin-left: 2%;
+}
+#drMadonnaBio > .content > p:last-child {
+    margin-bottom: 5%;
+}
+.staff-container>.member>.info {
+    padding-left: 2.5%;
+}
