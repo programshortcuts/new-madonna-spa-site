@@ -43,15 +43,19 @@
     max-height: unset !important;
     object-fit: contain;
 }
-.staff-container > .member > .pic{
-    max-width: 200px;
-    max-height: 200px;
-}
-.staff-container>.member>.info {
-    min-width: 200px;
-}
+
 img#officeInPhoto {
     max-width: 300px;
     max-height: 400px;
 
+}
+
+.staff-container>.member>.pic {
+    width: 100%;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.staff-container>.member>.info {
+    /* min-width: 100px; */
 }

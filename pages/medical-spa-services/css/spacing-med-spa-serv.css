@@ -3,12 +3,13 @@
     overflow-x: hidden;
 }
 .page-container.med-spa-serv-container {
-    padding-top: 10%;
+    padding-top: 0%;
     /* margin: 0 2%; */
     padding-bottom: 18%;
 }
 .med-spa-serv-container .section {
     padding-left: 2%;
+    margin: 5% 0;
 }
 .med-spa-serv-container .section p {
     padding-top: 3%;
