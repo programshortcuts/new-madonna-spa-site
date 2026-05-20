@@ -76,6 +76,7 @@ export function initServicesSwiper() {
         touchReleaseOnEdges: true,
         touchAngle: 20,
         threshold: 10,
+        centeredSlidesBounds: true,
 
         keyboard: {
             enabled: true,
@@ -90,8 +91,21 @@ export function initServicesSwiper() {
             pauseOnMouseEnter: true
         },
         on: {
-            slideChangeTransitionEnd() {
+            init() {
+                const swiper = this;
+                swiper.el.addEventListener('focusin', (event) => {
+                    if (swiper.destroyed) return;
 
+                    const slideEl = event.target.closest('.swiper-slide');
+                    if (!slideEl) return;
+
+                    const targetIndex = Array.prototype.indexOf.call(swiper.slides, slideEl);
+                    if (targetIndex < 0) return;
+
+                    swiper.slideTo(targetIndex, 0, false);
+                }, true);
+            },
+            slideChangeTransitionEnd() {
                 const activeSlide = swiperEl.querySelector('.swiper-slide-active');
 
                 if (!activeSlide) return;

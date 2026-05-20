@@ -52,6 +52,7 @@ function buildElements(container = document) {
     const raw = [
         ...container.querySelectorAll('#sideNavBtn, #navBarBtn,#madonnaShilouetteLogo'),
         ...container.querySelectorAll('.mobile-header-nav a'),
+        ...container.querySelectorAll('.service-title, .section-title, .cat-title'),
         ...container.querySelectorAll('[data-nav-target]'),
         ...container.querySelectorAll('.content-box > p'),
         ...container.querySelectorAll('button, [tabindex="0"]'),
@@ -149,7 +150,8 @@ export function initLetterNav({ container = document } = {}) {
         target.el.scrollIntoView({
             behavior: 'smooth',
             block: 'center',
-            inline: 'center'
+            inline: 'end'
         });
+        console.log('here');
     });
 }

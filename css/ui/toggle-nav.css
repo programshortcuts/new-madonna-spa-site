@@ -1,6 +1,7 @@
 /* toggle-nav.css */
 .page-wrapper.expand>.mobile-header-nav {
     border-top: 0;
+    padding-top: 5%;
     border-bottom: 1px solid whitesmoke;
     box-shadow: 0 2px 0 2px grey;
     height: 23vh;
@@ -19,7 +20,7 @@
 }
 
 .page-wrapper.expand .mobile-header-nav ul>li {
-    padding-top: 1%;
+    
     animation: slideInX 100ms forwards;
 }
 

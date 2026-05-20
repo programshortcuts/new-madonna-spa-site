@@ -61,9 +61,13 @@
 .staff-container {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    overflow-x: scroll;
 }
 .staff-container > .member {
     flex-basis: 15vw;
+    /* margin: 0 5%; */
+    /* gap: 2%; */
 }
 .staff-container > .member > .info{
     display: flex;
