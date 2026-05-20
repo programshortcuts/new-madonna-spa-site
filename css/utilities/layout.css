@@ -6,4 +6,5 @@
     min-height: 100vh;
     padding-top: 10vh;
     padding-bottom: 10vh;
+    overflow-x: none;
 }
