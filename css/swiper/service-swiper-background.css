@@ -4,9 +4,18 @@
     min-height: 50vh;
 }
 #bioIdenticalServiceHome{
-    background: url('../../imgs/ai-imgs/perfect-peptide-header.png') center/cover no-repeat !important;
-    /* background-position-x: 50% !important; */
-    /* background: url('../../imgs/ai-imgs/lady-med-spa.png') center/cover no-repeat !important; */
+    background: url('../../imgs/ai-imgs/bio-hormone-header-wide.png')
+    /* center/cover no-repeat !important; */
+    /* fit no-repeat !important; */
+;
+    /* background: url(imgs/ai-imgs/bio-hormone-header-wide.png')  */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 82% !important;
+    background-position-y: -10% !important;
+    filter:grayscale(.9);
+    /* background-size: 90% !important; */
+    /* background-origin: 50%; */
 }
 #botoxFillerServiceHome{
     background: url('../../imgs/botox-filler.webp') 
@@ -19,8 +28,12 @@
     
 }
 #glp-1ServiceHome{
-    background: url('../../imgs/ai-imgs/perfect-peptide-header.png') 
+    background: url('../../imgs/ai-imgs/glp-1-serv-header.png') 
     no-repeat !important;
+    /* background-size: 200px 200px; */
+    background-position-x: -50% !important;
+    background-position-y: 50% !important;
+    background-size: 98% !important;
 }
 #ivFusionsServiceHome{
     background: url('../../imgs/ai-imgs/iv-infusion.jpeg') center/cover no-repeat !important;
