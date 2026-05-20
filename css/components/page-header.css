@@ -56,7 +56,7 @@
 }
 #addressLinkHeader > a:visited,
 #addressLinkHeader > a{
-    color: black;
+    color: black !important;
 }
 #addressLinkHeader{
     width: 33vw;
@@ -70,5 +70,6 @@
     margin-top: 3%;
     margin-left: 15%;
     text-shadow: none !important;
+    color: black;
     box-shadow: none !important;
 }
