@@ -1,0 +1,19 @@
+/* sizing-med-spa-services.css */
+.page-container.med-spa-serv-container{
+    overflow-x: hidden;
+    margin-top: 10%;
+}
+.page-container.med-spa-serv-container {
+    padding-top: 10%;
+    /* margin: 0 2%; */
+    padding-bottom: 18%;
+}
+.med-spa-serv-container .section {
+    padding-left: 2%;
+}
+.med-spa-serv-container .section p {
+    padding-top: 3%;
+    padding-bottom: 1%;
+    line-height: 1.8;
+    margin-left: 4%;
+}

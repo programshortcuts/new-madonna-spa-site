@@ -57,6 +57,8 @@
 
 }
 .x-50{
-    background-position-x: 50% !important;
-
+    background-position-x: 80% !important;
+}
+.x-150{
+    background-position-x: 150% !important;
 }

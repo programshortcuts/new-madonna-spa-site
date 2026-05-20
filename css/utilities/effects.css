@@ -1,5 +1,20 @@
 /* layout.css */
 #navBarBtn:active,#navBarBtn:focus{
     border: 3px solid gold !important;
-
+}
+.section > button.section-title:active,
+.section>button.section-title:focus{
+    /* box-shadow: 0 0 2px 2px orange; */
+    box-shadow: 0 2px 2px 3px silver;
+    border: 1px solid lightcyan;
+    padding-left: 2%;
+    padding-top: 1%;
+}
+.med-spa-serv-container *:active,
+.med-spa-serv-container *:focus{
+    box-shadow: 0 2px 2px 3px silver;
+    border: 1px solid lightcyan;
+    outline: none;
+    padding-left: 2%;
+    padding-top: 1%;
 }

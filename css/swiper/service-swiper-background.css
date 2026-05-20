@@ -5,6 +5,7 @@
 }
 [data-nav-target="bioIdenticalServiceHome"] {
     background: url('../../imgs/ai-imgs/perfect-peptide-header.png') center/cover no-repeat !important;
+    /* background-position-x: 50% !important; */
     /* background: url('../../imgs/ai-imgs/lady-med-spa.png') center/cover no-repeat !important; */
 }
 [data-nav-target="botoxFillerServiceHome"] {

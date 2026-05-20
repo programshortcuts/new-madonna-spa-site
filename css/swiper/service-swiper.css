@@ -18,13 +18,13 @@
     opacity: 0.4;
     transform: scale(0.4);
     display: flex;
-    overflow-y: scroll;
     /* justify-content: center; */
     /* align-items: center; */
     flex-direction: column;
     /* background-color: white; */
     width: 60%;
     transform: scale(0.7) !important;
+    overflow-y: scroll;
 }
 
 /* active center slide */

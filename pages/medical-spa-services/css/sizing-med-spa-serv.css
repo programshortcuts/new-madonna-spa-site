@@ -1,4 +1,11 @@
 /* sizing-med-spa-services.css */
+.section#bioHormoneReplacement {
+    min-height: 10vh;
+}
+#botoxAndFillers {
+    /* min-height: 12vh; */
+    /* Ensures the section is at least 12% of viewport height */
+}
 .med-spa-serv-container 
 .section#bioHormoneReplacement {
     min-height: 10vh;
