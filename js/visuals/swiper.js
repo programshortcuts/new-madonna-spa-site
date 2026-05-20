@@ -61,7 +61,7 @@ export function initServicesSwiper() {
 
         slidesPerView: 2,
 
-        spaceBetween: 20,
+        spaceBetween: 0,
 
         initialSlide: 0,
 

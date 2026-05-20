@@ -7,7 +7,7 @@
 
 @media screen and (min-width:535px) {
     .home-page-container {
-        margin: 0 5%;
+        margin: 0 2%;
     }
     .home-page-header {
         float: left;
@@ -18,7 +18,7 @@
 @media screen and (max-width:533px) {
 
     .home-page-container{
-        padding: 5% !important;
+        /* padding: 5% !important; */
     }
     .home-page-container>article.mission-state>p {
         /* padding: 1%; */
@@ -26,6 +26,17 @@
         margin-top: 2%;
         /* padding-right: 5%; */
     }
+        .swiper-slide.service {
+            /* height: 100px !important; */
+            /* max-height: 200px !important; */
+            height: 50%;
+        }
+        .swiper.services-swiper {
+            width: 100%;
+            max-width: 80vw;
+            /* overflow: hidden; */
+            height: 60vh;
+        }
 }
 
 
