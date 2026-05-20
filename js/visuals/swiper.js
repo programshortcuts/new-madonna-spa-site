@@ -89,7 +89,6 @@ export function initServicesSwiper() {
                 if (!activeSlide) return;
 
                 const serviceBtn = activeSlide.querySelector('.service-title');
-                console.log(servicesSwiper.autoplay.paused)
                 if (serviceBtn && servicesSwiper.autoplay.paused == true) {
                     serviceBtn.focus();
                 }
@@ -97,5 +96,5 @@ export function initServicesSwiper() {
         }
     });
 
-    console.log("Services Swiper initialized");
+    // console.log("Services Swiper initialized");
 }

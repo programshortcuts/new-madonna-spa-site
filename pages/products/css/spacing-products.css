@@ -1,6 +1,7 @@
 /* spacing-products.css */
 .products-page-container {
-    padding-top: 20% ;
+    margin-top: 20% ;
+    /* padding-top: 50% ; */
 }
 .products-container {
     margin-bottom: 5%;
@@ -19,4 +20,8 @@
 }
 .item{
     padding:1%;
+}
+.alpha-list {
+    padding-top: 2%;
+    padding-bottom: 1%;
 }

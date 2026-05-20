@@ -33,12 +33,10 @@ export function initBgSlider() {
     currentSlide.classList.remove('active');
 
     // fade in next
-    console.log()
     nextSlide.classList.add('active');
     
 
     if (nextSlide.style.backgroundImage === 'url("imgs/ai-imgs/lady-med-spa.png")') {
-        console.log('here')
         nextSlide.classList.add('x-50')
     }
     current = nextIndex;

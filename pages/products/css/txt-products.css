@@ -2,12 +2,19 @@
 .products-title{
     
 }
+.alpha-list li {
+    list-style: none;
+}
+.alpha-list > ul > li{
+    
+    list-style-type: none;
+}
 .alpha-list>li >a{
     text-decoration: none;
  }
  .alpha-list,
  .alpha-list>li {
-     list-style-type: none none;
+     list-style-type: none ;
  }
  .item {
      font-family: Georgia, 'Times New Roman', Times, serif;
