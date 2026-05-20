@@ -58,8 +58,12 @@
 #drMadonnaPhoto {
     display: block;
 }
-.staff-container > .member {
+.staff-container {
     display: flex;
+    justify-content: space-around;
+}
+.staff-container > .member {
+    flex-basis: 15vw;
 }
 .staff-container > .member > .info{
     display: flex;
@@ -67,6 +71,8 @@
     justify-content: flex-end;
     flex-basis: 50%;
 }
+
 .address-contact{
     display: flex;
 }
+.address-contact
