@@ -11,6 +11,8 @@
     background:transparent;
 }
 .services-swiper .swiper-slide {
+    overflow: hidden;
+        overflow-y: scroll;
     border-radius: 8px;
     height: 100%;
     transition:
@@ -25,7 +27,7 @@
     /* background-color: white; */
     width: 60%;
     transform: scale(0.7) !important;
-    overflow: hidden;
+    
 }
 
 /* active center slide */
