@@ -25,6 +25,9 @@ export function initReviewsSwiper() {
 
         grabCursor: true,
         allowTouchMove: true,
+        touchStartPreventDefault: false,
+        touchMoveStopPropagation: false,
+        touchReleaseOnEdges: true,
 
         // IMPORTANT: makes swipe feel natural
         threshold: 5,
@@ -67,6 +70,9 @@ export function initServicesSwiper() {
 
         grabCursor: true,
         allowTouchMove: true,
+        touchStartPreventDefault: false,
+        touchMoveStopPropagation: false,
+        touchReleaseOnEdges: true,
         threshold: 5,
 
         keyboard: {

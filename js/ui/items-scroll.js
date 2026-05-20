@@ -18,7 +18,6 @@ export function initItemsScroll() {
 
         if (isVertical) {
             // ✅ vertical scroll
-            const containerTop = container.scrollTo;
             const containerHeight = container.clientHeight;
 
             const itemTop = el.offsetTop;
@@ -27,13 +26,10 @@ export function initItemsScroll() {
             const targetScroll =
                 itemTop - (containerHeight / 2) + (itemHeight / 2);
 
-            if(!container) return
-            container.scrollInToView({
-                behavior:"smooth",
-                block: "start",
-                inline: "nearest",
-            })
-            
+            container.scrollTo({
+                top: targetScroll,
+                behavior: 'smooth'
+            });
 
         } else {
             // ✅ horizontal scroll (your original)
