@@ -1,3 +1,5 @@
+/* responsivce-home.css */
+
 @media screen and (min-width:723px) {
     .home-page-header {
         /* float: left; */
@@ -26,17 +28,7 @@
         margin-top: 2%;
         /* padding-right: 5%; */
     }
-        .swiper-slide.service {
-            /* height: 100px !important; */
-            /* max-height: 200px !important; */
-            height: 50%;
-        }
-        .swiper.services-swiper {
-            width: 100%;
-            max-width: 80vw;
-            /* overflow: hidden; */
-            height: 60vh;
-        }
+    
 }
 
 
@@ -46,5 +38,8 @@
     }
     .home-main-content > .main-item{
         /* background-color: blue !important; */
+    }
+    .swiper.services-swiper {
+        height: 45vh;
     }
 }

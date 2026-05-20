@@ -80,6 +80,20 @@ export function initServicesSwiper() {
             delay: 3333,
             disableOnInteraction: true,
             pauseOnMouseEnter: true
+        },
+        on: {
+            slideChangeTransitionEnd() {
+
+                const activeSlide = swiperEl.querySelector('.swiper-slide-active');
+
+                if (!activeSlide) return;
+
+                const serviceBtn = activeSlide.querySelector('.service-title');
+
+                if (serviceBtn) {
+                    serviceBtn.focus();
+                }
+            }
         }
     });
 
