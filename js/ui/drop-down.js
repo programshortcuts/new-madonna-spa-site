@@ -21,7 +21,7 @@ export function initDropDown() {
         
         const catTitle = e.target.closest('.cat-title')
         const productTitle = e.target.closest('.product-title')
-        const sectionTitleDropDown = e.target.closest('.service-title.drop-down')
+        const sectionTitleDropDown = e.target.closest('.section-title.drop-down')
         const serviceHomeDropDown = e.target.closest('.service-title.drop-down')
 // 🟣 PRODUCT DROPDOWN
         if (productTitle) {

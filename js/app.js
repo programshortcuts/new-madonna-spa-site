@@ -5,7 +5,7 @@ import { initInjectContentListeners } from "./core/inject-content.js";
 import { initToggleNav } from "./ui/toggle-nav.js";
 import { initLetterNav } from "./nav/letter-nav.js";
 import { initReviewsSwiper } from "./visuals/swiper.js";
-// import { initDropDown } from "./ui/drop-down.js";
+import { initDropDown } from "./ui/drop-down.js";
 // import { initFilterSortItems } from "./ui/filter-sort-items.js";
 // import { initMedicalSpaAnimation } from "./visuals/animation.js";
 
@@ -29,7 +29,7 @@ function initMain(){
         });    
 }
 function setupGlobalListeners(){
-    // initDropDown()
+    initDropDown()
     // initFilterSortItems()
     // initChangeStyles()
 }
