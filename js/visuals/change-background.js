@@ -51,7 +51,7 @@ export function initBgSlider() {
         console.log()
         nextSlide.classList.add('active');
         if (nextSlide.style.backgroundImage === 'url("imgs/nature-bg.png")'){
-            nextSlide.classList.add('move-right')    
+            // nextSlide.classList.add('move-right')    
         }
 
         current = nextIndex;
