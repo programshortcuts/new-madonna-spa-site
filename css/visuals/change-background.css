@@ -57,8 +57,13 @@
 
 }
 .x-50{
-    background-position-x: 80% !important;
+    background-position-x: 70% !important;
 }
 .x-150{
-    background-position-x: 150% !important;
+    background-position-x: 110% !important;
+    background-position-y: -20% !important;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-color: rgb(147, 139, 129)
+    /* background-position-y: 100% !important; */
 }

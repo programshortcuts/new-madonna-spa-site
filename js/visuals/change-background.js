@@ -7,12 +7,11 @@ export function initBgSlider() {
 
     const images = [
         // "imgs/istock/istockphoto01.jpg",
-        "imgs/ai-imgs/woman-man.png",
-        "imgs/ai-imgs/lady-med-spa.png",
         "imgs/ai-imgs/nature-bg.png",
-        "imgs/perfect-peptide-header.png",
-        "imgs/rustic-rockymoutains-1024.JPEG",
-        // "imgs/rustic-rockymoutains-1024.JPEG"
+        "imgs/ai-imgs/woman-man.png",
+        // "imgs/rustic-rockymoutains-1024.JPEG",
+        "imgs/ai-imgs/lady-med-spa.png",
+        // "imgs/perfect-peptide-header.png",
         // "pages/medical-spa-services/media/AS-Botox2000.webp.png",
         // "pages/ivInfustionTherepy/media/iv-infusion.jpeg"
         // "../imgs/MadMediSpa-sihlouette.png",
@@ -31,14 +30,15 @@ export function initBgSlider() {
     const nextSlide = slides[nextIndex];
     // fade out current
     currentSlide.classList.remove('active');
+    if (nextSlide.style.backgroundImage === 'url("imgs/ai-imgs/lady-med-spa.png")') {
+        // nextSlide.classList.add('x-50')
+        nextSlide.classList.add('x-150')
+    }
 
     // fade in next
     nextSlide.classList.add('active');
     
 
-    if (nextSlide.style.backgroundImage === 'url("imgs/ai-imgs/lady-med-spa.png")') {
-        nextSlide.classList.add('x-50')
-    }
     current = nextIndex;
     setInterval(() => {
         const currentSlide = slides[current];
