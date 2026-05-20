@@ -50,3 +50,8 @@
 .staff-container>.member>.info {
     min-width: 200px;
 }
+img#officeInPhoto {
+    max-width: 300px;
+    max-height: 400px;
+
+}
