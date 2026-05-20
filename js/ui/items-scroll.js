@@ -27,6 +27,7 @@ export function initItemsScroll() {
             const targetScroll =
                 itemTop - (containerHeight / 2) + (itemHeight / 2);
 
+            if(!container) return
             container.scrollInToView({
                 behavior:"smooth",
                 block: "start",
