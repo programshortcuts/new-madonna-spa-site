@@ -13,7 +13,8 @@
     background-size: cover;
     background-position-x: 82% !important;
     background-position-y: -10% !important;
-    filter:grayscale(.9);
+    filter:grayscale(.95);
+    filter: brightness(.8);
     /* background-size: 90% !important; */
     /* background-origin: 50%; */
 }
@@ -41,7 +42,8 @@
     /* filter: grayscale(.7); */
     /* filter: contrast(.2); */
     /* filter:invert(.4); */
-    filter:brightness(.5)
+    /* filter:brightness(.5) */
+    background-position-x: 56% !important;
 }
 .service>.content {
     background: transparent !important;

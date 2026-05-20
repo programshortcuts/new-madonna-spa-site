@@ -1,3 +1,7 @@
+/* colors-home.css */
+.home-page-container button.section-title {
+    color: var(----font-p-clr);
+}
 .home-page-header > p{
     color: whitesmoke;
     font-weight: 600;
@@ -6,5 +10,6 @@
     text-shadow: 1px 1pxblur #000;
 }
 #botoxFillerServiceHome{
-    color: white;
+    /* color: white; */
+
 }

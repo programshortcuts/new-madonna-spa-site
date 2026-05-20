@@ -10,7 +10,6 @@
     font-size: 1.35rem;
 }
 .home-page-container button.section-title{
-    color: var(----font-p-clr);
     /* font-size: 1rem !important; */
     font-family: Arial, Helvetica, sans-serif;
     font-family: 'Times New Roman', Times, serif;
@@ -40,10 +39,11 @@
 }
 
 
+#addressLinkHeader > a:visited,
 #addressLink:visited{
-    color: white;
+    color: black;
 }
-#addressLink{
+#addressLinkHeader > a{
     text-decoration: none;
     text-shadow: 1px 1px 1px black;
 
