@@ -53,6 +53,7 @@ function buildElements(container = document) {
         ...container.querySelectorAll('#sideNavBtn, #navBarBtn,#madonnaShilouetteLogo'),
         ...container.querySelectorAll('.mobile-header-nav a'),
         ...container.querySelectorAll('[data-nav-target]'),
+        ...container.querySelectorAll('.content-box > p'),
         ...container.querySelectorAll('button, [tabindex="0"]'),
         ...container.querySelectorAll('.alpha-list > li > a')
     ];

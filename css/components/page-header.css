@@ -54,8 +54,8 @@
     z-index: 100
     
 }
-#addressLink:visited,
-#addressLink{
+#addressLinkHeader > a:visited,
+#addressLinkHeader > a{
     color: black;
 }
 #addressLinkHeader{
