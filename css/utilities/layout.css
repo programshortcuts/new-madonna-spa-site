@@ -3,3 +3,8 @@
     display: flex;
     flex-direction: column;
 }
+
+.main-landing-page{
+    overflow-x: hidden;
+        overflow-y: scroll;
+}
