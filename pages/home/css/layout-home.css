@@ -1,6 +1,10 @@
 /* layout-home.css*/
+.home-page-container{
+    overflow-x: hidden;
+}
 .home-page-container h3{
     display: none;
+
 
 }
 
@@ -16,7 +20,6 @@
 }
 .home-page-container button.section-title{
     /* display: block; */
-    overflow-x: hidden;
 }
 
 .page-container.home-page-container {
