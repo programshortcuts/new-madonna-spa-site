@@ -59,7 +59,7 @@ export function initServicesSwiper() {
 
         centeredSlides: true,
 
-        slidesPerView: 2,
+        slidesPerView: 'auto',
 
         spaceBetween: 0,
 

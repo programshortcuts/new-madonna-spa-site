@@ -12,11 +12,11 @@
     /* background-image: url('../../../imgs/biote.webp');  */
 }
 .section#IVinfusionTherapy {
-    background-image: url('../media/iv-infusion.jpeg'); 
+    /* background-image: url('../media/iv-infusion.jpeg');  */
 }
 .section#peptides {
 
-    background-image: url('../media/peptide.jpeg');
+    /* background-image: url('../media/peptide.jpeg'); */
 }
 .section#botoxAndFillers {
     background-image: url('../media/botox-filler.webp');
@@ -33,7 +33,7 @@
 }
 
 .section-title:active~.img-wrapper>img {
-    /* filter: grayscale(0) !important; */
+    filter: grayscale(0) !important;
 }
 
 .img-wrapper>img:hover,
