@@ -4,14 +4,6 @@
 }
 .section > button.section-title:active,
 .section>button.section-title:focus{
-    /* box-shadow: 0 0 2px 2px orange; */
-    box-shadow: 0 2px 2px 3px silver;
-    border: 1px solid lightcyan;
-    padding-left: 2%;
-    padding-top: 1%;
-}
-.med-spa-serv-container *:active,
-.med-spa-serv-container *:focus{
     box-shadow: 0 2px 2px 3px silver;
     border: 1px solid lightcyan;
     border-top: 2px solid darkgoldenrodb;
@@ -22,8 +14,10 @@
     padding-top: 1%;
 }
 
-
 /* med-spa-serv.html */
+.section-title:active~.img-wrapper>img {
+    filter: grayscale(0) !important;
+}
 .section-title:active~.img-wrapper>img {
     filter: grayscale(0) !important;
 }

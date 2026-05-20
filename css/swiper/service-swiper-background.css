@@ -23,8 +23,9 @@
     background-position-x: 60%;
 }
 #peptidesServiceHome{
-    background: url('../../imgs/peptide-header.png') 
-    no-repeat !important;
+    background: url('../../imgs/ai-imgs/peptide-header-wide.png') 
+    center/cover no-repeat !important;
+    background-position-y: 20% !important;
     
 }
 #glp-1ServiceHome{
