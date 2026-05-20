@@ -56,13 +56,8 @@ export function initInjectContentListeners(){
 
         injectPage(href);
 
+        window.scrollTo(0, 0);
         mainLandingPage.scrollTo(0, 0);
-
-        mainLandingPage.scrollIntoView({
-            behavior: 'smooth',
-            inline: 'nearest',
-            block: 'start'
-        });
 
         if (link === lastClickedLink) {
 

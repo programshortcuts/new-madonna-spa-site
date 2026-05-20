@@ -24,7 +24,7 @@
     /* background-color: white; */
     width: 60%;
     transform: scale(0.7) !important;
-    overflow-y: scroll;
+    overflow: hidden;
 }
 
 /* active center slide */

@@ -28,9 +28,10 @@ export function initReviewsSwiper() {
         touchStartPreventDefault: false,
         touchMoveStopPropagation: false,
         touchReleaseOnEdges: true,
+        touchAngle: 20,
 
-        // IMPORTANT: makes swipe feel natural
-        threshold: 5,
+        // IMPORTANT: makes swipe feel natural and reduces accidental page-scroll capture
+        threshold: 10,
 
         autoplay: {
             delay: 5000,
@@ -73,7 +74,8 @@ export function initServicesSwiper() {
         touchStartPreventDefault: false,
         touchMoveStopPropagation: false,
         touchReleaseOnEdges: true,
-        threshold: 5,
+        touchAngle: 20,
+        threshold: 10,
 
         keyboard: {
             enabled: true,

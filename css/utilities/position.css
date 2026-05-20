@@ -1,5 +1,5 @@
 /* position.css */
 .main-landing-page {
-    position: absolute;
-    top: 0;
+    position: relative;
+    z-index: 1;
 }
