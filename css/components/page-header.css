@@ -23,7 +23,10 @@
     position: fixed;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
+    /* height: 1vh; */
+    border: 1px solid blue
 }
 .page-header .page-title {
     text-decoration: none;

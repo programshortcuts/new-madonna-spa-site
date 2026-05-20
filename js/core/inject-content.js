@@ -154,6 +154,7 @@ export async function injectPage(href){
 
     })
 
+    window.scrollTo(0,0)
     mainLandingPage.scrollTo(0,0)
     onPageReady()   
 

@@ -4,6 +4,7 @@
     /* max-width: 80vw; */
     overflow: hidden;
     height: 50vh;
+    touch-action: pan-y;
 }
 .services-swiper .service-title{
     padding: 2%;
