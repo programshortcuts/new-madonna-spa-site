@@ -52,7 +52,11 @@
     /* border: 20px solid blue; */
     
 }
-.x-120{
-    background-position-x: -150% !important;
+.x-20{
+    background-position-x: 20% !important;
+
+}
+.x-50{
+    background-position-x: 50% !important;
 
 }

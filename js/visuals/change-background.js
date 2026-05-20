@@ -7,9 +7,9 @@ export function initBgSlider() {
 
     const images = [
         // "imgs/istock/istockphoto01.jpg",
-        "imgs/woman-man.png",
-        "imgs/nature-bg.png",
+        "imgs/ai-imgs/woman-man.png",
         "imgs/ai-imgs/lady-med-spa.png",
+        "imgs/ai-imgs/nature-bg.png",
         "imgs/perfect-peptide-header.png",
         "imgs/rustic-rockymoutains-1024.JPEG",
         // "imgs/rustic-rockymoutains-1024.JPEG"
@@ -35,10 +35,12 @@ export function initBgSlider() {
     // fade in next
     console.log()
     nextSlide.classList.add('active');
-    if (nextSlide.style.backgroundImage === 'url("imgs/ai-imgs/lady-med-spa.png")') {
-        nextSlide.classList.add('x-120')
-    }
+    
 
+    if (nextSlide.style.backgroundImage === 'url("imgs/ai-imgs/lady-med-spa.png")') {
+        console.log('here')
+        nextSlide.classList.add('x-50')
+    }
     current = nextIndex;
     setInterval(() => {
         const currentSlide = slides[current];
@@ -48,13 +50,13 @@ export function initBgSlider() {
         currentSlide.classList.remove('active');
         
         // fade in next
-        console.log()
-        nextSlide.classList.add('active');
-        if (nextSlide.style.backgroundImage === 'url("imgs/nature-bg.png")'){
-            // nextSlide.classList.add('move-right')    
-        }
-
         current = nextIndex;
+        nextSlide.classList.add('active');
+
+        
+        if (nextSlide.style.backgroundImage === 'url("imgs/nature-bg.png")') {
+            nextSlide.classList.add('x-20')
+        }
 
     }, 3400);
 }
