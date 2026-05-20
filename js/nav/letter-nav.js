@@ -149,7 +149,7 @@ export function initLetterNav({ container = document } = {}) {
         target.el.scrollIntoView({
             behavior: 'smooth',
             block: 'center',
-            inline: 'nearest'
+            inline: 'center'
         });
     });
 }
