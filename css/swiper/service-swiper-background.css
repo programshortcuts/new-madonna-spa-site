@@ -3,26 +3,26 @@
 .service{ 
     min-height: 50vh;
 }
-[data-nav-target="bioIdenticalServiceHome"] {
+#bioIdenticalServiceHome{
     background: url('../../imgs/ai-imgs/perfect-peptide-header.png') center/cover no-repeat !important;
     /* background-position-x: 50% !important; */
     /* background: url('../../imgs/ai-imgs/lady-med-spa.png') center/cover no-repeat !important; */
 }
-[data-nav-target="botoxFillerServiceHome"] {
+#botoxFillerServiceHome{
     background: url('../../imgs/botox-filler.webp') 
     no-repeat !important;
     background-position-x: 60%;
 }
-[data-nav-target="peptidesServiceHome"] {
+#peptidesServiceHome{
     background: url('../../imgs/peptide-header.png') 
     no-repeat !important;
     
 }
-[data-nav-target="glp-1ServiceHome"] {
+#glp-1ServiceHome{
     background: url('../../imgs/ai-imgs/perfect-peptide-header.png') 
     no-repeat !important;
 }
-[data-nav-target="ivFusionsServiceHome"] {
+#ivFusionsServiceHome{
     background: url('../../imgs/ai-imgs/iv-infusion.jpeg') center/cover no-repeat !important;
     /* filter: grayscale(.7); */
     /* filter: contrast(.2); */
