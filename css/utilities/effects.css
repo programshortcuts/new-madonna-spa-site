@@ -5,8 +5,10 @@
 .section > button.section-title:active,
 .section>button.section-title:focus{
     box-shadow: 0 2px 2px 3px silver;
-    border: 1px solid lightcyan;
-    border-top: 2px solid darkgoldenrodb;
+    /* box-shadow: 1px -1px 1px 4px lawngreen; */
+    box-shadow: 1px -1px 1px 4px lightcyan;
+    border: 1px solid grey;
+    border-top: 1px solid lightgreen;
     outline: none;
     text-shadow: 0 1px 1px lightcyan;
     text-transform: capitalize;
