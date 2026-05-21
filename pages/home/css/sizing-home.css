@@ -50,12 +50,9 @@ img#officeInPhoto {
 
 }
 
-.staff-container>.member>.pic {
+.staff-wrapper>.member>.pic {
     width: 100%;
     max-width: 200px;
     max-height: 200px;
 }
 
-.staff-container>.member>.info {
-    /* min-width: 100px; */
-}
