@@ -1,6 +1,7 @@
 /* bkgrnd-contact.css */
 .contact-container {
-    background-image: url('../../../imgs/ai-office-madonma-med-spa.png');
+    /* background-image: url('../../../imgs/ai-office-madonma-med-spa.png'); */
+    background-image: url('../../../imgs/office-in-photo.png');
     /* background-color: blue; */
     /* height: 10vh; */
     background-repeat: no-repeat;
