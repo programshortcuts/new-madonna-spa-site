@@ -19,12 +19,16 @@
     flex-direction: column;
 }
 .social-media-container {
+    width: 100%;
     display: flex;
+    flex-direction: row !important;
     /* justify-content: flex-end; */
     /* padding-right: 5%; */
     width: 100%;
+    border: 1px solid blue;
 }
 .social-media-container > .social-media-item {
-    flex-basis: 40%;
-    width: 50%;
+    border: 1px solid red;
+    flex-basis: 20%;
+    width: 20%;
 }
