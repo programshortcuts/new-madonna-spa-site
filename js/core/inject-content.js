@@ -18,9 +18,9 @@ if (!mainLandingPage) {
 }
 const DEFAULT_PAGE =
 // "pages/home/home.html";
-"pages/medical-spa-services/medical-spa-services.html";
+// "pages/medical-spa-services/medical-spa-services.html";
 // "pages/products/products.html";
-    // "pages/contact/contact.html";
+    "pages/contact/contact.html";
     // "pages/bookings/bookings.html";
     
 const girlShilouetteMediSpaLogo = document.querySelector('#girlShilouetteMediSpaLogo')
