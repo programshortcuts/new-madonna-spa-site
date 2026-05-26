@@ -56,6 +56,8 @@
 
 @import url('../../../pages/products/css/spacing-products.css');
 /* contact.css */
+@import url('../pages/contact/css/layout-contact.css');
+@import url('../pages/contact/css/position-contact.css');
 
 
 * {
