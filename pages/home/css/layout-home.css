@@ -71,12 +71,13 @@
     overflow-x: scroll;
     width: 100%;
 }
-.staff-wrapper > .member {
-    flex-basis:35%;
+.staff-wrapper > .staff {
+    display: flex;
+    flex-basis:50%;
     /* margin: 0 5%; */
     /* gap: 2%; */
 }
-.staff-wrapper > .member > .info{
+.staff-wrapper > .staff > .info{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
