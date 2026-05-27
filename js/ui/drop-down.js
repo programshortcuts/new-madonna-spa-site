@@ -7,6 +7,13 @@ export function initDropDown() {
     // const sectionTitles = document.querySelectorAll('.section-title')
     dropDowns.forEach(el => {
         // SUPER IMPORTANT 
+        if(el.classList.contains('service-title')){
+            const service = el.closest('.service')
+            const downs = service.querySelector('.downs')
+            downs.classList.add('hide')
+            console.log(downs)
+
+        }
         el.removeEventListener('click', toggleContent) // ✅ prevent stacking
         el.addEventListener('click', toggleContent)
     })
