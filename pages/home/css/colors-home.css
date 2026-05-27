@@ -13,3 +13,7 @@
     /* color: white; */
 
 }
+.service-title:visited, 
+.service-title {
+    color: black !important;
+}
