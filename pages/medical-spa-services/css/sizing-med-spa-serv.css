@@ -24,7 +24,7 @@
     max-height: 100vh;
 }
 .med-spa-serv-container
-.content .img-wrapper>img {
+.img-wrapper>img {
     max-height: 200px;
     max-width: 200px;
 }
