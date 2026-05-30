@@ -59,7 +59,7 @@ export function initServicesSwiper() {
 
     servicesSwiper = new Swiper(swiperEl, {
         loop: true,
-        speed: 600,
+        speed: 300,
 
         centeredSlides: true,
 

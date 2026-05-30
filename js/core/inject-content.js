@@ -5,7 +5,7 @@ import { isSafePath } from "./security-utils.js";
 import { initItemsScroll } from "../ui/items-scroll.js";
 
 // import { initSortItems } from "../ui/sort-items.js";
-import { initProductsController } from "../ui/products-controller.js";
+import { initSortItems } from "../ui/sort-items.js";
 
 // import { initBookingForm } from "./bookings.js";
 import { initBgSlider } from "../visuals/change-background.js";
@@ -19,10 +19,10 @@ if (!mainLandingPage) {
     throw new Error("Missing .main-landing-page in index.html");
 }
 const DEFAULT_PAGE =
-// "pages/home/home.html";
+"pages/home/home.html";
 // "pages/medical-spa-services/medical-spa-services.html";
 // "pages/contact/contact.html";
-"pages/products/products.html";
+// "pages/products/products.html";
     // "pages/bookings/bookings.html";
     
 const girlShilouetteMediSpaLogo = document.querySelector('#girlShilouetteMediSpaLogo')
@@ -172,7 +172,7 @@ export async function injectPage(href){
         });
     }
     initZoomItems()
-    initProductsController()
+    initSortItems()
     initItemsScroll()
     // ✅ ONLY INIT IF ON BOOKING PAGE
     if (href.includes("bookings")) {
