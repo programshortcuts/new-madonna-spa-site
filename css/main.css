@@ -31,6 +31,8 @@
 /* ui */
 @import url('./responsive.css');
 @import url('ui/items-scroll.css');
+@import url('ui/zoom-items.css');
+@import url('ui/sort-items.css');
 
 /* utilities */
 @import url('utilities/effects.css');
