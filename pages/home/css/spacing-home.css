@@ -1,4 +1,7 @@
 /* spacing-home.css */
+.reviews-txt-container p{
+    margin-top: 1%;
+}
 .page-container.home-page-container{
     margin-top: -5%;
 }
