@@ -1,4 +1,4 @@
-/* sort-items.css */
+/* sort-items */
 .items-container[data-view="grid"] {
     flex-wrap: wrap;
     overflow-y: auto;

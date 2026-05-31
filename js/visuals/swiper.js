@@ -43,6 +43,7 @@ export function initReviewsSwiper() {
 }
 export function initServicesSwiper() {
     const swiperEl = document.querySelector('.services-swiper');
+
     if (!swiperEl) return;
 
     if (typeof Swiper === 'undefined') {

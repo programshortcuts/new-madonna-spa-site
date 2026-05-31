@@ -4,7 +4,7 @@
     /* max-width: 80vw; */
     overflow: hidden;
     height: 50vh;
-    touch-action: pan-x;
+    touch-action: pan-y;
 }
 .services-swiper .service-title{
     padding: 2%;
@@ -12,8 +12,7 @@
 }
 .services-swiper .swiper-slide {
     overflow: hidden;
-    /* overflow-y: scroll; */
-    overflow-y: hidden;
+    overflow-y: scroll;
     border-radius: 8px;
     height: 100%;
     transition:
