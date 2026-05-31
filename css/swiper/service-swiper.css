@@ -1,10 +1,11 @@
 /* service-swiper.css */
 .swiper.services-swiper {
+        overscroll-behavior: contain;
     width: 100%;
     /* max-width: 80vw; */
     overflow: hidden;
     height: 50vh;
-    touch-action: pan-y;
+    touch-action: pan-x;
 }
 .services-swiper .service-title{
     padding: 2%;
@@ -12,7 +13,7 @@
 }
 .services-swiper .swiper-slide {
     overflow: hidden;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     border-radius: 8px;
     height: 100%;
     transition:

@@ -1,4 +1,9 @@
 /* layout.css */
+html,
+body {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
 .page-wrapper {
     display: flex;
     flex-direction: column;
