@@ -1,7 +1,5 @@
 
-.reviews-txt-container p{
-    margin-top: 1%;
-}
+
 .page-container.home-page-container{
     margin-top: -5%;
 }
@@ -28,7 +26,9 @@
     padding-bottom: 2%;
     padding-right: 4%;
 }
-
+.page-container.home-page-container .main-item.reviews-txt-container p {
+    margin-top: 1%;
+}
 .page-container.home-page-container  .main-item > p{
     padding-left: 3%;
     padding-top: 2.5%;
