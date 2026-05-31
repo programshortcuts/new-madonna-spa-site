@@ -1,4 +1,5 @@
 /* spacing-home.css */
+
 .page-container.home-page-container{
     margin-top: -5%;
 }
@@ -48,6 +49,15 @@
 }
 #longetivyMedHomePage > .content > p{
     line-height: 2;
+}
+
+#longetivyMedHomePage {
+    margin: 1% 0;
+    /* margin-top: 2%;
+    margin-bottom: 2%; */
+}
+#ourServiceHomePage {
+    margin-top: 5%;
 }
 .section-title[data-nav-target="ourServices"]  {
     width: 100%;
