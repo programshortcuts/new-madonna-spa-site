@@ -147,6 +147,12 @@ export function initLetterNav({ container = document } = {}) {
         if (!target?.el) return;
 
         target.el.focus();
+        // console.log(target)
+        // switch (target){
+        //     case target:
+        //         console.log('yes')
+        //         break
+        // } 
         target.el.scrollIntoView({
             behavior: 'smooth',
             block: 'center',
