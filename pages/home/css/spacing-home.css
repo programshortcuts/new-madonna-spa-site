@@ -1,4 +1,4 @@
-/* spacing-home.css */
+
 .reviews-txt-container p{
     margin-top: 1%;
 }
@@ -22,7 +22,6 @@
     padding: 2%
 }
  .address-num-container {
-    /* padding: 0 5%; */               
     padding-bottom: 10%;
 }
 .page-container.home-page-container  .main-item{
@@ -31,10 +30,8 @@
 }
 
 .page-container.home-page-container  .main-item > p{
-    /* padding:0  2%; */
     padding-left: 3%;
     padding-top: 2.5%;
-    /* padding-right: 5%; */
 }
 .page-container.home-page-container  .main-item > .content > p{
     line-height: 1.55;
@@ -47,14 +44,12 @@
 }
 #longetivyMedHomePage{
     margin-top: -3%;
-    /* background: blue; */
 }
 #longetivyMedHomePage > .content > p{
     line-height: 2;
 }
 .section-title[data-nav-target="ourServices"]  {
     width: 100%;
-    /* margin-top: 10%; */
     display: flex;
     justify-content: flex-start;
     text-align: start;

@@ -2,7 +2,6 @@
 .swiper.services-swiper {
         overscroll-behavior: contain;
     width: 100%;
-    /* max-width: 80vw; */
     overflow: hidden;
     height: 50vh;
     touch-action: pan-x;
@@ -13,7 +12,6 @@
 }
 .services-swiper .swiper-slide {
     overflow: hidden;
-    /* overflow-y: scroll; */
     border-radius: 8px;
     height: 100%;
     transition:
@@ -22,27 +20,20 @@
     opacity: 0.4;
     transform: scale(0.4);
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
     flex-direction: column;
-    /* background-color: white; */
     width: 60%;
     transform: scale(0.7) !important;
     
 }
 
-/* active center slide */
 .services-swiper .swiper-slide-active {
     opacity: 1;
     transform: scale(1) !important;
-    /* margin-top: 10%; */
     z-index: 2;
 }
 
-/* neighboring slides */
 .services-swiper .swiper-slide-prev,
 .services-swiper .swiper-slide-next {
-    /* opacity: 0.7; */
     /* transform: scale(0.7) !important; */
 }
 
