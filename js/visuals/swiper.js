@@ -24,7 +24,7 @@ export function initReviewsSwiper() {
         speed: 700,
 
         grabCursor: true,
-        allowTouchMove: true,
+        allowTouchMove: false,
         touchStartPreventDefault: false,
         touchMoveStopPropagation: false,
         touchReleaseOnEdges: true,
@@ -70,7 +70,7 @@ export function initServicesSwiper() {
         initialSlide: 0,
 
         grabCursor: true,
-        allowTouchMove: true,
+        allowTouchMove: false,
         touchStartPreventDefault: false,
         touchMoveStopPropagation: false,
         touchReleaseOnEdges: true,
