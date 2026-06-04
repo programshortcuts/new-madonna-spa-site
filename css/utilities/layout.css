@@ -1,8 +1,10 @@
 /* layout.css */
 html,
 body {
+    overflow-x: hidden;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+    overscroll-behavior-y: contain;
 }
 .page-wrapper {
     display: flex;
@@ -11,5 +13,5 @@ body {
     min-height: 100vh;
     padding-top: 10vh;
     padding-bottom: 10vh;
-    overflow-x: none;
+    overflow-x: hidden;
 }

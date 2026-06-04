@@ -1,10 +1,11 @@
 /* service-swiper.css */
 .swiper.services-swiper {
-        overscroll-behavior: contain;
+    overscroll-behavior: contain;
+    overscroll-behavior-y: contain;
     width: 100%;
     overflow: hidden;
     height: 50vh;
-    touch-action: pan-x;
+    touch-action: pan-y;
 }
 .services-swiper .service-title{
     padding: 2%;
