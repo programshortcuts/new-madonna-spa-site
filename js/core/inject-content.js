@@ -4,12 +4,13 @@ import { onPageReady } from "./page-lifecycle.js";
 import { isSafePath } from "./security-utils.js";
 import { initItemsScroll } from "../ui/items-scroll.js";
 
+// import { initSortItems } from "../ui/sort-items.js";
+import { initProductsController } from "../ui/products-controller.js";
 
 // import { initBookingForm } from "./bookings.js";
 import { initBgSlider } from "../visuals/change-background.js";
 import { initDropDown } from "../ui/drop-down.js";
 // import { initSectionsDropDown } from "../ui/sections-drop-downs.js";
-import { initFilterSortItems } from "../ui/filter-sort-items.js";
 // import { initImageHandling } from "../visuals/handleImages.js";
 // import { initProdImgHandle } from "../visuals/handleProductImgs.js";
 export const mainLandingPage = document.querySelector('.main-landing-page')
@@ -171,6 +172,8 @@ export async function injectPage(href){
         });
     }
     initZoomItems()
+    initProductsController()
+    initItemsScroll()
     // ✅ ONLY INIT IF ON BOOKING PAGE
     if (href.includes("bookings")) {
         initBookingForm();

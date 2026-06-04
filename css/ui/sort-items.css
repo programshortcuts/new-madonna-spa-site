@@ -1,17 +1,7 @@
 /* sort-items */
-/* SORT MODE CONTAINER */
-.items-container.sort {
-    width: 110vw;
+.items-container[data-view="grid"] {
     flex-wrap: wrap;
     overflow-y: auto;
+    overflow-x: hidden;
     max-height: 500px;
-    scroll-behavior: smooth;
-    scroll-snap-type: y proximity;
-}
-
-/* IMPORTANT: lock item size in sort mode */
-.items-container.sort .item {
-    flex: 0 0 180px;
-    width: 180px;
-    scroll-snap-align: start;
 }
