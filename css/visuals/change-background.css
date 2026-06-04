@@ -3,7 +3,7 @@
 .home-page-header {
     position: relative;
     width: 100vw !important;
-    /* height: 50vh; */
+    height: 50vh;
     overflow: hidden;
     
 }
