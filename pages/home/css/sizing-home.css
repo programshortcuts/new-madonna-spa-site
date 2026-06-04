@@ -38,7 +38,7 @@
 #drMadonnaPhoto {
     display: block;
     width: 200px !important;
-    height: auto !important;
+    height: 200px !important;
     max-width: unset !important;
     max-height: unset !important;
     object-fit: contain;
