@@ -68,7 +68,7 @@
     /* justify-content: space-around; */
     /* flex-wrap: wrap; */
     gap: 2%;
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
     width: 100%;
 }
 .staff-wrapper > .staff {

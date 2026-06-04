@@ -61,10 +61,7 @@
     box-sizing: border-box;
 }
 
-html,
-body {
-    /* overflow-x: hidden; */
-}
+
 
 .error-message {
     color: red;

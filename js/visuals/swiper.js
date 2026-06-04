@@ -59,62 +59,27 @@ export function initServicesSwiper() {
 
     servicesSwiper = new Swiper(swiperEl, {
         loop: true,
-        speed: 600,
-
+        speed: 300,
         centeredSlides: true,
-
         slidesPerView: 'auto',
 
-        spaceBetween: 0,
-
-        initialSlide: 0,
-
-        grabCursor: true,
         allowTouchMove: true,
         touchStartPreventDefault: false,
-        touchMoveStopPropagation: false,
-        touchReleaseOnEdges: true,
-        touchAngle: 20,
-        threshold: 10,
-        centeredSlidesBounds: true,
 
-        keyboard: {
-            enabled: true,
-            onlyInViewport: true
-        },
+        passiveListeners: true,
+
+        threshold: 10,
+        touchAngle: 20,
 
         slideToClickedSlide: true,
 
+        keyboard: {
+            enabled: true
+        },
+
         autoplay: {
             delay: 3333,
-            disableOnInteraction: true,
-            pauseOnMouseEnter: true
-        },
-        on: {
-            init() {
-                const swiper = this;
-                swiper.el.addEventListener('focusin', (event) => {
-                    if (swiper.destroyed) return;
-
-                    const slideEl = event.target.closest('.swiper-slide');
-                    if (!slideEl) return;
-
-                    const targetIndex = Array.prototype.indexOf.call(swiper.slides, slideEl);
-                    if (targetIndex < 0) return;
-
-                    swiper.slideTo(targetIndex, 0, false);
-                }, true);
-            },
-            slideChangeTransitionEnd() {
-                const activeSlide = swiperEl.querySelector('.swiper-slide-active');
-
-                if (!activeSlide) return;
-
-                const serviceBtn = activeSlide.querySelector('.service-title');
-                if (serviceBtn && servicesSwiper.autoplay.paused == true) {
-                    serviceBtn.focus();
-                }
-            }
+            disableOnInteraction: true
         }
     });
 
