@@ -3,34 +3,19 @@ let reviewsSwiper = null;
 let servicesSwiper = null;
 
 export function initReviewsSwiper() {
-    const swiperEl = document.querySelector('.reviews-swiper');
+    const el = document.querySelector('.reviews-swiper');
+    if (!el || typeof Swiper === 'undefined') return;
 
-    if (!swiperEl) return;
+    if (reviewsSwiper) reviewsSwiper.destroy(true, true);
 
-    if (typeof Swiper === 'undefined') {
-        console.error("Swiper is not loaded (check script tag)");
-        return;
-    }
-
-    // destroy old instance safely
-    if (reviewsSwiper) {
-        reviewsSwiper.destroy(true, true);
-        reviewsSwiper = null;
-    }
-
-    reviewsSwiper = new Swiper(swiperEl, {
+    reviewsSwiper = new Swiper(el, {
         slidesPerView: 1,
         loop: true,
         speed: 700,
 
         grabCursor: true,
         allowTouchMove: true,
-        touchStartPreventDefault: false,
-        touchMoveStopPropagation: false,
-        touchReleaseOnEdges: true,
-        touchAngle: 20,
 
-        // IMPORTANT: makes swipe feel natural and reduces accidental page-scroll capture
         threshold: 10,
 
         autoplay: {
@@ -38,38 +23,28 @@ export function initReviewsSwiper() {
             disableOnInteraction: false
         }
     });
-
-    console.log("Swiper initialized");
 }
+
 export function initServicesSwiper() {
-    const swiperEl = document.querySelector('.services-swiper');
+    const el = document.querySelector('.services-swiper');
+    if (!el || typeof Swiper === 'undefined') return;
 
-    if (!swiperEl) return;
+    if (servicesSwiper) servicesSwiper.destroy(true, true);
 
-    if (typeof Swiper === 'undefined') {
-        console.error("Swiper is not loaded");
-        return;
-    }
-
-    // destroy old instance
-    if (servicesSwiper) {
-        servicesSwiper.destroy(true, true);
-        servicesSwiper = null;
-    }
-
-    servicesSwiper = new Swiper(swiperEl, {
+    servicesSwiper = new Swiper(el, {
         loop: true,
         speed: 300,
+
         centeredSlides: true,
         slidesPerView: 'auto',
 
-        allowTouchMove: true,
-        touchStartPreventDefault: false,
+        spaceBetween: 0,
 
-        passiveListeners: true,
+        grabCursor: true,
+        allowTouchMove: true,
 
         threshold: 10,
-        touchAngle: 20,
+        touchAngle: 25,
 
         slideToClickedSlide: true,
 
@@ -82,6 +57,4 @@ export function initServicesSwiper() {
             disableOnInteraction: true
         }
     });
-
-    // console.log("Services Swiper initialized");
 }
