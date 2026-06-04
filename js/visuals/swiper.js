@@ -72,10 +72,14 @@ export function initServicesSwiper() {
         grabCursor: true,
         allowTouchMove: true,
         touchStartPreventDefault: false,
-        touchMoveStopPropagation: false,
-        touchReleaseOnEdges: true,
-        touchAngle: 20,
+        // touchMoveStopPropagation: false,
+        // touchReleaseOnEdges: true,
+        passiveListeners: true,        // 👈 important
+        nested: false,                // 👈 change this depending on scroll strategy
+
+        
         threshold: 10,
+        touchAngle: 20,
         centeredSlidesBounds: true,
 
         keyboard: {
