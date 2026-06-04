@@ -2,9 +2,10 @@
 .page-wrapper {
     display: flex;
     flex-direction: column;
-    position: relative;
     min-height: 100vh;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    overflow-x: none;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    -webkit-overflow-scrolling: touch;
 }

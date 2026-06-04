@@ -11,9 +11,8 @@
 @import url('../pages/medical-spa-services/css/sizing-med-spa-serv.css');
 @import url('../pages/medical-spa-services/css/spacing-med-spa-serv.css');
 @import url('../pages/medical-spa-services/css/txt-med-spa-serv.css');
-/* @import url('../pages/medical-spa-services/css/med-spa-serv.css'); */
+
 /* @import url('visuals/animations.css'); */
-/* @import url('swiper.css'); */
 
 /* components */
 @import url('components/mobile-header-nav.css');
@@ -34,8 +33,6 @@
 @import url('utilities/sizing.css');
 @import url('utilities/spacing.css');
 @import url('utilities/text.css');
-/* @import url('utilities/borders.css'); */
-/* @import url('utilities/colors.css'); */
 
 /* home */
 @import url('../pages/home/css/bkgrnd-home.css');
@@ -66,7 +63,7 @@
 
 html,
 body {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .error-message {
@@ -92,5 +89,5 @@ a.tel-num:visited {
 }
 
 .hide {
-    display: none !important;
+display: none !important;
 }
