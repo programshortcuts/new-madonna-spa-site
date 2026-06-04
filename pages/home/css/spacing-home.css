@@ -1,6 +1,7 @@
 /* spacing-home.css */
+
 .page-container.home-page-container{
-    margin-top: -5%;
+    margin-top: 5%;
 }
 .home-page-header> p{
     padding-bottom: 5%;
@@ -26,13 +27,10 @@
     padding-bottom: 2%;
     padding-right: 4%;
 }
-
-.page-container.home-page-container  .main-item > p{
-    /* padding:0  2%; */
-    padding-left: 3%;
-    padding-top: 2.5%;
-    /* padding-right: 5%; */
-}
+.reviews-container>p {
+     /* background-color: blue; */
+     padding-top: 5% !important;
+ } 
 .page-container.home-page-container  .main-item > .content > p{
     line-height: 1.55;
 }
@@ -43,7 +41,8 @@
     padding-left: 2%;
 }
 #longetivyMedHomePage{
-    margin-top: -3%;
+    margin-top: -5%;
+    z-index: 10;
     /* background: blue; */
 }
 #longetivyMedHomePage > .content > p{
