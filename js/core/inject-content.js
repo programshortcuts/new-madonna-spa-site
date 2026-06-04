@@ -4,13 +4,12 @@ import { onPageReady } from "./page-lifecycle.js";
 import { isSafePath } from "./security-utils.js";
 import { initItemsScroll } from "../ui/items-scroll.js";
 
-// import { initSortItems } from "../ui/sort-items.js";
-import { initSortItems } from "../ui/sort-items.js";
 
 // import { initBookingForm } from "./bookings.js";
 import { initBgSlider } from "../visuals/change-background.js";
 import { initDropDown } from "../ui/drop-down.js";
 // import { initSectionsDropDown } from "../ui/sections-drop-downs.js";
+import { initFilterSortItems } from "../ui/filter-sort-items.js";
 // import { initImageHandling } from "../visuals/handleImages.js";
 // import { initProdImgHandle } from "../visuals/handleProductImgs.js";
 export const mainLandingPage = document.querySelector('.main-landing-page')
@@ -19,10 +18,10 @@ if (!mainLandingPage) {
     throw new Error("Missing .main-landing-page in index.html");
 }
 const DEFAULT_PAGE =
-"pages/home/home.html";
+// "pages/home/home.html";
 // "pages/medical-spa-services/medical-spa-services.html";
 // "pages/contact/contact.html";
-// "pages/products/products.html";
+"pages/products/products.html";
     // "pages/bookings/bookings.html";
     
 const girlShilouetteMediSpaLogo = document.querySelector('#girlShilouetteMediSpaLogo')
@@ -172,8 +171,6 @@ export async function injectPage(href){
         });
     }
     initZoomItems()
-    initSortItems()
-    initItemsScroll()
     // ✅ ONLY INIT IF ON BOOKING PAGE
     if (href.includes("bookings")) {
         initBookingForm();

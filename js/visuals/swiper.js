@@ -59,7 +59,7 @@ export function initServicesSwiper() {
 
     servicesSwiper = new Swiper(swiperEl, {
         loop: true,
-        speed: 300,
+        speed: 600,
 
         centeredSlides: true,
 
@@ -72,14 +72,10 @@ export function initServicesSwiper() {
         grabCursor: true,
         allowTouchMove: true,
         touchStartPreventDefault: false,
-        // touchMoveStopPropagation: false,
-        // touchReleaseOnEdges: true,
-        passiveListeners: true,        // 👈 important
-        nested: false,                // 👈 change this depending on scroll strategy
-
-        
-        threshold: 10,
+        touchMoveStopPropagation: false,
+        touchReleaseOnEdges: true,
         touchAngle: 20,
+        threshold: 10,
         centeredSlidesBounds: true,
 
         keyboard: {
