@@ -23,5 +23,11 @@
         /* padding-top: 50% !important; */
         margin-top: 50% !important;
     }
-    
+    #addressLinkHeader{
+        width: 103vw !important;
+    }
+    #addressLinkHeader > a{
+        width: 100% !important;
+    }
+   
 }
