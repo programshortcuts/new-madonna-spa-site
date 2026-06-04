@@ -18,3 +18,10 @@
             height: 50vh !important;
         }
 }
+@media screen and(max-width:519px) {
+    .page-container.med-spa-serv-container{
+        /* padding-top: 50% !important; */
+        margin-top: 50% !important;
+    }
+    
+}
