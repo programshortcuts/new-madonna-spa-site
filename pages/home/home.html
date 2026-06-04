@@ -4,12 +4,12 @@
             <div class="bg-slide active"></div>
             <div class="bg-slide"></div>
             <div class="bg-slide"></div>
-            <p >
+            <p tabindex="0">
                 adding years to life and life to years
             </p>
         </header>
         <main class="home-main-content">
-            <article class="main-item reviews-txt-container">
+            <div class="main-item">
                 <div tabindex="0" data-nav-target="reviews-container" class="swiper reviews-swiper ">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -35,16 +35,16 @@
                         </div>
                     </div>
                 </div>
-                <p >We specilize is in Longevity Medicine and Cosmetic Care</p>
-            </article>
+                <p tabindex="0">We specilize is in Longevity Medicine and Cosmetic Care</p>
+            </div>
             
-            <!-- <section id="longetivyMedHomePage" class="main-item">
+            <section id="longetivyMedHomePage" class="main-item">
                 <button data-nav-target="longetivyMed" class="section-title drop-down" aria-expanded="false"
                     aria-controls="menu-id">
                     <span class="title-text">Longevity Medicine</span>
                 </button>
                 <div class="content downs ">
-                    <p>
+                    <p tabindex="0">
                         &emsp;Personalized longevity medicine focuses on hormone balance, cellular health, and proactive
                         care to support vitality,
                         resilience, and aging well.
@@ -55,9 +55,9 @@
 
                     </div>
                 </div>
-            </section> -->
+            </section>
             <!-- OUR SERVIES: -->
-            <article   id="ourServiceHomePage"  class="main-item">
+            <article   id="ourServiceHomePage"  tabindex="-1" class="main-item">
                 <button  data-nav-target="ourServices" class="section-title drop-down" aria-expanded="false" aria-controls="menu-id">
                     <span class="title-text">
                         Our Services:
@@ -300,7 +300,51 @@
                         
                     </div>
                 </article>
+                <article  id="ourStaff" tabindex="-1" class="main-item clear">
+                    <!-- <article  tabindex="-1" class="main-item"> -->
+                    <button  class="section-title drop-down" aria-expanded="false" aria-controls="menu-id">
+                        <span class="title-text">
+                            <h4>
+                                Our Staff
+                            </h4>
+                        </span>
+                    </button>
                 
+                    <div data-nav-target="ourStaffHomPage" class="staff-container ">
+                        <div class="staff-wrapper">
+                            <div class="swiper-slide staff">
+                                <img class="pic" src="imgs/staff/ila-md.PNG" alt="">
+                                <div class="info">
+                                    <h5>Ila </h5>
+                                    <p>
+                                        fill in text here
+                                    </p>
+                                
+                                </div>
+                            </div>
+                            <div class="swiper-slide staff">
+                                <img class="pic" src="imgs/staff/michelle-md.PNG" alt="">
+                                <div class="info">
+                                    <h5>Michelle</h5>
+                                    <p>
+                                        fill in text here
+                                    </p>
+                                
+                                </div>
+                            </div>
+                            <div class="swiper-slide staff">
+                                <img class="pic" src="pages/home/media/fake-employee.PNG" alt="">
+                                <div class="info">
+                                    <h5>Jane Doe</h5>
+                                    <p>
+                                        Occupation: NOT a real person ... fill in text here
+                                    </p>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
                 
             </article>
             <!-- <section    id="bioHormoneReplacementHomePage" class="section colored"> -->

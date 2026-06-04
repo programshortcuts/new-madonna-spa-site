@@ -1,10 +1,11 @@
 /* layout-home.css*/
-
 .page-container.home-page-container{
     
 }
 .home-page-container h3{
     display: none;
+
+
 }
 
 .home-page-header {
@@ -86,8 +87,4 @@
 }
 .main-item > .service-column > button{
     display: block;
-}
-#longetivyMedHomePage {
-    margin-top: -5.5% !important;
-    margin-bottom: 2.5%;
 }

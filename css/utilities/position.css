@@ -2,5 +2,4 @@
 .main-landing-page {
     position: relative;
     z-index: 1;
-    touch-action: pan-y;
 }

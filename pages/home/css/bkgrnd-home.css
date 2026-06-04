@@ -8,11 +8,7 @@
     background-repeat: no-repeat;
     background-position-y: 20%;
     background-position-x: 0%;
-
     background-size: 80% !;
-    background-position-y: 49%;
-    background-position-x: 50%;
-    filter: grayscale(50%);
     /* filter: grayscale(0); */
 }
 

@@ -1,14 +1,20 @@
 /* default/change-background.css */
-
+.page-wrapper {
+    /* position: relative; */
+}
 .home-page-header {
-    position: relative;
     width: 100vw !important;
+    /* .contact-container>.address-num-container { */
+    /* background-image: url('../../../../imgs/peptide-header.png'); */
+    /* background-image: url('../../../../imgs/woman-man.png'); */
+    /* background-repeat: no-repeat; */
     height: 50vh;
-    overflow: hidden;
-    
+    /* background-repeat: repeat; */
+    background-position-y: 49%;
+    background-position-x: 50% ;
+    filter: grayscale(50%);
 }
 .bg-slider {
-    position: relative;
 }
 .bg-slide {
     /* position: absolute; */
@@ -60,11 +66,4 @@
     background-repeat:no-repeat;
     background-color: rgb(147, 139, 129)
     /* background-position-y: 100% !important; */
-}
-
-.bg-slider,
-.bg-slide,
-.bg-slide * {
-    pointer-events: none !important;
-    touch-action: auto !important;
 }
