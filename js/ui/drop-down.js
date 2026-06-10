@@ -11,7 +11,6 @@ export function initDropDown() {
             const service = el.closest('.service')
             const downs = service.querySelector('.downs')
             downs.classList.add('hide')
-            console.log(downs)
 
         }
         el.removeEventListener('click', toggleContent) // ✅ prevent stacking
@@ -63,18 +62,12 @@ export function initDropDown() {
             const section = sectionTitleDropDown.closest('.section') ?
                             sectionTitleDropDown.closest('.section') :
                 sectionTitleDropDown.closest('.service')
-            
+            console.log(section)
             if (!section) return
-            // if(!section.classList.contains('drop-down')) return
             const downs = section.querySelector('.downs')
             if (!downs) return
 
-            // if(e.target === lastClickedDrop){
-            //     downs.classList.toggle('hide')
-            // } else {
-            //     hideAllDowns()
-            // }
-            // console.log(downs)
+            
             downs.classList.toggle('hide')
             lastClickedDrop = e.target
             return

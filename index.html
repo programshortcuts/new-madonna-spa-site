@@ -35,7 +35,7 @@
         <div class="page-header">                  
             <div class="page-title-container">
                 <h1>
-                    <a   data-target-nav="madonnaMediSpaH1" id="girlShilouetteMediSpaLogo"
+                    <a tabindex="-1"   id=""
                     class="page-title" rel="noopener noreferrer"  href="index.html">Madonna Medical Spa</a>
                     <span class="tel-num-header">(585) 698-2212</span>
                 </h1>
@@ -52,7 +52,7 @@
             <img  class="" id="madonnaShilouetteLogo" src="imgs/Madonna-Medical-Spa-logo.png.webp" alt="">
             <span id="versionTitle"></span>
         </div>
-        <svg tabindex="0" id="sideNavBtn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+        <svg tabindex="0" data-target-nav="side-nav-btn" id="sideNavBtn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <line x1="3" y1="6" x2="21" y2="6"></line>
             <line x1="3" y1="12" x2="21" y2="12"></line>
@@ -60,9 +60,10 @@
         </svg>
         <nav class="mobile-header-nav">
             <ul>
-                <li ><a data-target-nav="homeLink" href="pages/home/home.html" data-link rel="noopener noreferrer">
+                <li><a data-target-nav="homeLink" href="pages/home/home.html" data-link rel="noopener noreferrer">
                         Home</a></li>
-                <li id="medicalSpaServicesNavLi"><a data-target-nav="medSpaServLink"  href="pages/medical-spa-services/medical-spa-services.html" data-link rel="noopener noreferrer">
+                
+                <li ><a data-target-nav="medSpaServLink"  href="pages/medical-spa-services/medical-spa-services.html" data-link rel="noopener noreferrer">
                         Medical Spa Services</a>
                     <ul>
                         <!-- <li><a href="pages/medical-spa-services/services/bio-hormone-replace.html">Bio-indentical Hormone Replacment</a></li> -->
@@ -73,7 +74,7 @@
                         <li><a href="pages/medical-spa-services/services/glp-1/glp-1.html">GLP-1</a></li>
                     </ul>
                 </li>
-                <li id="productsNavLi"><a data-target-nav="productsLink" href="pages/products/products.html" data-link rel="noopener noreferrer">
+                <li ><a data-target-nav="productsLink" href="pages/products/products.html" data-link rel="noopener noreferrer">
                         Products</a>
                     <ul>
                         <li><a data-link href="pages/products/products.html"> supplements</a></li>
@@ -84,10 +85,10 @@
                 <!-- <li><a id="researchAndLitNavLink" href="pages/research-literature/researchAndLit.html" data-link rel="noopener noreferrer">
                         Research & Literature</a>
                 </li> -->
-                <!-- <li id="bookinsNavLink"><a href="pages/bookings/bookings.html" data-link rel="noopener noreferrer">
+                <!-- <><a href="pages/bookings/bookings.html" data-link rel="noopener noreferrer">
                         bookings</a>
-                    </li> -->
-                <li id="contactNavLink"><a data-target-nav="contactLink" href="pages/contact/contact.html" data-link rel="noopener noreferrer">
+                    </> -->
+                <li ><a data-target-nav="contactLink" href="pages/contact/contact.html" data-link rel="noopener noreferrer">
                         Contact</a>
                     <div class="social-media-container">
                         <div class="social-media-link-container facebook-container">
@@ -115,10 +116,8 @@
                 </li>
             </ul>
         </nav>
-        <div  tabindex="0" id="mainLandingPage" class="main-landing-page">
+        <div data-target-nav="main-landing-page"  tabindex="0" id="mainLandingPage" class="main-landing-page">
         </div>                
-
-             
     </div>
 </body>
 </html>

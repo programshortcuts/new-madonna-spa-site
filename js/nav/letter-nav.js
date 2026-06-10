@@ -25,75 +25,31 @@ export function isActuallyVisible(el) {
 // ----------------------------
 
 function getAlpha(el) {
-    if (!el) return '';
+    const val = el.dataset.targetNav || el.dataset.navTarget;
+    if (!val) return '';
+    // Extract first letter from the first word of the value
+    return val.trim().split(/\s+/)[0]?.[0]?.toLowerCase() || '';
+}
 
-    const aria = el.getAttribute('aria-label');
-    if (aria) return aria.trim()[0]?.toLowerCase() || '';
-
-    if (el.classList.contains('section-title')) {
-        return el.querySelector('.title-text')
-            ?.textContent.trim()[0]
-            ?.toLowerCase() || '';
+function ensureFocusable(el) {
+    if (el.matches('a, button, input, textarea, select')) return;
+    if (!el.hasAttribute('tabindex')) {
+        el.setAttribute('tabindex', '0');
     }
-
-    if (el.tagName === 'IMG') {
-        return el.id?.[0]?.toLowerCase() || '';
-    }
-
-    if (el.id) {
-        return el.id[0].toLowerCase();
-    }
-
-    const text = (el.textContent || '').trim().toLowerCase();
-    return text.match(/[a-z]/)?.[0] || '';
 }
 
 function buildElements(container = document) {
     const raw = [
-        ...container.querySelectorAll('#sideNavBtn, #navBarBtn,#madonnaShilouetteLogo'),
-        ...container.querySelectorAll('.mobile-header-nav a'),
-        ...container.querySelectorAll('.service-title, .section-title, .cat-title'),
-        ...container.querySelectorAll('[data-nav-target]'),
-        ...container.querySelectorAll('.content-box > p'),
-        ...container.querySelectorAll('button, [tabindex="0"]'),
-        ...container.querySelectorAll('.alpha-list > li > a')
+        ...container.querySelectorAll('[data-target-nav]'),
+        ...container.querySelectorAll('[data-nav-target]')
     ];
-
-    // remove duplicates + invisible
     const seen = new Set();
 
-    // return raw.filter(el => {
-    //     if (!isActuallyVisible(el)) return false;
-    //     if (seen.has(el)) return false;
-    //     seen.add(el);
-    //     return true;
-    // });
-    return raw.filter(el => {
-
-        // -----------------------------------
-        // skip collapsed submenu links
-        // -----------------------------------
-
-        const pageWrapper = document.querySelector('.page-wrapper');
-
-        const isSubMenuLink =
-            el.matches('.mobile-header-nav > ul > li > ul > li > a');
-
-        if (
-            isSubMenuLink &&
-            !pageWrapper?.classList.contains('expand')
-        ) {
-            return false;
-        }
-
-        // -----------------------------------
-
+    return [...raw].filter(el => {
         if (!isActuallyVisible(el)) return false;
-
         if (seen.has(el)) return false;
-
+        ensureFocusable(el);
         seen.add(el);
-
         return true;
     });
 }
@@ -112,6 +68,7 @@ export function initLetterNav({ container = document } = {}) {
         const key = e.key.toLowerCase();
         if (!/^[a-z]$/.test(key)) return;
 
+        // Re-query every keypress so injected content is always included
         const allEls = buildElements(container);
         
         const matches = allEls
@@ -152,6 +109,6 @@ export function initLetterNav({ container = document } = {}) {
             block: 'center',
             inline: 'end'
         });
-        console.log('here');
+        
     });
 }

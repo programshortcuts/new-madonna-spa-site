@@ -1,5 +1,5 @@
 // app.js
-
+import { initFocusScroll } from "./nav/focus-scroll.js";
 import { initChangeStyles } from "./ui/change-styles.js";
 import { initInjectContentListeners } from "./core/inject-content.js";
 import { initToggleNav } from "./ui/toggle-nav.js";
@@ -18,6 +18,7 @@ function initMain(){
     initLetterNav({
         pageWrapper
     });
+    initFocusScroll()
     initInjectContentListeners()
     document.querySelectorAll("*").forEach(el => {
         

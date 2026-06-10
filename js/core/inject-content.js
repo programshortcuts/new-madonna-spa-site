@@ -157,7 +157,10 @@ export async function injectPage(href){
     })
 
     window.scrollTo(0,0)
-    mainLandingPage.scrollTo(0,0)
+    mainLandingPage.scrollTo({
+        top: 0,
+        behavior: 'instant'
+    });
     onPageReady()   
 
     const autoFocusEl = mainLandingPage.querySelector('[data-auto-focus]');
