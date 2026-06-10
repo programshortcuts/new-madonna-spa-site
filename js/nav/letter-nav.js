@@ -25,10 +25,20 @@ export function isActuallyVisible(el) {
 // ----------------------------
 
 function getAlpha(el) {
-    const val = el.dataset.targetNav || el.dataset.navTarget;
-    if (!val) return '';
-    // Extract first letter from the first word of the value
-    return val.trim().split(/\s+/)[0]?.[0]?.toLowerCase() || '';
+
+    const dataVal =
+        el.dataset.targetNav ||
+        el.dataset.navTarget;
+
+    if (dataVal) {
+        return dataVal.trim()[0].toLowerCase();
+    }
+
+    const title =
+        el.querySelector('.title-item')?.textContent ||
+        el.textContent;
+
+    return title.trim()[0]?.toLowerCase() || '';
 }
 
 function ensureFocusable(el) {
@@ -39,17 +49,24 @@ function ensureFocusable(el) {
 }
 
 function buildElements(container = document) {
+
     const raw = [
         ...container.querySelectorAll('[data-target-nav]'),
-        ...container.querySelectorAll('[data-nav-target]')
+        ...container.querySelectorAll('[data-nav-target]'),
+        ...container.querySelectorAll('.drop-down'),
+        ...container.querySelectorAll('.item')
     ];
+
     const seen = new Set();
 
-    return [...raw].filter(el => {
+    return raw.filter(el => {
         if (!isActuallyVisible(el)) return false;
         if (seen.has(el)) return false;
+
         ensureFocusable(el);
+
         seen.add(el);
+
         return true;
     });
 }
