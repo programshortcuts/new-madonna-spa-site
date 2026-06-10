@@ -13,16 +13,17 @@ import { initDropDown } from "../ui/drop-down.js";
 // import { initSectionsDropDown } from "../ui/sections-drop-downs.js";
 // import { initImageHandling } from "../visuals/handleImages.js";
 // import { initProdImgHandle } from "../visuals/handleProductImgs.js";
+
 export const mainLandingPage = document.querySelector('.main-landing-page')
 export const pageWrapper = document.querySelector('.page-wrapper')
 if (!mainLandingPage) {
     throw new Error("Missing .main-landing-page in index.html");
 }
 const DEFAULT_PAGE =
-"pages/home/home.html";
+// "pages/home/home.html";
 // "pages/medical-spa-services/medical-spa-services.html";
 // "pages/contact/contact.html";
-// "pages/products/products.html";
+"pages/products/products.html";
     // "pages/bookings/bookings.html";
     
 const girlShilouetteMediSpaLogo = document.querySelector('#girlShilouetteMediSpaLogo')
@@ -37,14 +38,14 @@ document.addEventListener("submit", (e) => {
 export function initInjectContentListeners(){
     const mobileHeaderNav = document.querySelector('.mobile-header-nav')
     injectPage(DEFAULT_PAGE)
-    girlShilouetteMediSpaLogo.addEventListener('focus', (e) => {
-        console.log('here')
-        mainLandingPage.scrollTo(0,0)
-        window.scrollTo(0,0)
-    });
+    // girlShilouetteMediSpaLogo.addEventListener('focus', (e) => {
+    //     console.log('here')
+    //     mainLandingPage.scrollTo(0,0)
+    //     window.scrollTo(0,0)
+    // });
     document.addEventListener('click', e => {
         const link = e.target.closest('a[data-link]');
-
+        console.log('hwy')
         if (!link) return;
 
         const href = link.getAttribute('href');
@@ -128,9 +129,6 @@ export async function injectPage(href){
     }
 
     // ✅ Sanitize before injecting
-    // const cleanHTML = DOMPurify.sanitize(fetchedHtml, {
-    //     FORBID_TAGS: ['script']
-    // });
     mainLandingPage.innerHTML = DOMPurify.sanitize(newContent.outerHTML, {
         ALLOWED_TAGS: [
             'form', 'input', 'textarea', 'label',
@@ -157,10 +155,7 @@ export async function injectPage(href){
     })
 
     window.scrollTo(0,0)
-    mainLandingPage.scrollTo({
-        top: 0,
-        behavior: 'instant'
-    });
+    mainLandingPage.scrollTo(0,0)
     onPageReady()   
 
     const autoFocusEl = mainLandingPage.querySelector('[data-auto-focus]');
