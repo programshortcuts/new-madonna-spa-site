@@ -1,23 +1,4 @@
 /* spacing-contact.css */
-.contact-page-container{
-
-
-}
-.contact-page-container article {
-    
-}
-.contact-container{
-
-}
-
-.address-num-container{
-    
-
-}
-
- .address-box h2 {
-     /* color: white; */
- }
 
  .address-num-container {
     color: rgb(36, 34, 34);
@@ -26,4 +7,11 @@
  #contactForm{
     background-color: white;
     border: 1px solid blue;
+ }
+
+ .contact-address-num-container{
+   color: rgb(91, 75, 75);
+   font-weight: 600;
+   text-shadow: 1px 1px 1px black;
+   font-size: 2rem;
  }
