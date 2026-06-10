@@ -1,16 +1,11 @@
 @media screen and (min-width:520px) {
-    .page-container.home-page-container {
-            padding-top: 0% !important;
-            /* margin-top: 20%; */
 
-        }
-    .home-page-container > .home-page-header.bg-slider > .bg-slide{
-        /* height: 50vh; */
-        background-position-y: 10% !important;
+    .page-container.home-page-container {
+        padding-top: 0% !important;
+
     }
-    .page-header {
-        /* height: 10vh; */
-        /* background-color: blue !important; */
+    .home-page-container > .home-page-header.bg-slider > .bg-slide{
+        background-position-y: 10% !important;
     }
         .home-page-header {
             background-position-y: -129% !important;
@@ -29,5 +24,12 @@
     #addressLinkHeader > a{
         width: 100% !important;
     }
-   
+    .page-title-container>h1 {
+        /* margin: 0 25%; */
+        /* margin-top: 10% !important; */
+        width: 100% !important;
+
+        border: 1px solid blue !important;
+        background-color: blue;
+    }
 }

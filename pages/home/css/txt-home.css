@@ -39,12 +39,4 @@
 }
 
 
-#addressLinkHeader > a:visited,
-#addressLink:visited{
-    color: black;
-}
-#addressLinkHeader > a{
-    text-decoration: none;
-    text-shadow: 1px 1px 1px black;
 
-}
