@@ -1,4 +1,12 @@
 /* sizing-contact.css */
 .page-container.contact-page-container{
     padding-top: 20%;
+    margin-top: 20%;
+}
+#contactForm {
+    padding: 5% 0
+}
+
+#contactForm>.form-group {
+    margin: 0 5%
 }
