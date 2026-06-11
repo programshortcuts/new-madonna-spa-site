@@ -1,27 +1,9 @@
 /* layout-home.css*/
-.page-container.home-page-container{
-    
-}
-.home-page-container h3{
-    /* display: none; */
-
-
-}
-
 .home-page-header {
     display: flex;
     align-items: flex-end;
 }
-.home-page-header .img-wrapper {
-    flex-basis: 10%;
-}
-.home-page-header .img-wrapper img{
-    /* display: none; */
-}
-.home-page-container button.section-title{
-    /* display: block; */
-}
-
+.home-page-header .img-wrapper {flex-basis: 10%;}
 .page-container.home-page-container {
     display: flex;
     flex-direction: column;
@@ -44,29 +26,13 @@
     clear: both;
 }
 /* Removed conflicting width: 250px and float: right for .swiper */
-.mission-state .img-wrapper img{
-    height: 20vh;
-}
-.main-item > .img-wrapper{
-    float: right;
-    
-}
-.main-item > .content .img-wrapper{
-    float: left;
-}
-
-#drMadonnaPhoto {
-    display: block;
-}
-
-.address-contact-home{
-    display: flex;
-}
+.mission-state .img-wrapper img    {height: 20vh;}
+.main-item > .img-wrapper          {float: right;}
+.main-item > .content .img-wrapper {float: left;}
+#drMadonnaPhoto       {display: block;}
+.address-contact-home {display: flex;}
 
 .staff-wrapper {
-    display: flex;
-    /* justify-content: space-around; */
-    /* flex-wrap: wrap; */
     gap: 2%;
     overflow-x: scroll;
     touch-action: pan-x;
@@ -75,8 +41,6 @@
 .staff-wrapper > .staff {
     display: flex;
     flex-basis:50%;
-    /* margin: 0 5%; */
-    /* gap: 2%; */
 }
 .staff-wrapper > .staff > .info{
     display: flex;

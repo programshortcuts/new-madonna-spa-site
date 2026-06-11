@@ -32,35 +32,32 @@
 }
 
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:532px) {
     .home-page-header {
         padding-top: 5%;
     }
     .home-main-content > .main-item{
         /* background-color: blue !important; */
     }
-        .swiper.services-swiper {
-            height: 40vh;
-            padding-inline: 4%;
-        }
+    .swiper.services-swiper {
+        height: 40vh;
+        padding-inline: 4%;
+    }
+    
+    .services-swiper .swiper-slide {
+        /* margin-top: 10%; */
+        /* transform: scale(.78) !important; */
+        transition: transform .35s ease, opacity .35s ease;
+    }
+    
+    .services-swiper .swiper-slide-active button{
+        padding-top: 10%;
+    }
+    .services-swiper .swiper-slide-active {
         
-        .services-swiper .swiper-slide {
-            /* margin-top: 10%; */
-            /* transform: scale(.78) !important; */
-            transition: transform .35s ease, opacity .35s ease;
-        }
-        
-        .services-swiper .swiper-slide-active button{
-            padding-top: 10%;
-        }
-        .services-swiper .swiper-slide-active {
+        /* transform: scale(1.2) !important; */
+        opacity: 1;
+        z-index: 5;
+    }
             
-            /* transform: scale(1.2) !important; */
-            opacity: 1;
-            z-index: 5;
-        }
-                .x-150 {
-                    background-position-x: 80% !important;
-                    
-                }
 }
