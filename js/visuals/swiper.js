@@ -46,7 +46,6 @@ export function initServicesSwiper() {
         threshold: 10,
         touchAngle: 25,
 
-        // IMPORTANT FOR EXTERNAL CONTROL
         loopedSlides: el.querySelectorAll('.swiper-slide').length,
 
         keyboard: {
@@ -59,6 +58,8 @@ export function initServicesSwiper() {
             disableOnInteraction: true
         }
     });
+
+    return servicesSwiper; // ✅ CRITICAL ADDITION
 }
 
 // FILE: js/visuals/swiper.js
