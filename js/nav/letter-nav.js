@@ -42,7 +42,13 @@ function getAlpha(el) {
 }
 
 function ensureFocusable(el) {
-    if (el.matches('a, button, input, textarea, select')) return;
+    // Anchors without href are NOT focusable by default — add tabindex to compensate
+    if (el.matches('a') && !el.hasAttribute('href')) {
+        el.setAttribute('tabindex', '0');
+        return;
+    }
+    // Native focusable elements don't need tabindex override
+    if (el.matches('button, input, textarea, select')) return;
     if (!el.hasAttribute('tabindex')) {
         el.setAttribute('tabindex', '0');
     }
