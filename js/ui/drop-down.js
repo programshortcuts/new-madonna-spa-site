@@ -69,13 +69,12 @@ export function initDropDown() {
             return
         }
         if (serviceHomeDropDown) {
-            const section = serviceHomeDropDown.closest('section') ?
-                            serviceHomeDropDown.closest('section') :
-                serviceHomeDropDown.closest('.service')
+            const service = serviceHomeDropDown.closest('.service') 
+                
             
-            if (!section) return
-            // if(!section.classList.contains('drop-down')) return
-            const downs = section.querySelector('.downs')
+            if (!service) return
+            // if(!service.classList.contains('drop-down')) return
+            const downs = service.querySelector('.downs')
             if (!downs) return
 
             // if(e.target === lastClickedDrop){

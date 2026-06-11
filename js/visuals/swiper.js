@@ -56,12 +56,35 @@ export function initServicesSwiper() {
         autoplay: {
             delay: 3333,
             disableOnInteraction: true
+        },
+
+        on: {
+            slideChangeTransitionEnd: function () {
+                // Recalculate positions after transition so centeredSlides works correctly
+                this.update();
+            }
         }
     });
 
-    // Ensure slide is centered horizontally after external navigation (letter nav, clicks)
-    servicesSwiper.on('slideChange', () => {
-        servicesSwiper.update();
+    // Allow clicking on slides to navigate left/right
+    el.addEventListener('click', (e) => {
+        const slide = e.target.closest('.swiper-slide');
+        if (!slide || !servicesSwiper.slides.includes(slide)) return;
+
+        // Don't navigate if the click was on a button or interactive element
+        if (e.target.closest('button, a, [data-no-click]')) return;
+
+        const clickedIndex = servicesSwiper.slides.indexOf(slide);
+        if (clickedIndex === -1) return;
+
+        const activeIndex = servicesSwiper.activeIndex;
+
+        // Navigate based on whether the clicked slide is before or after current
+        if (clickedIndex < activeIndex) {
+            servicesSwiper.slidePrev();
+        } else if (clickedIndex > activeIndex) {
+            servicesSwiper.slideNext();
+        }
     });
 
     return servicesSwiper; // ✅ CRITICAL ADDITION
