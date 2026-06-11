@@ -46,15 +46,44 @@ export function initServicesSwiper() {
         threshold: 10,
         touchAngle: 25,
 
-        slideToClickedSlide: true,
+        // IMPORTANT FOR EXTERNAL CONTROL
+        loopedSlides: el.querySelectorAll('.swiper-slide').length,
 
         keyboard: {
-            enabled: true
+            enabled: true,
+            onlyInViewport: true
         },
 
         autoplay: {
             delay: 3333,
             disableOnInteraction: true
         }
+    });
+}
+
+// FILE: js/visuals/swiper.js
+
+export function initServiceNavController(swiperInstance) {
+    const buttons = document.querySelectorAll('.service-col-title');
+    if (!buttons.length) return;
+
+    buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const index = Number(btn.dataset.slide);
+            if (Number.isNaN(index)) return;
+
+            // IMPORTANT:
+            // Use loop-safe method when available
+            if (swiperInstance.slideToLoop) {
+                swiperInstance.slideToLoop(index);
+            } else {
+                swiperInstance.slideTo(index);
+            }
+
+            // 🚫 DO NOT:
+            // - focus()
+            // - scrollIntoView()
+            // - activeElement manipulation
+        });
     });
 }

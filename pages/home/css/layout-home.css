@@ -47,7 +47,7 @@
     flex-direction: column;
     justify-content: flex-end;
 }
-.service-column > a{
+.service-column > .service-col-title{
     display: block;
 }
 

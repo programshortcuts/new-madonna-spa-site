@@ -17,3 +17,7 @@
 .service-title {
     color: black !important;
 }
+.service-col-title{
+    background: none !important;
+    border: none;
+}
