@@ -1,62 +1,31 @@
 // focus-nav.js
-export function focusNav({ e, target }) {
-    const el = target.el;
+export function focusNav({e,target}){
+    const slide = target.el.closest('.swiper-slide');
 
-    // CASE 1: clicking service link (outside swiper)
-    if (el.classList.contains('service-title-col-link')) {
-        const href = el.getAttribute('href');
-        if (!href) return;
-
-        const id = href.replace('#', '');
-        const slide = document.getElementById(id);
-
-        const swiperEl = slide?.closest('.swiper');
-        const swiper = swiperEl?.swiper;
-
-        if (!swiper || !slide) return;
-
-        const index = swiper.slides.indexOf(slide);
-        if (index === -1) return;
-
-        swiper.slideTo(index, 300);
-
-        requestAnimationFrame(() => {
-            requestAnimationFrame(() => {
-                slide.focus({ preventScroll: true });
-            });
-        });
-
-        return;
+    if (e.target.classList.contains('service-title-col-link')){
+        console.log('stop')
+        return
+        
     }
-
-    // CASE 2: normal swiper item navigation
-    const slide = el.closest('.swiper-slide');
-
+    
     if (slide) {
         const swiperEl = slide.closest('.swiper');
         const swiper = swiperEl?.swiper;
 
-        if (!swiper) return;
+        if (swiper) {
+            const targetIndex = swiper.slides.indexOf(slide);
+            if (targetIndex === -1) return;
 
-        const index = swiper.slides.indexOf(slide);
-        if (index === -1) return;
+            // move first
+            swiper.slideTo(targetIndex, 300);
+            swiper.update();
 
-        swiper.slideTo(index, 300);
+            // then focus AFTER layout settles
+            setTimeout(() => {
+                target.el.focus({ preventScroll: true });
+            }, 350);
 
-        requestAnimationFrame(() => {
-            requestAnimationFrame(() => {
-                el.focus({ preventScroll: true });
-            });
-        });
-
-        return;
+            return;
+        }
     }
-
-    // CASE 3: fallback outside swiper
-    el.focus({ preventScroll: true });
-    el.scrollIntoView({
-        behavior: 'smooth',
-        block: 'center',
-        inline: 'center'
-    });
 }
