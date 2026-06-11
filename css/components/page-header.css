@@ -11,8 +11,9 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: var(--header-clr);
     width: 30%;
-    margin-top: -3%    ;
-    margin-right: -10% ;
+    margin-top: -3% !important;
+    margin-right: -10% !important;
+    /* margin-bottom: 5%; */
 
 }
 .page-header {
@@ -29,6 +30,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* flex-basis: 90%; */
+    /* margin-left: 5%; */
     flex-wrap: wrap;
 }
 .page-title-container h1 {

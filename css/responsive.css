@@ -13,46 +13,23 @@
             height: 50vh !important;
         }
 }
-@media screen and (max-width:519px) {
+@media screen and(max-width:519px) {
     .page-container.med-spa-serv-container{
+        /* padding-top: 50% !important; */
         margin-top: 50% !important;
     }
-
-    /* Page header small-screen fixes */
-    .page-header {
-        height: auto !important;
-        min-height: 7vh;
-        padding: 4px 8px;
-        flex-direction: column;
-        align-items: center;
+    #addressLinkHeader{
+        width: 103vw !important;
     }
-    .page-header > img,
-    #versionTile {
-        height: 6vh !important;
-        max-height: 35px;
-        position: static !important;
-        margin-top: 2px;
-    }
-    .page-title-container h1 {
-        margin: 0 3% !important;
-        text-align: center;
-    }
-    .page-header .page-title {
-        font-size: 0.75rem;
-        letter-spacing: 3%;
-    }
-    .page-header .tel-num-header {
-        font-size: 0.6rem;
-    }
-    .address-title {
+    #addressLinkHeader > a{
         width: 100% !important;
-        margin-top: 0 !important;
-        margin-right: 0 !important;
-        text-align: center;
-        font-size: 0.6rem;
     }
-    #addressLinkHeader > a {
-        font-size: 0.6rem;
-        width: 100%;
+    .page-title-container>h1 {
+        /* margin: 0 25%; */
+        /* margin-top: 10% !important; */
+        width: 100% !important;
+
+        border: 1px solid blue !important;
+        background-color: blue;
     }
 }
