@@ -55,13 +55,9 @@ export function initDropDown() {
 
             return
         }
-        
-
         // 🔵 SECTION DROPDOWN
         if (sectionTitleDropDown) {
-            const section = sectionTitleDropDown.closest('.section') ?
-                            sectionTitleDropDown.closest('.section') :
-                sectionTitleDropDown.closest('.service')
+            const section = sectionTitleDropDown.closest('section')
             console.log(section)
             if (!section) return
             const downs = section.querySelector('.downs')
