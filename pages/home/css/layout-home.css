@@ -27,8 +27,8 @@
 }
 /* Removed conflicting width: 250px and float: right for .swiper */
 .mission-state .img-wrapper img    {height: 20vh;}
-.main-item > .img-wrapper          {float: right;}
-.main-item > .content .img-wrapper {float: left;}
+.img-wrapper          {float: right;}
+.content .img-wrapper {float: left;}
 #drMadonnaPhoto       {display: block;}
 .address-contact-home {display: flex;}
 
@@ -47,6 +47,6 @@
     flex-direction: column;
     justify-content: flex-end;
 }
-.main-item > .service-column > button{
+.service-column > button{
     display: block;
 }
