@@ -69,8 +69,8 @@ export function initDropDown() {
             return
         }
         if (serviceHomeDropDown) {
-            const section = serviceHomeDropDown.closest('.section') ?
-                            serviceHomeDropDown.closest('.section') :
+            const section = serviceHomeDropDown.closest('section') ?
+                            serviceHomeDropDown.closest('section') :
                 serviceHomeDropDown.closest('.service')
             
             if (!section) return

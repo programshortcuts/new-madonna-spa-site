@@ -11,5 +11,5 @@
 }
 
 .content > .img-wrapper {
-    float: right;
+    float: right !important;
 }
