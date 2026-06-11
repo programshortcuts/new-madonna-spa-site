@@ -59,6 +59,13 @@ export function initServicesSwiper() {
         }
     });
 
+    // Center slide vertically in viewport when it receives focus
+    el.addEventListener('focusin', (e) => {
+        const slide = e.target.closest('.swiper-slide');
+        if (!slide) return;
+        slide.scrollIntoView({ block: 'center', behavior: 'smooth' });
+    });
+
     return servicesSwiper; // ✅ CRITICAL ADDITION
 }
 
