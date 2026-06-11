@@ -86,5 +86,25 @@ export function initServiceNavController(swiperInstance) {
             // - scrollIntoView()
             // - activeElement manipulation
         });
+        btn.addEventListener('keydown', (e) => {
+            const key = e.key.toLowerCase()
+            if(key == 'enter'){
+                const index = Number(btn.dataset.slide);
+                if (Number.isNaN(index)) return;
+
+                // IMPORTANT:
+                // Use loop-safe method when available
+                if (swiperInstance.slideToLoop) {
+                    swiperInstance.slideToLoop(index);
+                } else {
+                    swiperInstance.slideTo(index);
+                }
+
+                // 🚫 DO NOT:
+                // - focus()
+                // - scrollIntoView()
+                // - activeElement manipulation
+            }
+        });
     });
 }
