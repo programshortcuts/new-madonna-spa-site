@@ -102,11 +102,6 @@ export async function injectPage(href) {
             }
 
             html = await res.text();
-            console.log("FETCHED:", href);
-
-            console.log(
-                html.includes("Helping you look and feel younger")
-            );
             pageCache.set(href, html);
         }
 
