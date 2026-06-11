@@ -73,3 +73,6 @@ section#longetivyMedHomePage {
 #longetivyMedHomePage .section-title {
     margin-left: 19%;
 }
+.service-column>.service-col-title {
+    padding: .5% 0;
+}

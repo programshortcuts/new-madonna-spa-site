@@ -59,11 +59,9 @@ export function initServicesSwiper() {
         }
     });
 
-    // Center slide horizontally in viewport when it receives focus (e.g. from letter nav)
-    el.addEventListener('focusin', (e) => {
-        const slide = e.target.closest('.swiper-slide');
-        if (!slide) return;
-        slide.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
+    // Ensure slide is centered horizontally after external navigation (letter nav, clicks)
+    servicesSwiper.on('slideChange', () => {
+        servicesSwiper.update();
     });
 
     return servicesSwiper; // ✅ CRITICAL ADDITION
