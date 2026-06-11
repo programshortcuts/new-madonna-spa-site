@@ -76,3 +76,6 @@ section#longetivyMedHomePage {
 .service-column>.service-col-title {
     padding: .5% 0;
 }
+.staff-wrapper {
+    gap: 2%;
+}

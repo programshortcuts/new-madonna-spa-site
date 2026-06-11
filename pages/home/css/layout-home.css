@@ -33,10 +33,10 @@
 .address-contact-home {display: flex;}
 
 .staff-wrapper {
-    gap: 2%;
+    overflow: hidden;
     overflow-x: scroll;
     touch-action: pan-x;
-    width: 100%;
+    display: flex;
 }
 .staff-wrapper > .staff {
     display: flex;

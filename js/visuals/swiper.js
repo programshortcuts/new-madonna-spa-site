@@ -1,6 +1,6 @@
 // js/visuals/swiper.js
 let reviewsSwiper = null;
-let servicesSwiper = null;
+export let servicesSwiper = null;
 
 export function initReviewsSwiper() {
     const el = document.querySelector('.reviews-swiper');
