@@ -1,6 +1,5 @@
 // focus-nav.js
 export function focusNav({e,target}){
-    
     if (e.target.classList.contains('service-title-col-link')){
         console.log('stop')
         return

@@ -3,7 +3,7 @@ import { initFocusScroll } from "./nav/focus-scroll.js";
 import { initChangeStyles } from "./ui/change-styles.js";
 import { initInjectContentListeners } from "./core/inject-content.js";
 import { initToggleNav } from "./ui/toggle-nav.js";
-import { initLetterNav } from "./nav/letter-nav.js";
+import { initKeydboardNav } from "./nav/keyboard-nav.js";
 import { initDropDown } from "./ui/drop-down.js";
 // import { initFilterSortItems } from "./ui/filter-sort-items.js";
 // import { initMedicalSpaAnimation } from "./visuals/animation.js";
@@ -14,7 +14,7 @@ addEventListener('DOMContentLoaded', initMain)
 function initMain(){
     const pageWrapper = document.querySelector('.page-wrapper')
     initToggleNav()
-    initLetterNav({
+    initKeydboardNav({
         pageWrapper
     });
     initFocusScroll()

@@ -1,6 +1,6 @@
 // letter-nav.js
 import { focusNav } from "./focus-nav.js";
-export function isActuallyVisible(el) {
+function isActuallyVisible(el) {
     if (!el) return false;
     const style = getComputedStyle(el);
     if (
@@ -19,11 +19,6 @@ export function isActuallyVisible(el) {
     }
     return true;
 }
-
-// ----------------------------
-// helpers
-// ----------------------------
-
 function getAlpha(el) {
 
     const dataVal =
@@ -70,57 +65,39 @@ function buildElements(container = document) {
         return true;
     });
 }
-
-// ----------------------------
-// main
-// ----------------------------
-
-export function initLetterNav({ container = document } = {}) {
+export function letterNav({ container, e }) {
     if (!container) return;
+    if (e.target.matches('input, textarea, [contenteditable="true"]')) return;
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    const key = e.key.toLowerCase();
+    if (!/^[a-z]$/.test(key)) return;
+    // Re-query every keypress so injected content is always included
+    const allEls = buildElements(container);
+    const matches = allEls
+        .map((el, i) => ({ el, i, alpha: getAlpha(el) }))
+        .filter(x => x.alpha === key);
 
-    document.addEventListener('keydown', (e) => {
-        if (e.target.matches('input, textarea, [contenteditable="true"]')) return;
-        if (e.metaKey || e.ctrlKey || e.altKey) return;
+    if (!matches.length) return;
+    const active = document.activeElement;
+    const currentIndex = allEls.indexOf(active);
+    // sort matches in DOM order
+    const sorted = matches.sort((a, b) => a.i - b.i);
+    let target = null;
+    // find next
+    const next = sorted.find(m => m.i > currentIndex);
+    const prev = sorted.find(m => m.i <= currentIndex);
+    if (e.shiftKey) {
+        // reverse navigation
+        const reversed = [...sorted].reverse();
+        target =
+            reversed.find(m => m.i < currentIndex) ||
+            reversed[0]; // wrap
+    } else {
+        target =
+            next ||
+            sorted[0]; // wrap
+    }
+    if (!target?.el) return;
+    focusNav({ e, target })
 
-        const key = e.key.toLowerCase();
-        if (!/^[a-z]$/.test(key)) return;
-
-        // Re-query every keypress so injected content is always included
-        const allEls = buildElements(container);
-        
-        const matches = allEls
-            .map((el, i) => ({ el, i, alpha: getAlpha(el) }))
-            .filter(x => x.alpha === key);
-
-        if (!matches.length) return;
-
-        const active = document.activeElement;
-        const currentIndex = allEls.indexOf(active);
-
-        // sort matches in DOM order
-        const sorted = matches.sort((a, b) => a.i - b.i);
-
-        let target = null;
-
-        // find next
-        const next = sorted.find(m => m.i > currentIndex);
-        const prev = sorted.find(m => m.i <= currentIndex);
-
-        if (e.shiftKey) {
-            // reverse navigation
-            const reversed = [...sorted].reverse();
-            target =
-                reversed.find(m => m.i < currentIndex) ||
-                reversed[0]; // wrap
-        } else {
-            target =
-                next ||
-                sorted[0]; // wrap
-        }
-
-        if (!target?.el) return;
-
-        focusNav({e,target})
-        
-    });
 }

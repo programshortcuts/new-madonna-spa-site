@@ -1,5 +1,4 @@
 // drop-down.js
-
 let lastClickedDrop 
 export function initDropDown() {
     const dropDowns = document.querySelectorAll('.drop-down')
@@ -82,7 +81,6 @@ export function initDropDown() {
             // } else {
             //     hideAllDowns()
             // }
-            // console.log(downs)
             downs.classList.toggle('hide')
             lastClickedDrop = e.target
             return
@@ -96,7 +94,6 @@ export function initDropDown() {
     }
     function hideEls(els){
         els.forEach(el =>{
-            console.log(el)
             if(!el.classList.contains('hide')){
                 el.classList.add('hide')               
             }
