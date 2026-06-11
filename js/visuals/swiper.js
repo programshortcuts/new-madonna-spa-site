@@ -59,11 +59,11 @@ export function initServicesSwiper() {
         }
     });
 
-    // Center slide vertically in viewport when it receives focus
+    // Center slide horizontally in viewport when it receives focus (e.g. from letter nav)
     el.addEventListener('focusin', (e) => {
         const slide = e.target.closest('.swiper-slide');
         if (!slide) return;
-        slide.scrollIntoView({ block: 'center', behavior: 'smooth' });
+        slide.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
     });
 
     return servicesSwiper; // ✅ CRITICAL ADDITION
