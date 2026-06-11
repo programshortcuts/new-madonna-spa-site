@@ -47,9 +47,6 @@
     flex-direction: column;
     justify-content: flex-end;
 }
-.main-item > .service-column{
-    
-}
 .main-item > .service-column > button{
     display: block;
 }
