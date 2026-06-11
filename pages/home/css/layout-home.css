@@ -17,10 +17,10 @@
     flex-direction: column;
     justify-content: center;
 }
-.main-item {
+.home-page-header section {
     position: relative;
 }
-.main-item::after { 
+.home-page-header section::after { 
     content: "";
     display: block;
     clear: both;

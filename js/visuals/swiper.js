@@ -69,6 +69,7 @@ export function initServicesSwiper() {
     // Allow clicking on slides to navigate left/right
     el.addEventListener('click', (e) => {
         const slide = e.target.closest('.swiper-slide');
+        
         if (!slide || !servicesSwiper.slides.includes(slide)) return;
 
         // Don't navigate if the click was on a button or interactive element
@@ -85,7 +86,39 @@ export function initServicesSwiper() {
         } else if (clickedIndex > activeIndex) {
             servicesSwiper.slideNext();
         }
+        const rect = el.getBoundingClientRect()
+        console.log(rect.x)
     });
+    el.addEventListener('keydown', (e) => {
+        const key = e.key.toLowerCase()
+        if(key === 'enter'){
+            const slide = e.target.closest('.swiper-slide');
+            
+            if (!slide || !servicesSwiper.slides.includes(slide)) return;
+            
+            // Don't navigate if the click was on a button or interactive element
+            if (e.target.closest('button, a, [data-no-click]')) return;
+            
+            const clickedIndex = servicesSwiper.slides.indexOf(slide);
+            if (clickedIndex === -1) return;
+            
+            const activeIndex = servicesSwiper.activeIndex;
+            
+            // Navigate based on whether the clicked slide is before or after current
+            if (clickedIndex < activeIndex) {
+                servicesSwiper.slidePrev();
+            } else if (clickedIndex > activeIndex) {
+                servicesSwiper.slideNext();
+            }
+            console.log(el)
+            el.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+        }
+    });
+
+    
 
     return servicesSwiper; // ✅ CRITICAL ADDITION
 }
@@ -97,7 +130,8 @@ export function initServiceNavController(swiperInstance) {
     if (!buttons.length) return;
 
     buttons.forEach(btn => {
-        btn.addEventListener('click', () => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault()
             const index = Number(btn.dataset.slide);
             if (Number.isNaN(index)) return;
 
@@ -135,4 +169,15 @@ export function initServiceNavController(swiperInstance) {
             }
         });
     });
+}
+
+// implement this later in serviceSwiper
+function centerFocus(e){
+    console.log(e.type)
+    if(e.type =='keydown'){
+
+    }
+    if(e.type == 'click'){
+
+    }
 }
