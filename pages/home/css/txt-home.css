@@ -2,14 +2,16 @@
 .home-page-header>p {
     font-family: 'Courier New', Courier, monospace;
 }
-.home-page-container   {
-}   
+
+.home-page-container {}
+
 .address-num-container>p {
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
     color: white;
     font-size: 1.35rem;
 }
-.home-page-container button.section-title{
+
+.home-page-container button.section-title {
     /* font-size: 1rem !important; */
     font-family: Arial, Helvetica, sans-serif;
     font-family: 'Times New Roman', Times, serif;
@@ -27,23 +29,25 @@
     /* font-weight: 400; */
     line-height: 1.8;
 }
+
 .page-container.home-page-container .main-item p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     /* font-size: .9rem; */
 }
-#ourServiceHomePage .title-text ,
+
+#ourServiceHomePage .title-text,
 #longetivyMedHomePage .title-text {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 500 !important;
     /* color: blue; */
 }
 
-.and-font{
-    font-family: Arial, Helvetica, sans-serif;    
+.and-font {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .service-column>.service-col-title {
     text-decoration: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 90%i;
+    font-size: 90%;
 }
