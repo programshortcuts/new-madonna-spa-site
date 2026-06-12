@@ -39,58 +39,42 @@ document.addEventListener("submit", (e) => {
    INIT ENTRY POINT
 ----------------------------- */
 export function initInjectContentListeners() {
-
     // ✅ FIX: ensure DOM is ready before first injection
     requestAnimationFrame(() => {
         injectPage(DEFAULT_PAGE);
     });
-
     document.addEventListener('click', (e) => {
         const link = e.target.closest('a[data-link]');
         if (!link) return;
-
         const href = link.getAttribute('href');
-
         if (!href || href === '#' || href === 'undefined') {
             console.warn('Blocked bad href:', href);
             return;
         }
-
         e.preventDefault();
         injectPage(href);
-
         window.scrollTo(0, 0);
         mainLandingPage.scrollTo(0, 0);
-
         if (link === lastClickedLink) {
-
             mainLandingPage.focus();
-
             if (pageWrapper?.classList.contains('expand')) {
                 pageWrapper.classList.remove('expand');
             }
-
             lastClickedLink = null;
             return;
         }
-
         lastClickedLink = link;
     });
 }
-
-/* -----------------------------
-   PAGE INJECTION CORE
+/* ----------------------------- PAGE INJECTION CORE
 ----------------------------- */
 export async function injectPage(href) {
     if (!href) return;
-
     if (!isSafePath(href)) {
         console.warn('Blocked unsafe path:', href);
         return;
     }
-
     let html;
-
     try {
         if (pageCache.has(href)) {
             html = pageCache.get(href);
