@@ -24,7 +24,7 @@ export function initKeydboardNav({ container = document } = {}) {
                         );
                         activeSlide?.focus();
 
-                    }, 250);
+                    }, 50);
                 }
             }
 

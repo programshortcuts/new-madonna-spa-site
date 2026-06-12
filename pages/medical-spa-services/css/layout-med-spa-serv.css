@@ -12,3 +12,8 @@
     z-index: 1;
     /* Ensure it's above the content */
 }
+
+.vid-wrapper>video {
+    border: 2px solid blue;
+    background-color: black;
+}

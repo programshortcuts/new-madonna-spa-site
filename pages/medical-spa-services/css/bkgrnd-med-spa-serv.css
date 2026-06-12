@@ -10,7 +10,7 @@
 }
 
 .section#bioHormoneReplacement {
-    /* background-image: url('../../../imgs/biote.webp');  */
+    /* background-image: url('../media/bio-horm-replace.png');  */
 }
 
 .section#IVinfusionTherapy {
@@ -18,14 +18,11 @@
 }
 
 .section#peptides {
-
-    /* background-image: url('../media/peptide.jpeg'); */
+    /* background-image: url('../media/peptide-header-wide.png'); */
 }
 
 .section#botoxAndFillers {
     background-image: url('../media/botox-filler.webp');
-    background-position-y: 50%;
-    background-position-x: -12%;
 
 }
 
