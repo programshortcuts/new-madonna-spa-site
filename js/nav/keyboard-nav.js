@@ -5,6 +5,7 @@ import { servicesSwiper } from "../visuals/swiper.js";
 export function initKeydboardNav({ container = document } = {}) {
     let lastElClicked = null;
 
+
     document.addEventListener('keydown', (e) => {
 
         if (e.key === 'Enter') {
@@ -15,15 +16,16 @@ export function initKeydboardNav({ container = document } = {}) {
 
                 servicesSwiper.slideToLoop(index);
 
-                setTimeout(() => {
+                if (e.target === lastElClicked) {
+                    setTimeout(() => {
 
-                    const activeSlide = document.querySelector(
-                        '.services-swiper .swiper-slide-active'
-                    );
+                        const activeSlide = document.querySelector(
+                            '.services-swiper .swiper-slide-active'
+                        );
+                        activeSlide?.focus();
 
-                    activeSlide?.focus();
-
-                }, 350);
+                    }, 250);
+                }
             }
 
             lastElClicked = e.target;
@@ -32,4 +34,7 @@ export function initKeydboardNav({ container = document } = {}) {
         letterNav({ container, e });
 
     });
+    document.addEventListener('focusout', (e) => {
+        lastElClicked = null
+    })
 }
