@@ -140,13 +140,7 @@ export async function injectPage(href) {
         ]
     });
 
-    // -----------------------------
-    // RESET VIEW
-    // -----------------------------
-    window.scrollTo(0, 0);
-    mainLandingPage.scrollTo(0, 0);
-
-    onPageReady();
+    
 
     // -----------------------------
     // AUTO FOCUS
@@ -162,7 +156,13 @@ export async function injectPage(href) {
             });
         });
     }
-
+    // -----------------------------
+    // RESET VIEW
+    // -----------------------------
+    window.scrollTo(0, 0);
+    mainLandingPage.scrollTo(0, 0);
+    console.log('reset')
+    onPageReady();
     // -----------------------------
     // INIT UI MODULES
     // -----------------------------

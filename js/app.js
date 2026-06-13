@@ -12,6 +12,7 @@ let animationCleanup = null;
 
 addEventListener('DOMContentLoaded', initMain)
 function initMain(){
+
     const pageWrapper = document.querySelector('.page-wrapper')
     initToggleNav()
     initKeydboardNav({
