@@ -1,4 +1,10 @@
 /* layout-products.css */
+.page-container.products-page-container {
+    overflow-y: auto;
+    overscroll-behavior: auto;
+    height: 100vh;
+    /* important */
+}
 .alpha-list {display: flex;}
 .alpha-list>li {flex-basis: 4%;}
 .items-container {
@@ -44,4 +50,18 @@
     max-height: 100px;
     left: 50%;
     bottom: 50%;
+}
+
+.items-container {
+    display: flex;
+    flex-wrap: nowrap;
+    
+    gap: 1rem;
+    
+    overscroll-behavior: contain;
+    /* overflow-x: auto; */
+    /* overflow-y: scroll; */
+    
+    scroll-behavior: smooth;
+    scrollbar-width: none;
 }
