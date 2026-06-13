@@ -4,8 +4,13 @@
     height: 100vh;
     padding-bottom: 50%;
 }
+.cat-containers >.cat{
+    margin-bottom: 5%;
+}
+
 .cat-title {
     margin-left: 3%;
+    letter-spacing: 25%
 }
 .products-header {
     margin-left: 9%;
