@@ -1,6 +1,9 @@
 /* spacing-products.css */
+.cat-title {
+    margin-left: 3%;
+}
 .products-header {
-    margin-left: 5%;
+    margin-left: 9%;
 }
 .products-title {
     letter-spacing: 2%;

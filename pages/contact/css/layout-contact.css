@@ -9,16 +9,11 @@
     flex-direction: column;
 }
 .page-container.contact-page-container .social-media-container {
-    width: 100%;
     display: flex;
-    /* justify-content: flex-end; */
-    /* padding-right: 5%; */
-    width: 100%;
-    /* border: 1px solid blue; */
+    flex-direction: row;
 }
 .social-media-container > .social-media-item {
     flex-basis: 20%;
-    width: 20%;
 }
 
 .contact-container {
