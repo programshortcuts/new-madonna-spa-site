@@ -25,12 +25,12 @@ export function initDropDown() {
         e.stopPropagation()
         
         const catTitle = e.target.closest('.cat-title')
-        const productTitle = e.target.closest('.product-title')
+        const productTitle = e.target.closest('.products-title')
         const sectionTitleDropDown = e.target.closest('.section-title.drop-down')
         const serviceHomeDropDown = e.target.closest('.service-title.drop-down')
 // 🟣 PRODUCT DROPDOWN
         if (productTitle) {
-            const productsContainers = productTitle.closest('.products-containers')
+            const productsContainers = productTitle.closest('.products')
             if (!productsContainers) return
 
             const downs = productsContainers.querySelector('.products-content.downs')
