@@ -67,7 +67,17 @@ function buildElements(container = document) {
 }
 export function letterNav({ container, e }) {
     if (!container) return;
-    if (e.target.matches('input, textarea, [contenteditable="true"]')) return;
+    const isSlider = e.target.matches('input.product-size-slider');
+
+    if (
+        !isSlider &&
+        e.target.matches('input, textarea, [contenteditable="true"]')
+    ) {
+        if(e.key === 'enter') {
+            
+        }
+        return;
+    }
     if (e.metaKey || e.ctrlKey || e.altKey) return;
     const key = e.key.toLowerCase();
     if (!/^[a-z]$/.test(key)) return;

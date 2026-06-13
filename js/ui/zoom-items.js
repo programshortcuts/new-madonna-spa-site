@@ -15,7 +15,7 @@ export function initZoomItems() {
             // console.log(slider.value)
             itemsContainer.style.setProperty(
                 "--item-size",
-                `${slider.value}%`
+                `${slider.value}px`
             );
         });
         slider.addEventListener("change", () => {

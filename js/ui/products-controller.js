@@ -23,7 +23,7 @@ export function initProductsController() {
             sortBtn.addEventListener('click', (e) => {
                 e.preventDefault();
                 e.stopPropagation();
-
+                
                 const current = container.dataset.view || "horizontal";
 
                 const next = current === "horizontal"
@@ -34,6 +34,8 @@ export function initProductsController() {
 
                 // reset scroll so layout change is visible
                 container.scrollTo({ left: 0, top: 0, behavior: "smooth" });
+
+                
             });
         }
 

@@ -3,19 +3,14 @@
     <!-- supplement -->
     <div class="cat-containers">
         <div class="cat">
-            <header class="cat-header">
-                <button  data-nav-target="supplements" id="supplements" class="cat-title drop-down"
-                    aria-expanded="false" aria-controls="menu-id">
-                    
-                    Supplements
-                </button>
+            <button  data-nav-target="supplements" id="supplements" 
+                class="cat-title drop-down cat-header"
+                aria-expanded="false" aria-controls="menu-id">
+                Supplements
                 <div class="img-wrapper">
                     <img src="imgs/biote.webp" alt="">
                 </div>
-                
-                <div class="img-wrapper">
-                </div>
-            </header>
+            </button>
             <div class="products-container downs">
                 <header class="products-container-header">
                     <button id="biote" class="product-title drop-down">
@@ -106,8 +101,9 @@
                             <span class="price-product">$38.50??</span>
                         </div>
                     </div>
+                    <span class="zoom">zoom:</span>
                     <input data-auto-focus data-nav-target="zoomSlider" class="product-size-slider" 
-                    type="range" min="10" max="35" value="10" step="5">
+                    type="range" min="50" max="200" value="100" step="25">
                     <div class="alphabet-header">
                         <ul class="alpha-list">
                             <li><a tabindex="-1" id="a-alpha" href="#" class="letter-alphabet">A</a></li>
@@ -139,9 +135,9 @@
                             <li><a tabindex="-1" id="z-alpha" href="#" class="letter-alphabet">Z</a></li>
                         </ul>
                     </div>
-                    <nav class="filter-nav">
-                        <button data-nav-target class="filter-nav-item filter-btn">filter btn</button>
+                    <nav class="sort-filter-nav">
                         <button data-nav-target class="filter-nav-item sort-btn">sort btn</button>
+                        <button data-nav-target class="filter-nav-item filter-btn">filter btn</button>
                     </nav>
                 </div>
             </div>
