@@ -14,6 +14,8 @@
 }
 
 .mobile-header-nav {
+    font-family: cursive;
+
     border-radius: 2px;
     border-top: 1px solid whitesmoke;
     box-shadow: 0 -1px 1px 1px grey;
