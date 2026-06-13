@@ -61,8 +61,19 @@ export function initServicesSwiper() {
 
         on: {
             slideChangeTransitionEnd: function () {
-                // Recalculate positions after transition so centeredSlides works correctly
+
                 this.update();
+
+                const activeSlide = this.slides[this.activeIndex];
+
+                console.log(
+                    'ACTIVE SLIDE:',
+                    activeSlide,
+                    'FOCUSED:',
+                    document.activeElement
+                );
+
+                activeSlide?.focus();
             }
         }
     });
