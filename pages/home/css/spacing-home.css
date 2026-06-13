@@ -71,7 +71,7 @@ section#longetivyMedHomePage {
     margin-top: -6% !important;
 }
 #longetivyMedHomePage .section-title {
-    margin-left: 19%;
+    margin-left: 15%;
 }
 .staff-wrapper {
     gap: 2%;
@@ -81,6 +81,7 @@ section#longetivyMedHomePage {
 }
 .services-swiper .swiper-slide .service-title {
     padding: 1% 0;
+    padding-right: 5%;
 }
 .services-swiper .swiper-slide .content {
     padding: 4% 5%;

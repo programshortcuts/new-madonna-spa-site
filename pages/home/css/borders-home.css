@@ -13,3 +13,7 @@
     /* display: block; */
     border-radius: 32px;
 }
+
+.services-swiper .swiper-slide .service-title {
+    border-bottom: none;
+}

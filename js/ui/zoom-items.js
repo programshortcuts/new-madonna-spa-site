@@ -11,6 +11,7 @@ export function initZoomItems() {
         if (!itemsContainer) return;
 
         slider.addEventListener("input", () => {
+            console.log(slider.value)
             itemsContainer.style.setProperty(
                 "--item-size",
                 `${slider.value}px`
