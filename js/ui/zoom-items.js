@@ -2,7 +2,7 @@
 
 export function initZoomItems() {
     
-    const sliders = document.querySelectorAll('[data-nav-target="zoomSlider"]');
+    const sliders = document.querySelectorAll('.product-size-slider');
 
     sliders.forEach(slider => {
         const container = slider.closest('.products-content');
