@@ -1,6 +1,6 @@
 /* zoom-items.css */
 .items-container {
-    --item-size: 10%;
+    --item-size: 100px;
 
     display: flex;
     flex-wrap: nowrap;
