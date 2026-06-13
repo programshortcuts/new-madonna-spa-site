@@ -1,6 +1,7 @@
 /* sizing-products.css */
-/* sizing-products.css */
-
+.page-container.products-page-container {
+    height: 100vh;
+}
 /* container width only */
 .products-content {
     width: 100%;

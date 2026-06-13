@@ -1,4 +1,9 @@
 /* spacing-products.css */
+.page-container.products-page-container {
+    margin-top: 15%;
+    height: 100vh;
+    padding-bottom: 50%;
+}
 .cat-title {
     margin-left: 3%;
 }
@@ -9,10 +14,7 @@
     letter-spacing: 2%;
     margin-bottom: 1rem;
 }
-.products-page-container {
-    margin-top: 15%;
-    /* padding-top: 50% ; */
-}
+
 .products-container {
     margin-bottom: 5%;
 }

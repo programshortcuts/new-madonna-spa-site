@@ -2,7 +2,6 @@
 .page-container.products-page-container {
     overflow-y: auto;
     overscroll-behavior: auto;
-    height: 100vh;
     /* important */
 }
 .alpha-list {display: flex;}
