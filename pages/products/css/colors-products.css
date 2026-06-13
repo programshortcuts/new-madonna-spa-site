@@ -1,8 +1,13 @@
+/* colors-products.css */
+.cat-title {
+   color:black
+}
 .alpha-list>li >a:visited,
 .alpha-list>li >a{
     text-decoration: none;
     color: black;
  }
+ 
  .item { 
     background-color: white;
  }
