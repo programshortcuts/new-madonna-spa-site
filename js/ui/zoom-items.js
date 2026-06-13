@@ -1,6 +1,7 @@
 // zoom-items.js
 
 export function initZoomItems() {
+    
     const sliders = document.querySelectorAll('[data-nav-target="zoomSlider"]');
 
     sliders.forEach(slider => {
@@ -16,6 +17,9 @@ export function initZoomItems() {
                 "--item-size",
                 `${slider.value}px`
             );
+        });
+        slider.addEventListener("onchange", () => {
+            console.log(slider.value)
         });
     });
 }
