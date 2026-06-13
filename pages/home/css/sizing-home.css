@@ -1,8 +1,4 @@
 /* sizing-home.css*/
-.home-page-header{
-    /* min-height: 27vh; */
-    /* height: 80vh */
-}
 .home-page-header>.contact-content>.img-wrapper>img {
     width: 80%;
     height: 10vh;
@@ -43,16 +39,13 @@
     max-height: unset !important;
     object-fit: contain;
 }
-
 img#officeInPhoto {
     max-width: 300px;
     max-height: 400px;
-
 }
 .staff-wrapper {
     width: 100%;
 }
-
 .staff-wrapper>.staff>.pic {
     width: 100%;
     max-width:  150px;
