@@ -16,6 +16,7 @@
 }
 
 /* header visuals only */
-.product-title >img {
+.products-header  img {
     height: 50px;
+    max-height: 80px;
 }
