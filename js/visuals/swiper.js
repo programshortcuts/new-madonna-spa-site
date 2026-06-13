@@ -36,6 +36,7 @@ export function initServicesSwiper() {
         speed: 300,
 
         centeredSlides: true,
+        // slidesPerView: window.innerWidth < 940 ? 5 : 4,
         slidesPerView: 'auto',
 
         spaceBetween: 0,
@@ -86,8 +87,10 @@ export function initServicesSwiper() {
         } else if (clickedIndex > activeIndex) {
             servicesSwiper.slideNext();
         }
-        const rect = el.getBoundingClientRect()
-        console.log(rect.x)
+        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+    el.addEventListener('focus', (e) => {
+
     });
     el.addEventListener('keydown', (e) => {
         const key = e.key.toLowerCase()
@@ -99,29 +102,13 @@ export function initServicesSwiper() {
             // Don't navigate if the click was on a button or interactive element
             if (e.target.closest('button, a, [data-no-click]')) return;
 
-            const clickedIndex = servicesSwiper.slides.indexOf(slide);
-            if (clickedIndex === -1) return;
-
-            const activeIndex = servicesSwiper.activeIndex;
-
-            // Navigate based on whether the clicked slide is before or after current
-            if (clickedIndex < activeIndex) {
-                servicesSwiper.slidePrev();
-            } else if (clickedIndex > activeIndex) {
-                servicesSwiper.slideNext();
-            }
-            console.log(el)
-            el.scrollIntoView({
+            slide.scrollIntoView({
                 behavior: 'smooth',
-                block: 'center'
+                block: 'center',
+                inline: 'nearest'
             });
         }
     });
-    el.addEventListener('focus', (e) => {
-        console.log('here')
-    });
-
-
 
     return servicesSwiper; // ✅ CRITICAL ADDITION
 }
