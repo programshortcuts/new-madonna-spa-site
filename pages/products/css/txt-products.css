@@ -1,5 +1,9 @@
 /* txt-products.css */
 .products-title{
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+    text-align: center;
     
 }
 .alpha-list li {

@@ -1,4 +1,11 @@
 /* spacing-products.css */
+.products-header {
+    margin-left: 5%;
+}
+.products-title {
+    letter-spacing: 2%;
+    margin-bottom: 1rem;
+}
 .products-page-container {
     margin-top: 15%;
     /* padding-top: 50% ; */
