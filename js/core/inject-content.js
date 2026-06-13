@@ -63,6 +63,7 @@ export function initInjectContentListeners() {
             return;
         }
         lastClickedLink = link;
+        
     });
 }
 /* ----------------------------- PAGE INJECTION CORE
@@ -136,7 +137,17 @@ export async function injectPage(href) {
             'src', 'href', 'class', 'id', 'alt', 'tabindex',
             'allow', 'allowfullscreen', 'frameborder',
             'width', 'height', 'viewBox', 'fill', 'd', 'cx', 'cy', 'r',
-            'type', 'name', 'value', 'for', 'required', 'action', 'method'
+            'type', 'name', 'value', 'for', 'required', 'action', 'method',
+
+            'min',
+            'max',
+            'step',
+
+            'data-auto-focus',
+            'data-nav-target',
+            'data-link',
+            'aria-expanded',
+            'aria-controls'
         ]
     });
 
@@ -165,9 +176,9 @@ export async function injectPage(href) {
     // -----------------------------
     // INIT UI MODULES
     // -----------------------------
-    initZoomItems();
     initProductsController();
     initItemsScroll();
+    initZoomItems();
 
     // OPTIONAL PAGE-SPECIFIC INIT
     if (href.includes("bookings")) {
