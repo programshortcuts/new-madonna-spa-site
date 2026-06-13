@@ -30,11 +30,10 @@ export function initDropDown() {
         const serviceHomeDropDown = e.target.closest('.service-title.drop-down')
 // 🟣 PRODUCT DROPDOWN
         if (productTitle) {
-            const productsContainer = productTitle.closest('.products-container')
-            if (!productsContainer) return
+            const productsContainers = productTitle.closest('.products-containers')
+            if (!productsContainers) return
 
-            const downs = productsContainer.querySelector('.products-content.downs')
-            console.log(downs)
+            const downs = productsContainers.querySelector('.products-content.downs')
             if (!downs) return
             downs.classList.toggle('hide')
 
@@ -46,7 +45,7 @@ export function initDropDown() {
             console.log(container)
             if (!container) return
 
-            const downs = container.querySelector('.products-container.downs')
+            const downs = container.querySelector('.products-containers.downs')
 
             console.log(downs)
             if (!downs) return

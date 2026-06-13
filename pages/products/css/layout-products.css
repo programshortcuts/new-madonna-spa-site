@@ -37,3 +37,11 @@
     align-items: center;
     gap: 1rem;
 }
+
+.products-header > img {
+    z-index: 10;
+    /* position: absolute; */
+    max-height: 100px;
+    left: 50%;
+    bottom: 50%;
+}
