@@ -1,2 +1,4 @@
 /* bkgrnd-products.css */
-
+.products-header > .products-title{
+    background: none !important;
+}
