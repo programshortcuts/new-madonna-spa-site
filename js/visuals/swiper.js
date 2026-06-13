@@ -66,12 +66,12 @@ export function initServicesSwiper() {
 
                 const activeSlide = this.slides[this.activeIndex];
 
-                console.log(
-                    'ACTIVE SLIDE:',
-                    activeSlide,
-                    'FOCUSED:',
-                    document.activeElement
-                );
+                // console.log(
+                //     'ACTIVE SLIDE:',
+                //     activeSlide,
+                //     'FOCUSED:',
+                //     document.activeElement
+                // );
 
                 activeSlide?.focus();
             }

@@ -23,3 +23,10 @@
 .section-title:active~.img-wrapper>img {
     filter: grayscale(0) !important;
 }
+
+
+.service-col-title.is-focused {
+    background-color: rgba(0, 123, 255, 0.2) !important;
+    /* temp highlight */
+    transition: background-color 0.2s ease;
+}

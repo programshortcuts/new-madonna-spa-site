@@ -37,4 +37,39 @@ export function initKeydboardNav({ container = document } = {}) {
     document.addEventListener('focusout', (e) => {
         lastElClicked = null
     })
+    document.addEventListener('focusin', syncServiceFocusHighlight);
+    document.addEventListener('focusout', () => {
+        // small delay so focusin has time to re-apply if moving inside swiper
+        setTimeout(syncServiceFocusHighlight, 0);
+    });
+}
+function syncServiceFocusHighlight() {
+    // clear all first
+    document.querySelectorAll('.service-col-title.is-focused')
+        .forEach(btn => btn.classList.remove('is-focused'));
+
+    const active = document.activeElement;
+    if (!active) return;
+
+    // CASE 1: focus is on a service-column button
+    const colBtn = active.closest('.service-col-title');
+    if (colBtn) {
+        colBtn.classList.add('is-focused');
+        return;
+    }
+
+    // CASE 2: focus is inside a slide
+    const slide = active.closest('.swiper-slide.service');
+    if (!slide) return;
+
+    const target = slide.dataset.navTarget;
+    if (!target) return;
+
+    const matchingBtn = document.querySelector(
+        `.service-col-title[data-nav-target="${target.replace('-serv-home', '-col-home-link')}"]`
+    );
+
+    if (matchingBtn) {
+        matchingBtn.classList.add('is-focused');
+    }
 }
