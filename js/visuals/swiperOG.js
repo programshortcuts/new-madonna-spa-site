@@ -101,12 +101,9 @@ export function initServicesSwiper() {
         }
         el.scrollIntoView({ behavior: 'smooth', block: 'center' });
     });
-    el.addEventListener('focusin', (e) => {
-        if (e.target.closest('.swiper-slide')) {
-            pauseSwiperTemporarily();
-        }
-    });
+    el.addEventListener('focus', (e) => {
 
+    });
     el.addEventListener('keydown', (e) => {
         servicesSwiper.autoplay.stop(); 
         const key = e.key.toLowerCase()
@@ -182,5 +179,17 @@ export function initServiceNavController(swiperInstance) {
             }
         });
     });
+}
+
+let autoplayRestartTimer;
+
+function pauseSwiperTemporarily() {
+    servicesSwiper.autoplay?.stop();
+
+    clearTimeout(autoplayRestartTimer);
+
+    autoplayRestartTimer = setTimeout(() => {
+        servicesSwiper.autoplay?.start();
+    }, 8000);
 }
 
