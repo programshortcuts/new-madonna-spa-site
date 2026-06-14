@@ -37,12 +37,12 @@
     background-position-y: 50% !important;
     background-size: 98% !important;
 }
+#infraRedServiceHome{
+    background: url('../../imgs/ai-imgs/infrared-therapy.png') center/cover no-repeat !important;
+    background-position-x: 50% !important;
+}
 #ivInfusionsServiceHome{
     background: url('../../imgs/ai-imgs/ivInfusion-header-wide.png') center/cover no-repeat !important;
-    /* filter: grayscale(.7); */
-    /* filter: contrast(.2); */
-    /* filter:invert(.4); */
-    /* filter:brightness(.5) */
     background-position-x: 56% !important;
 }
 .service>.content {
