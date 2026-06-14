@@ -1,4 +1,5 @@
 // drop-down.js
+import { vidControls } from "./vid-cntrls.js"
 let lastClickedDrop 
 export function initDropDown() {
     const dropDowns = document.querySelectorAll('.drop-down')
@@ -14,6 +15,8 @@ export function initDropDown() {
         }
         el.removeEventListener('click', toggleContent) // ✅ prevent stacking
         el.addEventListener('click', toggleContent)
+        el.removeEventListener('keydown', toggleContent) // ✅ prevent stacking
+        el.addEventListener('keydown', toggleContent)
     })
     // sectionTitles.forEach(el => {
     //     // SUPER IMPORTANT 
@@ -23,63 +26,12 @@ export function initDropDown() {
     function toggleContent(e) {
         e.preventDefault()
         e.stopPropagation()
-        
-        const catTitle = e.target.closest('.cat-title')
-        const productTitle = e.target.closest('.products-title')
-        const sectionTitleDropDown = e.target.closest('.section-title.drop-down')
-        const serviceSwiperDropDown = e.target.closest('.services-swiper > .swiper-wrapper .service-title.drop-down')
-// 🟣 PRODUCT DROPDOWN
-        if (productTitle) {
-            const productsContainers = productTitle.closest('.products')
-            if (!productsContainers) return
-
-            const downs = productsContainers.querySelector('.products-content.downs')
-            if (!downs) return
-            downs.classList.toggle('hide')
-
+        if(e.type === 'click'){
+            clickHandler(e)
             return
         }
-        // 🟣 CAT DROPDOWN
-        if (catTitle) {
-            const container = e.target.closest('.cat')
-            console.log(container)
-            if (!container) return
-
-            const downs = container.querySelector('.products-containers.downs')
-
-            console.log(downs)
-            if (!downs) return
-            downs.classList.toggle('hide')
-
-            return
-        }
-        // 🔵 SECTION DROPDOWN
-        if (sectionTitleDropDown) {
-            const section = sectionTitleDropDown.closest('section')
-            console.log(section)
-            if (!section) return
-            const downs = section.querySelector('.downs')
-            if (!downs) return
-
-            
-            downs.classList.toggle('hide')
-            lastClickedDrop = e.target
-            return
-        }
-        // Services Swiper Dropdown
-        if (serviceSwiperDropDown) {
-            const service = serviceSwiperDropDown.closest('.service') 
-            if (!service) return
-            // if(!service.classList.contains('drop-down')) return
-            const downs = service.querySelector('.downs')
-            if (!downs) return
-            // if(e.target === lastClickedDrop){
-            //     downs.classList.toggle('hide')
-            // } else {
-            //     hideAllDowns()
-            // }
-            downs.classList.toggle('hide')
-            lastClickedDrop = e.target
+        if(e.type === 'keydown'){
+            keydownHandler(e)
             return
         }
     }
@@ -99,4 +51,97 @@ export function initDropDown() {
             }
         })
     }
+    function clickHandler(e){    
+        const catTitle = e.target.closest('.cat-title')
+        const productTitle = e.target.closest('.products-title')
+        const sectionTitleDropDown = e.target.closest('.section-title.drop-down')
+        const serviceSwiperDropDown = e.target.closest('.services-swiper > .swiper-wrapper .service-title.drop-down')
+        // 🟣 PRODUCT DROPDOWN
+        if (productTitle) {
+            const productsContainers = productTitle.closest('.products')
+            if (!productsContainers) return
+    
+            const downs = productsContainers.querySelector('.products-content.downs')
+            if (!downs) return
+            downs.classList.toggle('hide')
+    
+            return
+        }
+        // 🟣 CAT DROPDOWN
+        if (catTitle) {
+            const container = e.target.closest('.cat')
+            console.log(container)
+            if (!container) return
+    
+            const downs = container.querySelector('.products-containers.downs')
+    
+            console.log(downs)
+            if (!downs) return
+            downs.classList.toggle('hide')
+    
+            return
+        }
+        // 🔵 SECTION DROPDOWN
+        if (sectionTitleDropDown) {
+            const section = sectionTitleDropDown.closest('.section')
+            
+            if (!section) return
+            const downs = section.querySelector('.downs')
+            if (!downs) return
+    
+    
+            downs.classList.toggle('hide')
+            lastClickedDrop = e.target
+    
+            return
+        }
+        // Services Swiper Dropdown
+        if (serviceSwiperDropDown) {
+            const service = serviceSwiperDropDown.closest('.service')
+            if (!service) return
+            // if(!service.classList.contains('drop-down')) return
+            const downs = service.querySelector('.downs')
+            if (!downs) return
+            // if(e.target === lastClickedDrop){
+            //     downs.classList.toggle('hide')
+            // } else {
+            //     hideAllDowns()
+            // }
+            downs.classList.toggle('hide')
+            lastClickedDrop = e.target
+            return
+        }
+    }
+    function keydownHandler(e){    
+        
+        const key = e.key.toLowerCase()
+        const sectionTitleDropDown = e.target.closest('.section-title.drop-down')
+        console.log(sectionTitleDropDown)
+        const section = sectionTitleDropDown.closest('.section')
+        
+        // Services Swiper Dropdown
+        if (sectionTitleDropDown) {
+            
+            vidControls({ e, section })
+            if(key === 'space'){
+                console.log('go')
+                return
+            }
+            if(key === 'enter'){
+                if (!section) return
+                // if(!service.classList.contains('drop-down')) return
+                const downs = section.querySelector('.downs')
+                if (!downs) return
+            // if(e.target === lastClickedDrop){
+            //     downs.classList.toggle('hide')
+            // } else {
+                //     hideAllDowns()
+                // }
+                downs.classList.toggle('hide')
+                lastClickedDrop = e.target
+                return
+            }
+        }
+    }
 }
+
