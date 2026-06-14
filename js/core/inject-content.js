@@ -153,12 +153,13 @@ export async function injectPage(href) {
     });
 
     requestAnimationFrame(() => {
-        mainLandingPage.scrollTop = 0;
-        mainLandingPage.scrollLeft = 0;
+        const firstSection = mainLandingPage.querySelector(".sections-containers");
 
-        const pageContainer = mainLandingPage.querySelector(".page-container");
-        if (pageContainer) {
-            pageContainer.scrollTop = 0;
+        if (firstSection) {
+            firstSection.scrollIntoView({
+                block: "start",
+                behavior: "instant"
+            });
         }
     });
 
@@ -179,8 +180,9 @@ export async function injectPage(href) {
     // -----------------------------
     // RESET VIEW
     // -----------------------------
-    window.scrollTo(0, 0);
-    mainLandingPage.scrollTo(0, 0);
+    requestAnimationFrame(() => {
+        pageWrapper.scrollTop = 0;
+    });
     onPageReady();
     // -----------------------------
     // INIT UI MODULES
