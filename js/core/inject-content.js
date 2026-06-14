@@ -1,3 +1,10 @@
+// 🔥 Ensure correct default page
+// export const DEFAULT_PAGE = "pages/home/home.html";
+export const DEFAULT_PAGE = "pages/medical-spa-services/medical-spa-services.html";
+// export const DEFAULT_PAGE = "pages/products/products.html";
+// export const DEFAULT_PAGE = "pages/contact/contact.html";
+// export const DEFAULT_PAGE = "pages/bookings/bookings.html";
+
 // inject-content.js
 import { initZoomItems } from "../ui/zoom-items.js";
 import { onPageReady } from "./page-lifecycle.js";
@@ -15,12 +22,6 @@ if (!mainLandingPage) {
     throw new Error("Missing .main-landing-page in index.html");
 }
 
-// 🔥 Ensure correct default page
-// export const DEFAULT_PAGE = "pages/home/home.html";
-export const DEFAULT_PAGE = "pages/medical-spa-services/medical-spa-services.html";
-// export const DEFAULT_PAGE = "pages/products/products.html";
-// export const DEFAULT_PAGE = "pages/contact/contact.html";
-// export const DEFAULT_PAGE = "pages/bookings/bookings.html";
 
 const pageCache = new Map();
 let lastClickedLink = null;
@@ -151,7 +152,15 @@ export async function injectPage(href) {
         ]
     });
 
-    
+    requestAnimationFrame(() => {
+        mainLandingPage.scrollTop = 0;
+        mainLandingPage.scrollLeft = 0;
+
+        const pageContainer = mainLandingPage.querySelector(".page-container");
+        if (pageContainer) {
+            pageContainer.scrollTop = 0;
+        }
+    });
 
     // -----------------------------
     // AUTO FOCUS
