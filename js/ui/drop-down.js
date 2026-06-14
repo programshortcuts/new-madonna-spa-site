@@ -27,7 +27,7 @@ export function initDropDown() {
         const catTitle = e.target.closest('.cat-title')
         const productTitle = e.target.closest('.products-title')
         const sectionTitleDropDown = e.target.closest('.section-title.drop-down')
-        const serviceHomeDropDown = e.target.closest('.service-title.drop-down')
+        const serviceSwiperDropDown = e.target.closest('.services-swiper > .swiper-wrapper .service-title.drop-down')
 // 🟣 PRODUCT DROPDOWN
         if (productTitle) {
             const productsContainers = productTitle.closest('.products')
@@ -66,15 +66,13 @@ export function initDropDown() {
             lastClickedDrop = e.target
             return
         }
-        if (serviceHomeDropDown) {
-            const service = serviceHomeDropDown.closest('.service') 
-                
-            
+        // Services Swiper Dropdown
+        if (serviceSwiperDropDown) {
+            const service = serviceSwiperDropDown.closest('.service') 
             if (!service) return
             // if(!service.classList.contains('drop-down')) return
             const downs = service.querySelector('.downs')
             if (!downs) return
-
             // if(e.target === lastClickedDrop){
             //     downs.classList.toggle('hide')
             // } else {
@@ -88,7 +86,10 @@ export function initDropDown() {
     
     function hideAllDowns(){
         downs.forEach(el => {
-            el.classList.add('hide')
+            if(!el.classList.contains('hide')) {
+                el.classList.add('hide')
+
+            }
         })
     }
     function hideEls(els){

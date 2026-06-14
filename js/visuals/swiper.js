@@ -1,5 +1,6 @@
 // js/visuals/swiper.js
 let reviewsSwiper = null;
+let clickedServiceSlide = null;
 export let servicesSwiper = null;
 
 export function initReviewsSwiper() {
@@ -104,8 +105,15 @@ export function initServicesSwiper() {
 
     });
     el.addEventListener('keydown', (e) => {
+        servicesSwiper.autoplay.stop(); 
         const key = e.key.toLowerCase()
         if (key === 'enter') {
+            if(e.target === clickedServiceSlide) {
+                const serviceTitle = e.target.querySelector('.service-title');
+                serviceTitle.focus()
+                serviceTitle.click()
+                return
+            }
             const slide = e.target.closest('.swiper-slide');
 
             if (!slide || !servicesSwiper.slides.includes(slide)) return;
@@ -118,6 +126,7 @@ export function initServicesSwiper() {
                 block: 'center',
                 inline: 'nearest'
             });
+            clickedServiceSlide = e.target
         }
     });
 
