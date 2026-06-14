@@ -9,6 +9,14 @@
     bottom: 50%;
 }
 
-.content > .img-wrapper {
+.content-box{
+    position: relative;
+}
+.content-box::after{
+    clear: both;
+    content: ' ';
+    display: block;
+}
+.content-box > .img-wrapper {
     float: right !important;
 }

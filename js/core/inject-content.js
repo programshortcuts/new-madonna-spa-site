@@ -125,6 +125,7 @@ export async function injectPage(href) {
     // -----------------------------
     mainLandingPage.innerHTML = DOMPurify.sanitize(newContent.outerHTML, {
         ALLOWED_TAGS: [
+            'video',
             'form', 'input', 'textarea', 'label',
             'div', 'p', 'span', 'ul', 'ol', 'li',
             'pre', 'code',
@@ -135,6 +136,7 @@ export async function injectPage(href) {
             'svg', 'path', 'circle', 'g'
         ],
         ALLOWED_ATTR: [
+            'autoplay','loop','controls',
             'src', 'href', 'class', 'id', 'alt', 'tabindex',
             'allow', 'allowfullscreen', 'frameborder',
             'width', 'height', 'viewBox', 'fill', 'd', 'cx', 'cy', 'r',
