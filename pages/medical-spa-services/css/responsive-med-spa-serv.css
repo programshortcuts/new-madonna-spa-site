@@ -5,19 +5,9 @@
     
 }
 @media screen and (max-width:533px) {
-    .section#bioHormoneReplacement>button.section-title>img {
-            transform: scale(.5);
-            right: -30%;
-            top: -40%;
-    
-        }
-}
-@media screen and (min-width:500px) {
-    .page-container.med-spa-serv-container {
-        margin-top: 15%;
+    .img-wrapper.float-left {
+        max-width: 224px;
+        /* border: 10px solid red !important; */
+
     }
-    .section{
-        margin-right: 50%;
-        background-position-x: -50% !important;
-    }   
 }

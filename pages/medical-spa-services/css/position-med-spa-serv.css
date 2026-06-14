@@ -17,7 +17,10 @@
     content: ' ';
     display: block;
 }
-.content-box > .img-wrapper {
+.section .img-wrapper:first-of-type {
     float: right !important;
+}
+.section .img-wrapper.float-left {
+    float: left !important;
 }
 

@@ -32,10 +32,11 @@
     max-width: 200px;
 }
 
-.img-wrapper>video {
-    z-index: 999;
+.img-wrapper.float-left{
     height: 200px;
-    width: 200px;
+}
+.img-wrapper>video {
+    height: 100%;
+    width: 100%;
     max-height: 200px;
-    max-width: 200px;
 }
