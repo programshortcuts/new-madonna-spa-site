@@ -132,7 +132,9 @@ export function initServicesSwiper() {
             clickedServiceSlide = e.target
         }
     });
-
+    document.addEventListener('change', e => {
+        console.log('chaning')
+    })
     return servicesSwiper; // ✅ CRITICAL ADDITION
 }
 
