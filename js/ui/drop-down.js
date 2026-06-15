@@ -27,6 +27,7 @@ export function initDropDown() {
         e.preventDefault()
         e.stopPropagation()
         if(e.type === 'click'){
+
             clickHandler(e)
             return
         }
@@ -89,7 +90,7 @@ export function initDropDown() {
             const downs = section.querySelector('.downs')
             if (!downs) return
     
-    
+            hideAllDowns()
             downs.classList.toggle('hide')
             lastClickedDrop = e.target
     
