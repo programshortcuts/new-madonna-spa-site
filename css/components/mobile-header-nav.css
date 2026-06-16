@@ -1,4 +1,7 @@
 /* mobile-header-nav.css */
+.mobile-header-nav .start-hidden {
+    display: none;
+}
 :root {
     --social-max-height: 3vh;
 }
@@ -34,6 +37,7 @@
     display: flex;
     align-items: flex-start;
 }
+
 
 .mobile-header-nav>ul>li {
     flex-basis: 25%;
@@ -100,7 +104,6 @@ li#contactNavLink>.social-media-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* max-height: 20px !important; */
     width: 100%;
     max-height: var(--social-max-height);
     height: fit-content;
@@ -114,6 +117,11 @@ li#contactNavLink>.social-media-container {
     max-width: 100%;
 }
 
-.social-media-link-container {
-    position: relative;
+.social-media-link-container { position: relative;}
+
+#researchAndLitLI{
+    margin-left: 3%;
+}
+#researchAndLitLI > ul {
+    margin-left: 10%;
 }

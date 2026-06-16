@@ -1,4 +1,7 @@
 /* toggle-nav.css */
+.page-wrapper.expand .mobile-header-nav .start-hidden {
+    display: inherit            
+}
 .page-wrapper.expand>.mobile-header-nav {
     border-top: 0;
     padding-top: 5%;
@@ -15,6 +18,10 @@
     transition: all 400ms;
 }
 
+.page-wrapper.expand .mobile-header-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+}
 .page-wrapper.expand .mobile-header-nav ul>li>ul {
     padding-top: 8%;
 }
