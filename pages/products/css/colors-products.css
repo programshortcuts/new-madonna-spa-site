@@ -13,3 +13,10 @@
     background-color: white;
  }
  
+ .products-title{
+   color: black !important;
+ }
+ 
+ .products-title:visited{
+   color: black !important;
+ }
