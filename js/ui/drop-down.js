@@ -5,6 +5,7 @@ export function initDropDown() {
     const dropDowns = document.querySelectorAll('.drop-down')
     const downs = document.querySelectorAll('.downs')
     // const sectionTitles = document.querySelectorAll('.section-title')
+    hideAllDowns()
     dropDowns.forEach(el => {
         // SUPER IMPORTANT 
         if(el.classList.contains('service-title')){
@@ -18,16 +19,12 @@ export function initDropDown() {
         // el.removeEventListener('keydown', toggleContent) // ✅ prevent stacking
         // el.addEventListener('keydown', toggleContent)
     })
-    // sectionTitles.forEach(el => {
-    //     // SUPER IMPORTANT 
-    //     el.removeEventListener('click', toggleContent) // ✅ prevent stacking
-    //     el.addEventListener('click', toggleContent)
-    // })
+    
     function toggleContent(e) {
         e.preventDefault()
         
         if(e.type === 'click'){
-            // hideAllDowns()
+            hideAllDowns()
             clickHandler(e)
             return
         }
