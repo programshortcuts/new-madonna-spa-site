@@ -61,20 +61,15 @@ export function initServicesSwiper() {
         },
 
         on: {
-            slideChangeTransitionEnd: function () {
+            slideChangeTransitionEnd() {
 
-                this.update();
+                if (initialSlide) {
+                    initialSlide = false;
+                    return;
+                }
 
                 const activeSlide = this.slides[this.activeIndex];
-
-                // console.log(
-                //     'ACTIVE SLIDE:',
-                //     activeSlide,
-                //     'FOCUSED:',
-                //     document.activeElement
-                // );
-
-                // activeSlide?.focus();
+                activeSlide?.focus();
             }
         }
     });
