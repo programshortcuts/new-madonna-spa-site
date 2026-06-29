@@ -102,7 +102,10 @@ export function initServicesSwiper() {
         } else if (clickedIndex > activeIndex) {
             servicesSwiper.slideNext();
         }
-        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        el.scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'nearest',
+            inline: 'center' });
     });
     el.addEventListener('focusin', (e) => {
         if (e.target.closest('.swiper-slide')) {
