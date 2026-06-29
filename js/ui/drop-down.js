@@ -37,6 +37,7 @@ export function initDropDown() {
     function hideAllDowns(){
         downs.forEach(el => {
             if(!el.classList.contains('hide')) {
+                if(el.closest('.cat'))
                 el.classList.add('hide')
 
             }
