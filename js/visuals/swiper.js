@@ -31,7 +31,8 @@ export function initServicesSwiper() {
     if (!el || typeof Swiper === 'undefined') return;
 
     if (servicesSwiper) servicesSwiper.destroy(true, true);
-
+    let shouldFocusSlide = false;
+    let initialLoad = true;
     servicesSwiper = new Swiper(el, {
         loop: true,
         speed: 300,
@@ -59,19 +60,26 @@ export function initServicesSwiper() {
             delay: 3333,
             disableOnInteraction: true
         },
-
         on: {
-            slideChangeTransitionEnd() {
+        slideChangeTransitionEnd() {
 
-                if (initialSlide) {
-                    initialSlide = false;
-                    return;
-                }
+            // Always update the highlighted button
+            syncServiceButton(this);
 
-                const activeSlide = this.slides[this.activeIndex];
-                activeSlide?.focus();
+            // Don't focus the slide on page load
+            if (initialLoad) {
+                initialLoad = false;
+                return;
             }
+
+            // Only focus after the user actually interacted
+            if (!shouldFocusSlide) return;
+
+            shouldFocusSlide = false;
+
+            this.slides[this.activeIndex]?.focus();
         }
+    }
     });
 
     // Allow clicking on slides to navigate left/right
@@ -181,3 +189,25 @@ export function initServiceNavController(swiperInstance) {
     });
 }
 
+
+function syncServiceButton(swiper) {
+
+    // Remove previous highlight
+    document
+        .querySelectorAll('.service-col-title')
+        .forEach(btn => btn.classList.remove('is-focused'));
+
+    // Current active slide
+    const slide = swiper.slides[swiper.activeIndex];
+    if (!slide) return;
+
+    const target = slide.dataset.navTarget;
+    if (!target) return;
+
+    // Find matching button
+    const btn = document.querySelector(
+        `.service-col-title[data-nav-target="${target.replace('-serv-home', '-col-home-link')}"]`
+    );
+
+    btn?.classList.add('is-focused');
+}

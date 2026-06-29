@@ -25,6 +25,12 @@
 }
 
 
+.service-col-title{
+    background-color: none;
+    /* temp highlight */
+    border: none;
+    transition: background-color 0.2s ease;
+}
 .service-col-title.is-focused {
     background-color: rgba(0, 123, 255, 0.2) !important;
     /* temp highlight */
