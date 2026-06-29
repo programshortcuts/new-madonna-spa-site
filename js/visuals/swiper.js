@@ -74,7 +74,7 @@ export function initServicesSwiper() {
                 //     document.activeElement
                 // );
 
-                activeSlide?.focus();
+                // activeSlide?.focus();
             }
         }
     });

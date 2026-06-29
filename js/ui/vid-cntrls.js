@@ -1,6 +1,5 @@
 export function vidControls({e,section}){
 
-    console.log(section)
+    console.log(e.target)
     const vid = section.querySelector('video')
-    // vid.play()
 }
