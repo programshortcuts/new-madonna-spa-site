@@ -24,7 +24,7 @@ export function initDropDown() {
         e.preventDefault()
         
         if(e.type === 'click'){
-            hideAllDowns()
+
             clickHandler(e)
             return
         }
